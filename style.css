@@ -2,18 +2,18 @@
 html {
 	line-height: 1.15;
 	-ms-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
-	
-	background: url('background_night.png') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 100%;
-    overflow: hidden;
+	-webkit-text-size-adjust: 100%
 }
 
 body {
+	margin: 0;
+	background: url('background_night.png') no-repeat center center fixed; 
+    background-size: cover;
+	
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    height: 100%;
 }
 
 #hideAll {
@@ -36,11 +36,7 @@ body {
     height:510px;
     margin-top: -255px; /*set to a negative number 1/2 of your height*/
     margin-left: -205px; /*set to a negative number 1/2 of your width*/
-    background-image: url('background_night.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-	background-origin: border-box;
-	background-position: center;
+	background: url('background_night.png') no-repeat center center fixed; 
     background-size: cover;
 	
 	-webkit-background-size: cover;
