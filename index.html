@@ -29,14 +29,21 @@
     <meta name="theme-color" content="#172027">
 </head>
 <body>
-	 <div class="center" unselectable="on" onselectstart="return false;" onmousedown="return false;">
-		  <div class="lower-button">
-	      <p class="lower-button-text">
-	      <font color="white">
-          SHOW ME
-		  </font>
-          </p>
-		  </div>
-	 </div>
+    <div style="display: none" id="hideAll">&nbsp;</div>
+	<div class="center" unselectable="on" onselectstart="return false;" onmousedown="return false;">
+		<div class="lower-button">
+	    <p class="lower-button-text">
+	    <font color="white">
+        SHOW ME
+		</font>
+        </p>
+		</div>
+	</div>
+	
+    <script type="text/javascript">
+        document.getElementById("hideAll").style.display = "block";
+	    window.onload = function() { document.getElementById("hideAll").style.display = "none"; }
+	    
+    </script>
 </body>
 </html>
