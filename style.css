@@ -18,10 +18,10 @@ body {
 	position:fixed;
     top: 50%;
     left: 50%;
-    width:650px;
-    height:450px;
-    margin-top: -225px; /*set to a negative number 1/2 of your height*/
-    margin-left: -325px; /*set to a negative number 1/2 of your width*/
+    width:410px;
+    height:510px;
+    margin-top: -255px; /*set to a negative number 1/2 of your height*/
+    margin-left: -205px; /*set to a negative number 1/2 of your width*/
     background-color: #172027;
 	box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.425);
 }
