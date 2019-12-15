@@ -20,8 +20,8 @@ body {
     left: 50%;
     width:650px;
     height:450px;
-    margin-top: -325px; /*set to a negative number 1/2 of your height*/
-    margin-left: -225px; /*set to a negative number 1/2 of your width*/
+    margin-top: -225px; /*set to a negative number 1/2 of your height*/
+    margin-left: -325px; /*set to a negative number 1/2 of your width*/
     background-color: #172027;
     border-radius: 25px;
 }
