@@ -12,6 +12,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+	background-position: center;
 }
 
 #hideAll {
@@ -37,6 +38,8 @@ body {
     background-image: url('background_night.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
+	background-origin: border-box;
+	background-position: center;
     background-size: cover;
 }
 .center {
@@ -74,4 +77,17 @@ body {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
+}
+
+.title-text {
+	color: #fafafa;
+	font-family: Roboto, sans-serif;
+	font-size: 48px;
+    font-weight: 900;
+    font-style: normal;
+    font-variant: normal;
+	
+	top: 50px;
+    position: relative;
+    text-align: center;
 }
