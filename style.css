@@ -24,6 +24,20 @@ body {
    z-index: 99; /* Higher than anything else in the document */
 }
 
+.blur-center {
+    filter: blur(15px);
+	position:fixed;
+    top: 50%;
+    left: 50%;
+    width:410px;
+    height:510px;
+    margin-top: -255px; /*set to a negative number 1/2 of your height*/
+    margin-left: -205px; /*set to a negative number 1/2 of your width*/
+    background-image: url('background_night.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 .center {
 	position:fixed;
     top: 50%;
@@ -32,7 +46,7 @@ body {
     height:510px;
     margin-top: -255px; /*set to a negative number 1/2 of your height*/
     margin-left: -205px; /*set to a negative number 1/2 of your width*/
-    background-color: #172027;
+    background-color: rgba(23,32,39,0.75);
 	box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.425);
 	border-radius: 14px;
 	overflow:hidden;
