@@ -1,0 +1,27 @@
+
+
+html {
+	line-height: 1.15;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%
+}
+
+body {
+	margin: 0;
+    background-image: url('background_night.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.center {
+	position:fixed;
+    top: 50%;
+    left: 50%;
+    width:650px;
+    height:450px;
+    margin-top: -325px; /*set to a negative number 1/2 of your height*/
+    margin-left: -225px; /*set to a negative number 1/2 of your width*/
+    background-color: #172027;
+    border-radius: 25px;
+}
