@@ -33,4 +33,8 @@ body {
     background-color: #40A954;
 	width: 100%;
 	height: 55px;
+	text-align: center;
+}
+.lower-button-text {
+	display: inline-block;
 }
