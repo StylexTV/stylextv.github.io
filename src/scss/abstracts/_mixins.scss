@@ -47,7 +47,7 @@
 			color: color(typography, 1i);
 		}
 	} @else if ($type == 'footer') {
-		color: color(typography, 2);
+		color: color(typography, 2i);
 		text-decoration: none;
 
 		&:hover,
@@ -59,17 +59,17 @@
 
 @mixin shadow($layout: false) {
 	@if ( $layout == 'dark' ) {
-		box-shadow: 0 16px 48px rgba(darken(color(bg, 1i), 35%), .2);
+		box-shadow: 0 20px 48px rgba(darken(color(bg, 1), 35%), .2);
 	} @else {
-		box-shadow: 0 16px 48px rgba(color(bg, 1), .5);
+		box-shadow: 0 20px 48px rgba(color(typography, 1), .16);
 	}
 }
 
 @mixin shadow-sm($layout: false) {
 	@if ( $layout == 'dark' ) {
-		box-shadow: 0 16px 24px rgba(darken(color(bg, 1i), 35%), .2);
+		box-shadow: 0 16px 24px rgba(darken(color(bg, 1), 35%), .2);
 	} @else {
-		box-shadow: 0 16px 24px rgba(color(bg, 1), .5);
+		box-shadow: 0 16px 24px rgba(color(typography, 1), .16);
 	}
 }
 
@@ -77,7 +77,7 @@
 	display: block;
 	height: 1px;
 	@if ( $layout == 'dark' ) {
-		background: color(bg, 3i);
+		background: color(bg, 2i);
 	} @else {
 		background: color(bg, 3);
 	}

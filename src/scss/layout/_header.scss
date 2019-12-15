@@ -1,21 +1,10 @@
 .site-header {
-    position: relative;
     padding: 24px 0;
-	z-index: 2;
-
-	&::before {
-		content: '';
-		position: absolute;
-		top: -140px;
-		right: -100px;
-		width: 1440px;
-		height: 324px;
-		background-image: url('../images/header-illustration-light.svg');
-
-		.lights-off & {
-			background-image: url('../images/header-illustration-dark.svg');
-		}
-	}
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1;
 }
 
 .site-header-inner {
@@ -44,14 +33,4 @@
         line-height: 16px;
         padding: 8px 24px;
     }
-}
-
-@include media( '>medium' ) {
-
-	.site-header {
-
-		&::before {
-			display: none;
-		}
-	}
 }
