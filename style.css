@@ -3,17 +3,16 @@ html {
 	line-height: 1.15;
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%
-}
-
-body {
-	margin: 0;
+	
 	background: url('background_night.png') no-repeat center center fixed; 
     background-size: cover;
 	
 	-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    height: 100%;
+}
+
+body {
 }
 
 #hideAll {
