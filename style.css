@@ -25,6 +25,7 @@ body {
 }
 
 .blur-center {
+	margin: 0;
     filter: blur(15px);
 	position:fixed;
     top: 50%;
