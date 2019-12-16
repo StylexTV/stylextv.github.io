@@ -56,7 +56,6 @@ body {
 	box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.425);
 	border-radius: 14px;
 	overflow:hidden;
-	-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;
 }
 .lower-button {
 	position: absolute;
@@ -64,6 +63,7 @@ body {
     background-color: #40A954;
 	width: 100%;
 	height: 55px;
+	-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;
 }
 .lower-button-text {
 	color: white;
@@ -92,6 +92,8 @@ body {
 	top: 50px;
     position: relative;
     text-align: center;
+	
+	-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;
 }
 .info-text {
 	color: #fafafa;
@@ -104,13 +106,38 @@ body {
 	top: 75px;
     position: relative;
     text-align: left;
+	
+	-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;
 }
 
-.text-field-line {
+.text-field {
     position: absolute;
 	width:65%;
-	height:0px;
-	border:1px solid rgba(255,255,255,0.5);
+	height:50px;
 	left: 17.5%;
 	bottom: 105px;
+}
+.text-field-line {
+    position: absolute;
+	width:100%;
+	height:0px;
+	border:1px solid rgba(255,255,255,0.5);
+	bottom: 0;
+}
+input[type=text] {
+    position: absolute;
+	width:90%;
+	height:30px;
+	left: 5%;
+	bottom:6px;
+	
+	font-family: Roboto, sans-serif;
+	font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+	
+    background: none;
+    border: none;
+	color: rgba(255,255,255,0.5);
 }
