@@ -105,3 +105,12 @@ body {
     position: relative;
     text-align: left;
 }
+
+.text-field-line {
+    position: absolute;
+	width:65%;
+	height:0px;
+	border:1px solid rgba(255,255,255,0.5);
+	left: 17.5%;
+	bottom: 105px;
+}
