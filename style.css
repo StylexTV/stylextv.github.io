@@ -93,3 +93,15 @@ body {
     position: relative;
     text-align: center;
 }
+.info-text {
+	color: #fafafa;
+	font-family: Roboto, sans-serif;
+	font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+	
+	top: 75px;
+    position: relative;
+    text-align: left;
+}
