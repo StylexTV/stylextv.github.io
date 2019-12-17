@@ -141,3 +141,9 @@ input[type=text] {
     border: none;
 	color: rgba(255,255,255,0.5);
 }
+textarea:focus, input:focus{
+    outline: none;
+}
+*:focus {
+    outline: none;
+}
