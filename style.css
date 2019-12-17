@@ -103,7 +103,7 @@ body {
     font-style: normal;
     font-variant: normal;
 	
-	top: 75px;
+	top: 85px;
     position: relative;
     text-align: left;
 	
@@ -141,8 +141,12 @@ body {
     vertical-align: middle;
     line-height: 30px;
 	
-	border: 1px solid red;
+	transition: all ease 0.5s;
 }
+.text-field-header:hover {
+	bottom: 0px;
+}
+
 input[type=text] {
     position: absolute;
 	width:95%;
