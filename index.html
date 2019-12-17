@@ -28,7 +28,6 @@
     <meta name="theme-color" content="#172027">
 </head>
 <body>
-			<span class="text-field-header">Username</span>
     <div style="display: none" id="hideAll">&nbsp;</div>
 	<div class="blur-center"></div>
 	<div class="center">
@@ -44,8 +43,9 @@
 		
 		<div class="text-field">
 		    <div class="text-field-line"></div>
-			<span class="text-field-header">Username</span>
-			<input class="input-text1" type="text" id="username" name="Username" placeholder="">
+			<input class="input-text1" type="text" id="username" name="Username" placeholder=" ">
+			<div class="text-field-header" unselectable="on" onselectstart="return false;" onmousedown="return false;">Username</div>
+		    <div class="text-field-line-overlay"></div>
 		</div>
 		<div>
 	    
