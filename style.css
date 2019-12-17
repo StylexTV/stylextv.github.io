@@ -144,7 +144,14 @@ body {
 	transition: all ease 0.5s;
 }
 .text-field-header:hover {
-	bottom: 0px;
+	bottom: 36px;
+}
+
+.input-text1:focus {
+	background-color: red;
+}
+.has-val.input-text1 {
+	background-color: red;
 }
 
 input[type=text] {
