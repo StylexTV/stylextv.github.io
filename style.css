@@ -143,7 +143,9 @@ input[type=text] {
 }
 textarea:focus, input:focus{
     outline: none;
+	outline-style: none;
 }
 *:focus {
     outline: none;
+	outline-style: none;
 }
