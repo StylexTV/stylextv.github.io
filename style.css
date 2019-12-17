@@ -140,20 +140,20 @@ input[type=text] {
     background: none;
     border: none;
 	color: rgba(255,255,255,0.5);
-	outline: none;
-	outline-style:none;
-	box-shadow:none;
-	border-color:transparent;
+    outline: none !important;
+	outline-style: none !important;
+	box-shadow:none !important;
+	border-color:transparent !important;
 }
 textarea:focus, input:focus{
-    outline: none;
-	outline-style: none;
-	box-shadow:none;
-	border-color:transparent;
+    outline: none !important;
+	outline-style: none !important;
+	box-shadow:none !important;
+	border-color:transparent !important;
 }
 *:focus {
-    outline: none;
-	outline-style: none;
-	box-shadow:none;
-	border-color:transparent;
+    outline: none !important;
+	outline-style: none !important;
+	box-shadow:none !important;
+	border-color:transparent !important;
 }
