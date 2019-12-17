@@ -141,12 +141,19 @@ input[type=text] {
     border: none;
 	color: rgba(255,255,255,0.5);
 	outline: none;
+	outline-style:none;
+	box-shadow:none;
+	border-color:transparent;
 }
 textarea:focus, input:focus{
     outline: none;
 	outline-style: none;
+	box-shadow:none;
+	border-color:transparent;
 }
 *:focus {
     outline: none;
 	outline-style: none;
+	box-shadow:none;
+	border-color:transparent;
 }
