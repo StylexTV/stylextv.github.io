@@ -20,7 +20,7 @@ html {
 }
 @font-face {
     font-family: Inter-Regular;
-    src:url("assets/fonts/inter-regular.TTF");
+    src:url("assets/fonts/inter-regular.ttf");
 }
 
 body {
