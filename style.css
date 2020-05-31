@@ -37,6 +37,32 @@ body {
     z-index: 99; /* Higher than anything else in the document */
 }
 
+#header {
+	width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+	height: 107px;
+}
+#header-container {
+	height: 100%;
+    position: relative;
+    margin: 0 auto;
+    padding: 0 38px;
+}
+#header-social-container {
+	float: right;
+	height: 100%;
+    right: 0;
+	display: flex;
+	
+    justify-content: center;
+    align-items: center;
+}
+.header-social {
+	padding-left: 25px;
+}
+
 #center {
 	display: flex;
     justify-content: center;
