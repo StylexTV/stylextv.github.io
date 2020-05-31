@@ -6,44 +6,16 @@ html {
 	
     height:100%;
 	
-	background: #171a1e no-repeat center center fixed;
+	background: #ffffff no-repeat center center fixed;
     background-size: cover;
 	
 	-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-	
-    scrollbar-face-color: #646464;
-    scrollbar-base-color: #646464;
-    scrollbar-3dlight-color: #646464;
-    scrollbar-highlight-color: #646464;
-    scrollbar-track-color: #000;
-    scrollbar-arrow-color: #000;
-    scrollbar-shadow-color: #646464;
-    scrollbar-dark-shadow-color: #646464;
 }
 
 body {
-	background: #171a1e;
 	height: 1500px;
-}
-
-body::-webkit-scrollbar { width: 8px; height: 3px;}
-body::-webkit-scrollbar-button {  background-color: #666; }
-body::-webkit-scrollbar-track {  background-color: #646464;}
-body::-webkit-scrollbar-track-piece { background-color: #000;}
-body::-webkit-scrollbar-thumb { height: 50px; background-color: #666; border-radius: 3px;}
-body::-webkit-scrollbar-corner { background-color: #646464;}}
-body::-webkit-resizer { background-color: #666;}
-
-img {
-	pointer-events: none;
-	
-	-webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -o-user-select: none;
-    user-select: none;
 }
 
 #hideAll {
@@ -52,24 +24,6 @@ img {
     right: 0px;
     top: 0px;
     bottom: 0px;
-    background-color: #171a1e;
+    background-color: #ffffff;
     z-index: 99; /* Higher than anything else in the document */
-}
-
-#top_shadow {
-    position: fixed;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    height: 118px;
-    background-image: linear-gradient(#171a1e, rgba(0,0,0,0)); /* Standard syntax (must be last) */
-}
-
-.icon_gif {
-    position: absolute;
-    top: 16px;
-    left: 16px;
-}
-.icon_gif_frame {
-    position: relative;
 }
