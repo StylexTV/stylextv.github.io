@@ -14,8 +14,13 @@ html {
     -o-background-size: cover;
 }
 
+@font-face {
+    font-family: Consola;
+    src:url("assets/fonts/consola.ttf");
+}
+
 body {
-	height: 1500px;
+	
 }
 
 #hideAll {
@@ -26,4 +31,18 @@ body {
     bottom: 0px;
     background-color: #ffffff;
     z-index: 99; /* Higher than anything else in the document */
+}
+
+#editor {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	height: 98vh;
+}
+
+.code-container {
+	font-family: Consola;
+	font-size: 13.6px;
+	
+	white-space: pre-line;
 }
