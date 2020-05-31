@@ -1,0 +1,193 @@
+
+html {
+	line-height: 1.15;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	
+    height:100%;
+	
+	background: #ffffff no-repeat center center fixed;
+    background-size: cover;
+	
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+@font-face {
+    font-family: Consola;
+    src:url("assets/fonts/consola.TTF");
+}
+@font-face {
+    font-family: Inter-Regular;
+    src:url("assets/fonts/inter-regular.ttf");
+}
+
+body {
+	margin: 0;
+}
+
+#hideAll {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    background-color: #ffffff;
+    z-index: 99; /* Higher than anything else in the document */
+}
+
+#header {
+	width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+	height: 107px;
+}
+#header-container {
+	height: 100%;
+    position: relative;
+    margin: 0 auto;
+    padding: 0 38px;
+}
+#header-social-container {
+	float: right;
+	height: 100%;
+    right: 0;
+	display: flex;
+	
+    justify-content: center;
+    align-items: center;
+}
+.header-social {
+	padding-left: 25px;
+}
+.header-social a img {
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#header-pages-container {
+	float: left;
+	height: 100%;
+    right: 0;
+	display: flex;
+	
+    justify-content: center;
+    align-items: center;
+}
+.header-page-container {
+	padding-right: 25px;
+	font-family: Segoe UI;
+	font-size: 18px;
+	font-weight: 600;
+	
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.header-page-icon {
+	padding-right: 25px;
+}
+.header-page-icon a img {
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.header-page {
+	color: #24292e;
+	text-decoration: none;
+}
+.header-page:hover {
+	color: #586069;
+}
+
+#center {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	
+	margin-top: 107px;
+}
+#projects-container {
+	width: 1280px;
+}
+.project-container {
+	height: 480px;
+	border-radius: 3px;
+	margin: 70px 0;
+}
+.project-container-left {
+	display: flex;
+    align-items: center;
+	height: 100%;
+	float: left;
+}
+.project-container-right {
+	display: flex;
+    align-items: center;
+	height: 100%;
+	float: right;
+}
+.project-icon {
+	float: left;
+	max-width: 204px;
+	max-height: 204px;
+	
+	margin: 0 85px;
+}
+.project-text-title {
+	display: block;
+	font-family: Segoe UI;
+	font-size: 38px;
+	font-weight: 600;
+	color: #ffffff;
+	
+	padding-bottom: 14px;
+}
+.project-text-description {
+	display: block;
+	font-family: Segoe UI;
+	font-size: 18px;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.thin-button {
+	font-family: Segoe UI;
+	font-size: 14px;
+	
+	padding: 18px;
+    border: 1px solid rgba(244, 244, 255, 0.71);
+	color: #ffffff;
+	border-radius: 3px;
+	transition: 0.25s;
+	
+	text-decoration: none;
+	outline: none;
+	margin: 0 141px;
+}
+.thin-button:hover {
+    border-color: #ffffff;
+    color: rgba(244, 244, 255, 0.71);
+}
+.thin-button:focus {
+    box-shadow: 0 0 0 3px rgba(31, 201, 232, 0.065);
+}
+.thin-button span {
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
