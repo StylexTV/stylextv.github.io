@@ -44,5 +44,7 @@ body {
 	font-family: Consola;
 	font-size: 13.6px;
 	
-	white-space: pre-line;
+	background-color: #f6f8fa;
+	padding: 18px;
+    border-radius: 3px;
 }
