@@ -62,6 +62,54 @@ body {
 .header-social {
 	padding-left: 25px;
 }
+.header-social a img {
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#header-pages-container {
+	float: left;
+	height: 100%;
+    right: 0;
+	display: flex;
+	
+    justify-content: center;
+    align-items: center;
+}
+.header-page-container {
+	padding-right: 25px;
+	font-family: Segoe UI;
+	font-size: 18px;
+	font-weight: 600;
+	
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.header-page-icon {
+	padding-right: 25px;
+}
+.header-page-icon a img {
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.header-page {
+	color: #24292e;
+	text-decoration: none;
+}
+.header-page:hover {
+	color: #586069;
+}
 
 #center {
 	display: flex;
