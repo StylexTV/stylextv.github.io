@@ -24,7 +24,7 @@ html {
 }
 
 body {
-	
+	margin: 0;
 }
 
 #hideAll {
@@ -115,7 +115,7 @@ body {
 	display: flex;
     justify-content: center;
     align-items: center;
-	height: 98vh;
+	height: 100vh;
 }
 #editor {
 	text-align: center;
