@@ -116,10 +116,10 @@ body {
     align-items: center;
 }
 #projects-container {
-	width: 1280px;
+	width: 66vw;
 }
 .project-container {
-	height: 480px;
+	height: 25vw;
 	border-radius: 3px;
 	margin: 70px 0;
 }
@@ -134,18 +134,19 @@ body {
     align-items: center;
 	height: 100%;
 	float: right;
+	margin-right: 11%;
 }
 .project-icon {
 	float: left;
-	max-width: 204px;
-	max-height: 204px;
+	max-width: 10.7vw;
+	max-height: 10.7vw;
 	
-	margin: 0 85px;
+	margin: 0 4.4vw;
 }
 .project-text-title {
 	display: block;
 	font-family: Segoe UI;
-	font-size: 38px;
+	font-size: 1.9vw;
 	font-weight: 600;
 	color: #ffffff;
 	
@@ -154,7 +155,7 @@ body {
 .project-text-description {
 	display: block;
 	font-family: Segoe UI;
-	font-size: 18px;
+	font-size: 0.9vw;
 	font-weight: 400;
 	color: rgba(255, 255, 255, 0.7);
 }
@@ -171,7 +172,6 @@ body {
 	
 	text-decoration: none;
 	outline: none;
-	margin: 0 141px;
 }
 .thin-button:hover {
     border-color: #ffffff;
