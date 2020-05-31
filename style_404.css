@@ -44,7 +44,7 @@ body {
 	height: 98vh;
 }
 #editor {
-	
+	text-align: center;
 }
 
 #editor-title {
@@ -52,21 +52,32 @@ body {
 	font-size: 48px;
 	
 	color: #24292e;
-	
-	line-height: 13px;
+	margin: -35px 0;
 }
 .editor-p {
     font-family: Inter-Regular;
 	font-size: 20px;
 	
 	color: #586069;
+	margin: 50px 0;
 }
 
-.code-container {
-	font-family: Consola;
-	font-size: 13.6px;
+.thin-button {
+	font-family: Segoe UI;
+	font-size: 14px;
 	
-	background-color: #f6f8fa;
 	padding: 18px;
-    border-radius: 3px;
+    border: 1px solid #87b9f3;
+	color: #1074E7;
+	border-radius: 3px;
+	transition: 0.25s;
+	
+	text-decoration: none;
+	outline: none;
+}
+.thin-button:hover {
+    border-color: #1074E7;
+}
+.thin-button:focus {
+    box-shadow: 0 0 0 3px #b3d1f3;
 }
