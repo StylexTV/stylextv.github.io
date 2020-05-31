@@ -20,7 +20,7 @@
 	
 	<div id="center">
 	    <div id="editor">
-		    <h1 id="editor-title">🍩 D'oh!</h1>
+		    <h1 id="editor-title"></h1>
 		    <p class="editor-p">Doesn't look like that page exists.</p>
 	        <pre class="code-container">├─ 📂 node_modules/   # 👶 Dependencies
 │  ├─ 📁 gl-matrix      # ➕ Linear Algebra
@@ -67,7 +67,11 @@
         setupIcons();
 		
 		function setupMessage() {
-		    
+		    var message = document.getElementById('editor-title');
+			var index = Math.floor(Math.random() * 3);
+			if(index == 0) message.innerHTML = "🍩 D'oh!";
+			else if(index == 1) message.innerHTML = "🥊 404'd!";
+			else if(index == 2) message.innerHTML = "🦆 Honk!";
 		}
 		setupMessage();
 		
