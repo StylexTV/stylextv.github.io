@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GitHub ReadMe | Blog</title>
+	
+	<link rel="stylesheet" href="style_about.css">
+	
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<link rel="icon" href="favicons/favicon_light-16x16.ico" type="image/x-icon" id="light-scheme-icon">
+<link rel="icon" href="favicons/favicon_dark-16x16.ico" type="image/x-icon" id="dark-scheme-icon">
+
+<body>
+    <div style="display: none" id="hideAll">&nbsp;</div>
+	
+	<div id="header">
+	    <div id="header-container">
+	        <div id="header-pages-container">
+			    <div class="header-page-icon"><a href="/"><img src="/assets/icons/lightning.png"></img></a></div>
+			    <div class="header-page-container"><a href="/portfolio.html" class="header-page">Portfolio</a></div>
+			    <div class="header-page-container"><a href="/blog.html" class="header-page">Blog</a></div>
+			    <div class="header-page-container"><a href="/about.html" class="header-page" style="border-bottom: 2px solid currentColor;">About</a></div>
+			</div>
+	        <div id="header-social-container">
+			    <div class="header-social"><a href="https://twitter.com"><img src="/assets/icons/twitter.png"></img></a></div>
+			    <div class="header-social"><a href="https://github.com/StylexTV"><img src="/assets/icons/github.png"></img></a></div>
+			</div>
+	    </div>
+	</div>
+	
+	<div id="center">
+	    <div id="editor">
+		    <h1 id="editor-title">👋 Hi there,</h1>
+		    <p class="editor-p">Doesn't look like that page exists.</p>
+	        <a class="thin-button" href="https://twitter.com"><span>Twitter</span></a>
+	        <a class="thin-button" href="https://github.com/StylexTV"><span>GitHub</span></a>
+	        <a class="thin-button" href="mailto:EMAILADDRESS">Email<span></span></a>
+		</div>
+	</div>
+	
+    <script type="text/javascript">
+        document.getElementById("hideAll").style.display = "block";
+	    window.onload = function() { document.getElementById("hideAll").style.display = "none"; }
+		
+	    function setupIcons() {
+            const lightSchemeIcon = document.querySelector('link#light-scheme-icon');
+            const darkSchemeIcon = document.querySelector('link#dark-scheme-icon');
+			
+            function setLight() {
+                darkSchemeIcon.remove();
+                document.head.append(lightSchemeIcon);
+            }
+			
+            function setDark() {
+                lightSchemeIcon.remove();
+                document.head.append(darkSchemeIcon);
+            }
+			
+            const matcher = window.matchMedia('(prefers-color-scheme:dark)');
+            function onUpdate() {
+                if (matcher.matches) {
+                    setDark();
+                } else {
+                    setLight();
+                }
+            }
+            matcher.addListener(onUpdate);
+            onUpdate();
+        }
+        setupIcons();
+		
+    </script>
+</body>
+</html>
