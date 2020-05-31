@@ -39,7 +39,6 @@ body {
 
 #header {
 	width: 100%;
-    position: fixed;
     left: 0;
     top: 0;
 	height: 107px;
@@ -115,8 +114,6 @@ body {
 	display: flex;
     justify-content: center;
     align-items: center;
-	
-	margin-top: 107px;
 }
 #projects-container {
 	width: 1280px;
