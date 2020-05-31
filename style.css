@@ -16,7 +16,7 @@ html {
 
 @font-face {
     font-family: Consola;
-    src:url("assets/fonts/consola.ttf");
+    src:url("assets/fonts/consola.TTF");
 }
 
 body {
