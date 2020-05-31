@@ -122,6 +122,8 @@ body {
 	height: 25vw;
 	border-radius: 3px;
 	margin: 70px 0;
+	
+	overflow: hidden;
 }
 .project-container-left {
 	display: flex;
@@ -138,15 +140,15 @@ body {
 }
 .project-icon {
 	float: left;
-	max-width: 10.7vw;
-	max-height: 10.7vw;
+	max-width: 204px;
+	max-height: 204px;
 	
 	margin: 0 4.4vw;
 }
 .project-text-title {
 	display: block;
 	font-family: Segoe UI;
-	font-size: 1.9vw;
+	font-size: 38px;
 	font-weight: 600;
 	color: #ffffff;
 	
@@ -155,7 +157,7 @@ body {
 .project-text-description {
 	display: block;
 	font-family: Segoe UI;
-	font-size: 0.9vw;
+	font-size: 18px;
 	font-weight: 400;
 	color: rgba(255, 255, 255, 0.7);
 }
