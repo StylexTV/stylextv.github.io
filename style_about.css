@@ -166,6 +166,11 @@ body {
 	color: #24292e;
 	font-weight: 600;
 }
+.editor-p a {
+	color: #0366d6;
+	font-weight: 400;
+	text-decoration: none;
+}
 .editor-p2 {
     font-family: Inter-Regular;
 	font-size: 16px;
