@@ -15,7 +15,7 @@
 <link rel="icon" href="favicons/favicon_light-16x16.ico" type="image/x-icon" id="light-scheme-icon">
 <link rel="icon" href="favicons/favicon_dark-16x16.ico" type="image/x-icon" id="dark-scheme-icon">
 
-<a hidden href="/blog/hello.html" id="post-template"><div class="post-container" onmousedown="return false";>
+<a hidden href="" id="post-template"><div class="post-container" onmousedown="return false";>
 	<div class="post-container-bottom">
 		<div class="post-container-shadow"></div>
 	    <div style="margin-left: 50px; z-index: 0;">
@@ -85,18 +85,20 @@
                 const postTemplate = document.querySelector('a#post-template');
                 const postsContainer = document.querySelector('div#posts-container');
 			    
-			    var split = source.split(";;");
-			    for(i = split.length/3 - 1; i >= 0; i--) {
-			        var clone = postTemplate.cloneNode(true);
-				    var container = clone.childNodes[0];
-			    	var textContainer = container.childNodes[1].childNodes[3];
-			    	var title = textContainer.childNodes[1];
-			    	var description = textContainer.childNodes[3];
-			    	var dateLabel = textContainer.childNodes[5];
+			    var splitSource = source.split("\n");
+			    for(i = splitSource.length - 1; i >= 0; i--) {
+			        const clone = postTemplate.cloneNode(true);
+				    const container = clone.childNodes[0];
+			    	const textContainer = container.childNodes[1].childNodes[3];
+			    	const title = textContainer.childNodes[1];
+			    	const description = textContainer.childNodes[3];
+			    	const dateLabel = textContainer.childNodes[5];
+					console.log(clone);
 			    	
-		    		var index = i * 3;
+		    		var split = splitSource[i].split(";;");
+		    		const id = split[0];
 		    		
-		    		var unixTime = parseInt(split[index+2]);
+		    		var unixTime = parseInt(split[3]);
 		    		// Create a new JavaScript Date object based on the timestamp
 		    		// multiplied by 1000 so that the argument is in milliseconds, not seconds.
 		    		var date = new Date(unixTime*1000);
@@ -141,12 +143,13 @@
 					    formattedTime = formattedTime+number+" "+unit+" ago";
 					}
 		    		
-		    		container.style.backgroundImage = "url('blog/posts/"+i+"/cover.jpg')";
-		    		title.innerText = "📰 "+split[index];
-			    	description.innerText = split[index+1];
+		    		container.style.backgroundImage = "url('blog/"+id+"/cover.jpg')";
+		    		title.innerText = "📰 "+split[1];
+			    	description.innerText = split[2];
 			    	dateLabel.innerHTML = dateLabel.innerHTML+formattedTime;
 			    	
-					clone.removeAttribute("hidden")
+					clone.removeAttribute("hidden");
+					clone.href = "blog/"+id+".html";
                     postsContainer.append(clone);
 			    }
 			    
@@ -154,7 +157,7 @@
 			}
 			
 			var request = new XMLHttpRequest();
-            request.open('GET', 'blog/posts/list.txt', true);
+            request.open('GET', 'blog/list.txt', true);
             request.send(null);
             request.onreadystatechange = function () {
                 if (request.readyState === 4 && request.status === 200) {
@@ -164,6 +167,7 @@
                     }
                 }
 			}
+			addObjects("0;;Topic - Subtopic;;Doesn't look like that page exists.;;1591011086\n1;;Topic2 - Subtopic2;;Doesn't look like that page exists.2;;1591012141");
 			
         }
         setupPosts();
