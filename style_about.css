@@ -31,7 +31,7 @@ body {
     position: fixed;
     left: 0px;
     right: 0px;
-    top: 0px;
+    top: 107px;
     bottom: 0px;
     background-color: #ffffff;
     z-index: 99; /* Higher than anything else in the document */
