@@ -15,6 +15,18 @@
 <link rel="icon" href="favicons/favicon_light-16x16.ico" type="image/x-icon" id="light-scheme-icon">
 <link rel="icon" href="favicons/favicon_dark-16x16.ico" type="image/x-icon" id="dark-scheme-icon">
 
+<a href="/blog/hello.html" id="post-template"><div class="post-container" onmousedown="return false";>
+	<div class="post-container-bottom">
+		<div class="post-container-shadow"></div>
+	        <div style="margin-left: 50px; z-index: 0;">
+		        <h1 class="post-title">📰 Topic - Subtopic</h1>
+		            <p class="post-p">Doesn't look like that page exists.</p>
+		            <p class="post-p2"><img src="assets/blog/icons/calender.png"></img> 16.5.2020 @ 02:36 - Updated 2 days ago</p>
+		    </div>
+			
+	</div>
+</div></a>
+
 <body>
     <div style="display: none" id="hideAll">&nbsp;</div>
 	
@@ -34,31 +46,7 @@
 	</div>
 	
 	<div id="center">
-	    <div id="posts-container">
-		    <a href="/blog/hello.html"><div class="post-container" style="background-image: url(blog/posts/1/cover.jpg);" onmousedown="return false";>
-			    <div class="post-container-bottom">
-					<div class="post-container-shadow"></div>
-	                <div style="margin-left: 50px; z-index: 0;">
-		                <h1 class="post-title">📰 Topic - Subtopic</h1>
-		                <p class="post-p">Doesn't look like that page exists.</p>
-		                <p class="post-p2"><img src="assets/blog/icons/calender.png"></img> 16.5.2020 @ 02:36 - Updated 2 days ago</p>
-		            </div>
-					
-				</div>
-			</div></a>
-			
-		    <a href="/blog/hello.html"><div class="post-container" style="background-image: url(blog/posts/0/cover.jpg);" onmousedown="return false";>
-			    <div class="post-container-bottom">
-					<div class="post-container-shadow"></div>
-	                <div style="margin-left: 50px; z-index: 0;">
-		                <h1 class="post-title">📰 Topic - Subtopic</h1>
-		                <p class="post-p">Doesn't look like that page exists.</p>
-		                <p class="post-p2"><img src="assets/blog/icons/calender.png"></img> 16.5.2020 @ 02:36 - Updated 2 days ago</p>
-		            </div>
-					
-				</div>
-			</div></a>
-		</div>
+	    <div id="posts-container"></div>
 	</div>
 	
     <script type="text/javascript">
@@ -91,6 +79,35 @@
             onUpdate();
         }
         setupIcons();
+		
+	    function setupPosts() {
+            const postTemplate = document.querySelector('a#post-template');
+            const postsContainer = document.querySelector('div#posts-container');
+			
+			var request = new XMLHttpRequest();
+            request.open('GET', 'blog/posts/list.txt', true);
+            request.send(null);
+            request.onreadystatechange = function () {
+                if (request.readyState === 4 && request.status === 200) {
+                    var type = request.getResponseHeader('Content-Type');
+                    if (type.indexOf("text") !== 1) {
+			            console.log(request.responseText);
+                    }
+                }
+			}
+			
+			for(i = 1; i >= 0; i--) {
+			    var clone = postTemplate.cloneNode(true);
+				var container = clone.childNodes[0];
+				
+				container.style.backgroundImage = "url('blog/posts/"+i+"/cover.jpg')";
+				
+                postsContainer.append(clone);
+			}
+			
+			postTemplate.remove();
+        }
+        setupPosts();
 		
     </script>
 </body>
