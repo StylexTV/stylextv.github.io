@@ -39,7 +39,6 @@ body {
 
 #header {
 	width: 100%;
-    position: fixed;
     left: 0;
     top: 0;
 	height: 107px;
@@ -115,52 +114,65 @@ body {
 	display: flex;
     justify-content: center;
     align-items: center;
-	height: 100vh;
 }
-#editor {
-	text-align: center;
+#posts-container {
+	width: 60vw;
 }
-
-#editor-title {
-    font-family: Inter-Regular;
-	font-size: 48px;
-	
-	color: #24292e;
-	margin: -35px 0;
-}
-.editor-p {
-    font-family: Inter-Regular;
-	font-size: 20px;
-	
-	color: #586069;
-	margin: 50px 0;
-}
-
-.thin-button {
-	font-family: Segoe UI;
-	font-size: 14px;
-	
-	padding: 18px;
-    border: 1px solid #87b9f3;
-	color: #1074E7;
+.post-container {
+    position: relative;
+	height: 34vw;
 	border-radius: 3px;
-	transition: 0.25s;
+	margin: 38px 0;
 	
-	text-decoration: none;
-	outline: none;
-	margin: 0 5px;
-}
-.thin-button:hover {
-    border-color: #1074E7;
-}
-.thin-button:focus {
-    box-shadow: 0 0 0 3px #b3d1f3;
-}
-.thin-button span {
+	overflow: hidden;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+	
 	-webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+.post-container-bottom {
+	display: flex;
+    align-items: center;
+	
+    position: absolute;
+    bottom: 0;
+	width: 100%;
+}
+.post-container-right {
+	display: flex;
+    align-items: center;
+	height: 100%;
+	float: right;
+	margin-right: 11%;
+}
+.post-title {
+    font-family: Inter-Regular;
+	font-size: 48px;
+	
+	color: #24292e;
+	margin: -35px 0;
+}
+.post-p {
+    font-family: Inter-Regular;
+	font-size: 20px;
+	
+	color: #586069;
+	margin: 50px 0;
+}
+.post-p2 {
+    font-family: Inter-Regular;
+	font-size: 16px;
+	line-height: 1.45;
+	
+	color: #afb4b9;
+	margin: 50px 0;
+}
+
+.post-p2 img {
+	max-width: 18px;
+	max-height: 18px;
 }
