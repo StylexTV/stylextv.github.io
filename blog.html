@@ -175,8 +175,6 @@
 						    addObject(posts[loadedPagesUntil]);
 						}
 			            window.addEventListener('scroll', function() {
-						    console.log(loadedPagesUntil);
-							console.log(posts.length);
                             if(window.pageYOffset + window.innerHeight == document.body.clientHeight && loadedPagesUntil < posts.length) {
 						        for(; loadedPagesUntil < posts.length; loadedPagesUntil++) {
 						            addObject(posts[loadedPagesUntil]);
