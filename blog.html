@@ -15,7 +15,7 @@
 <link rel="icon" href="favicons/favicon_light-16x16.ico" type="image/x-icon" id="light-scheme-icon">
 <link rel="icon" href="favicons/favicon_dark-16x16.ico" type="image/x-icon" id="dark-scheme-icon">
 
-<a href="/blog/hello.html" id="post-template"><div class="post-container" onmousedown="return false";>
+<a hidden href="/blog/hello.html" id="post-template"><div class="post-container" onmousedown="return false";>
 	<div class="post-container-bottom">
 		<div class="post-container-shadow"></div>
 	    <div style="margin-left: 50px; z-index: 0;">
@@ -121,7 +121,7 @@
 			    	description.innerText = split[index+1];
 			    	dateLabel.innerHTML = dateLabel.innerHTML+formattedTime;
 			    	
-                    postsContainer.append(clone);
+                    postsContainer.append(clone.removeAttribute("hidden"));
 			    }
 			    
 			    postTemplate.remove();
