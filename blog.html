@@ -109,12 +109,37 @@
 		    		var now = new Date();
 		    		const diffTime = Math.abs(now - date) / 1000;
 		    		if(diffTime<10) formattedTime = formattedTime+"just now";
-		    		else if(diffTime<60) formattedTime = formattedTime+Math.round(diffTime)+" seconds ago";
-		    		else if(diffTime<60*60) formattedTime = formattedTime+Math.round(diffTime/60)+" minutes ago";
-		    		else if(diffTime<60*60*24) formattedTime = formattedTime+Math.round(diffTime/60/60)+" hours ago";
-		    		else if(diffTime<60*60*24*30.4167) formattedTime = formattedTime+Math.round(diffTime/60/60/24)+" days ago";
-		    		else if(diffTime<60*60*24*30.4167*12) formattedTime = formattedTime+Math.round(diffTime/60/60/24/30.4167)+" months ago";
-		    		else formattedTime = formattedTime+(now.getUTCFullYear()-date.getUTCFullYear())+" years ago";
+		    		else if(diffTime<60) {
+					    var number = Math.floor(diffTime);
+						var unit = "seconds";
+						if(number == 1) unit = "second";
+					    formattedTime = formattedTime+number+" "+unit+" ago";
+		    		} else if(diffTime<60*60) {
+					    var number = Math.floor(diffTime/60);
+						var unit = "minutes";
+						if(number == 1) unit = "minute";
+					    formattedTime = formattedTime+number+" "+unit+" ago";
+		    		} else if(diffTime<60*60*24) {
+					    var number = Math.floor(diffTime/60/60);
+						var unit = "hours";
+						if(number == 1) unit = "hour";
+					    formattedTime = formattedTime+number+" "+unit+" ago";
+		    		} else if(diffTime<60*60*24*30.4167) {
+					    var number = Math.floor(diffTime/60/60/24);
+						var unit = "days";
+						if(number == 1) unit = "day";
+					    formattedTime = formattedTime+number+" "+unit+" ago";
+		    		} else if(diffTime<60*60*24*30.4167*12) {
+					    var number = Math.floor(diffTime/60/60/24/30.4167);
+						var unit = "months";
+						if(number == 1) unit = "month";
+					    formattedTime = formattedTime+number+" "+unit+" ago";
+		    		} else {
+					    var number = now.getUTCFullYear()-date.getUTCFullYear();
+						var unit = "years";
+						if(number == 1) unit = "year";
+					    formattedTime = formattedTime+number+" "+unit+" ago";
+					}
 		    		
 		    		container.style.backgroundImage = "url('blog/posts/"+i+"/cover.jpg')";
 		    		title.innerText = "📰 "+split[index];
@@ -139,6 +164,7 @@
                     }
                 }
 			}
+			addObjects("Topic - Subtopic;;Doesn't look like that page exists.;;1591011086;;Topic2 - Subtopic2;;Doesn't look like that page exists.2;;1591012141");
 			
         }
         setupPosts();
