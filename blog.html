@@ -12,8 +12,18 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 
-<link rel="icon" href="favicons/favicon_light-16x16.ico" type="image/x-icon" id="light-scheme-icon">
-<link rel="icon" href="favicons/favicon_dark-16x16.ico" type="image/x-icon" id="dark-scheme-icon">
+<div id="light-scheme-icon">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicons/light/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicons/light/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicons/light/favicon-16x16.png">
+	<link rel="mask-icon" href="favicons/light/safari-pinned-tab.svg" color="#ffffff">
+</div>
+<div id="dark-scheme-icon">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicons/dark/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicons/dark/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicons/dark/favicon-16x16.png">
+	<link rel="mask-icon" href="favicons/dark/safari-pinned-tab.svg" color="#ffffff">
+</div>
 
 <a hidden href="" id="post-template"><div class="post-container" onmousedown="return false";>
 	<div class="post-container-bottom">
@@ -54,8 +64,8 @@
 	    window.onload = function() { document.getElementById("hideAll").style.display = "none"; }
 		
 	    function setupIcons() {
-            const lightSchemeIcon = document.querySelector('link#light-scheme-icon');
-            const darkSchemeIcon = document.querySelector('link#dark-scheme-icon');
+            const lightSchemeIcon = document.querySelector('div#light-scheme-icon');
+            const darkSchemeIcon = document.querySelector('div#dark-scheme-icon');
 			
             function setLight() {
                 darkSchemeIcon.remove();
