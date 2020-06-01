@@ -167,15 +167,16 @@
             request.open('GET', 'blog/list.txt', true);
             request.send(null);
             request.onreadystatechange = function () {
-                if (request.readyState === 4 && request.status === 200) {
+                if(request.readyState === 4 && request.status === 200) {
                     var type = request.getResponseHeader('Content-Type');
-                    if (type.indexOf("text") !== 1) {
+                    if(type.indexOf("text") !== 1) {
 					    posts = request.responseText.split("\n");
-			            addObject("");
 						for(; loadedPagesUntil < 5; loadedPagesUntil++) {
 						    addObject(posts[loadedPagesUntil]);
 						}
 			            window.addEventListener('scroll', function() {
+						    console.log(loadedPagesUntil);
+							console.log(pages.length);
                             if(window.pageYOffset + window.innerHeight == document.body.clientHeight && loadedPagesUntil < pages.length) {
 						        for(; loadedPagesUntil < pages.length; loadedPagesUntil++) {
 						            addObject(posts[loadedPagesUntil]);
