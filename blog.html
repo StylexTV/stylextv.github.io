@@ -91,78 +91,76 @@
         setupIcons();
 		
 	    function setupPosts() {
-		    function addObjects(source) {
-                const postTemplate = document.querySelector('a#post-template');
-                const postsContainer = document.querySelector('div#posts-container');
+            const postTemplate = document.querySelector('a#post-template');
+            const postsContainer = document.querySelector('div#posts-container');
+			var posts;
+			var loadedPagesUntil = 0;
+			
+		    function addObject(source) {
 			    
-			    var splitSource = source.split("\n");
-			    for(i = splitSource.length - 1; i >= 0; i--) {
-			        const clone = postTemplate.cloneNode(true);
-				    const container = clone.childNodes[0];
-			    	const textContainer = container.childNodes[1].childNodes[3];
-			    	const title = textContainer.childNodes[1];
-			    	const description = textContainer.childNodes[3];
-			    	const dateLabel = textContainer.childNodes[5];
-			    	
-		    		var split = splitSource[i].split(";;");
-		    		const id = split[0];
-		    		
-		    		var unixTime = parseInt(split[3]);
-		    		// Create a new JavaScript Date object based on the timestamp
-		    		// multiplied by 1000 so that the argument is in milliseconds, not seconds.
-		    		var date = new Date(unixTime*1000);
-		    		var hours = "0" + date.getHours();
-		    		// Minutes part from the timestamp
-		    		var minutes = "0" + date.getMinutes();
-		    		// Will display time in 10:30:23 format
-		    		var formattedTime = " " + date.getUTCDate() + '.' + (date.getUTCMonth()+1) + '.' + date.getUTCFullYear()+" @ "+hours.substr(-2)+":"+minutes.substr(-2)+" - Updated ";
-		    		
-		    		var now = new Date();
-		    		const diffTime = Math.abs(now - date) / 1000;
-		    		if(diffTime<10) formattedTime = formattedTime+"just now";
-		    		else if(diffTime<60) {
-					    var number = Math.floor(diffTime);
-						var unit = "seconds";
-						if(number == 1) unit = "second";
-					    formattedTime = formattedTime+number+" "+unit+" ago";
-		    		} else if(diffTime<60*60) {
-					    var number = Math.floor(diffTime/60);
-						var unit = "minutes";
-						if(number == 1) unit = "minute";
-					    formattedTime = formattedTime+number+" "+unit+" ago";
-		    		} else if(diffTime<60*60*24) {
-					    var number = Math.floor(diffTime/60/60);
-						var unit = "hours";
-						if(number == 1) unit = "hour";
-					    formattedTime = formattedTime+number+" "+unit+" ago";
-		    		} else if(diffTime<60*60*24*30.4167) {
-					    var number = Math.floor(diffTime/60/60/24);
-						var unit = "days";
-						if(number == 1) unit = "day";
-					    formattedTime = formattedTime+number+" "+unit+" ago";
-		    		} else if(diffTime<60*60*24*30.4167*12) {
-					    var number = Math.floor(diffTime/60/60/24/30.4167);
-						var unit = "months";
-						if(number == 1) unit = "month";
-					    formattedTime = formattedTime+number+" "+unit+" ago";
-		    		} else {
-					    var number = now.getUTCFullYear()-date.getUTCFullYear();
-						var unit = "years";
-						if(number == 1) unit = "year";
-					    formattedTime = formattedTime+number+" "+unit+" ago";
-					}
-		    		
-		    		container.style.backgroundImage = "url('blog/"+id+"/cover.jpg')";
-		    		title.innerText = "📰 "+split[1];
-			    	description.innerText = split[2];
-			    	dateLabel.innerHTML = dateLabel.innerHTML+formattedTime;
-			    	
-					clone.removeAttribute("hidden");
-					clone.href = "blog/"+id;
-                    postsContainer.append(clone);
-			    }
+			    const clone = postTemplate.cloneNode(true);
+				const container = clone.childNodes[0];
+			    const textContainer = container.childNodes[1].childNodes[3];
+			    const title = textContainer.childNodes[1];
+			    const description = textContainer.childNodes[3];
+			    const dateLabel = textContainer.childNodes[5];
 			    
-			    postTemplate.remove();
+		    	var split = splitSource[i].split(";;");
+		    	const id = split[0];
+		    	
+		    	var unixTime = parseInt(split[3]);
+		    	// Create a new JavaScript Date object based on the timestamp
+		    	// multiplied by 1000 so that the argument is in milliseconds, not seconds.
+		    	var date = new Date(unixTime*1000);
+		    	var hours = "0" + date.getHours();
+		    	// Minutes part from the timestamp
+		    	var minutes = "0" + date.getMinutes();
+		    	// Will display time in 10:30:23 format
+		    	var formattedTime = " " + date.getUTCDate() + '.' + (date.getUTCMonth()+1) + '.' + date.getUTCFullYear()+" @ "+hours.substr(-2)+":"+minutes.substr(-2)+" - Updated ";
+		    	
+		    	var now = new Date();
+		    	const diffTime = Math.abs(now - date) / 1000;
+		    	if(diffTime<10) formattedTime = formattedTime+"just now";
+		    	else if(diffTime<60) {
+					var number = Math.floor(diffTime);
+				    var unit = "seconds";
+					if(number == 1) unit = "second";
+					formattedTime = formattedTime+number+" "+unit+" ago";
+		    	} else if(diffTime<60*60) {
+					var number = Math.floor(diffTime/60);
+				    var unit = "minutes";
+					if(number == 1) unit = "minute";
+					formattedTime = formattedTime+number+" "+unit+" ago";
+		    	} else if(diffTime<60*60*24) {
+					var number = Math.floor(diffTime/60/60);
+					var unit = "hours";
+					if(number == 1) unit = "hour";
+					formattedTime = formattedTime+number+" "+unit+" ago";
+		    	} else if(diffTime<60*60*24*30.4167) {
+					var number = Math.floor(diffTime/60/60/24);
+				    var unit = "days";
+					if(number == 1) unit = "day";
+					formattedTime = formattedTime+number+" "+unit+" ago";
+		    	} else if(diffTime<60*60*24*30.4167*12) {
+					var number = Math.floor(diffTime/60/60/24/30.4167);
+					var unit = "months";
+					if(number == 1) unit = "month";
+					formattedTime = formattedTime+number+" "+unit+" ago";
+		    	} else {
+					var number = now.getUTCFullYear()-date.getUTCFullYear();
+			        var unit = "years";
+					if(number == 1) unit = "year";
+					formattedTime = formattedTime+number+" "+unit+" ago";
+				}
+		    	
+		    	container.style.backgroundImage = "url('blog/"+id+"/cover.jpg')";
+		    	title.innerText = "📰 "+split[1];
+			   	description.innerText = split[2];
+			    dateLabel.innerHTML = dateLabel.innerHTML+formattedTime;
+			    
+				clone.removeAttribute("hidden");
+				clone.href = "blog/"+id;
+                postsContainer.append(clone);
 			}
 			
 			var request = new XMLHttpRequest();
@@ -172,7 +170,18 @@
                 if (request.readyState === 4 && request.status === 200) {
                     var type = request.getResponseHeader('Content-Type');
                     if (type.indexOf("text") !== 1) {
-			            addObjects(request.responseText);
+					    posts = request.responseText.split("\n");
+			            addObject("");
+						for(; loadedPagesUntil < 5; loadedPagesUntil++) {
+						    addObject(posts[loadedPagesUntil]);
+						}
+			            window.addEventListener('scroll', function() {
+                            if(window.pageYOffset + window.innerHeight == document.body.clientHeight && loadedPagesUntil < pages.length) {
+						        for(; loadedPagesUntil < pages.length; loadedPagesUntil++) {
+						            addObject(posts[loadedPagesUntil]);
+						        }
+				            }
+                        });
                     }
                 }
 			}
