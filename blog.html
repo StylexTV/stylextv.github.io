@@ -176,7 +176,7 @@
 						}
 			            window.addEventListener('scroll', function() {
                             if(window.pageYOffset + window.innerHeight == document.body.clientHeight && loadedPagesUntil < posts.length) {
-						        for(int i=0; i<15; i++) {
+						        for(var i = 0; i < 15; i++) {
 								    if(loadedPagesUntil >= posts.length) break;
 									
 						            addObject(posts[loadedPagesUntil]);
