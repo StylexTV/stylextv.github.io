@@ -61,7 +61,10 @@
 	
     <script type="text/javascript">
         document.getElementById("hideAll").style.display = "block";
-	    window.onload = function() { document.getElementById("hideAll").style.display = "none"; }
+	    window.onload = function() {
+		    setupPosts();
+		    document.getElementById("hideAll").style.display = "none";
+		}
 		
 	    function setupIcons() {
             const lightSchemeIcon = document.querySelector('div#light-scheme-icon');
@@ -189,7 +192,6 @@
 			}
 			
         }
-        setupPosts();
 		
     </script>
 </body>
