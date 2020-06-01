@@ -171,13 +171,16 @@
                     var type = request.getResponseHeader('Content-Type');
                     if(type.indexOf("text") !== 1) {
 					    posts = request.responseText.split("\n");
-						for(; loadedPagesUntil < 5; loadedPagesUntil++) {
+						for(; loadedPagesUntil < 15; loadedPagesUntil++) {
 						    addObject(posts[loadedPagesUntil]);
 						}
 			            window.addEventListener('scroll', function() {
                             if(window.pageYOffset + window.innerHeight == document.body.clientHeight && loadedPagesUntil < posts.length) {
-						        for(; loadedPagesUntil < posts.length; loadedPagesUntil++) {
+						        for(int i=0; i<15; i++) {
+								    if(loadedPagesUntil >= posts.length) break;
+									
 						            addObject(posts[loadedPagesUntil]);
+									loadedPagesUntil++;
 						        }
 				            }
                         });
