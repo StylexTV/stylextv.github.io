@@ -121,12 +121,13 @@
 			    	description.innerText = split[index+1];
 			    	dateLabel.innerHTML = dateLabel.innerHTML+formattedTime;
 			    	
-                    postsContainer.append(clone.removeAttribute("hidden"));
+					clone.removeAttribute("hidden")
+                    postsContainer.append(clone);
 			    }
 			    
 			    postTemplate.remove();
 			}
-		
+			
 			var request = new XMLHttpRequest();
             request.open('GET', 'blog/posts/list.txt', true);
             request.send(null);
