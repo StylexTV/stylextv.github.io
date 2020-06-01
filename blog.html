@@ -18,12 +18,12 @@
 <a href="/blog/hello.html" id="post-template"><div class="post-container" onmousedown="return false";>
 	<div class="post-container-bottom">
 		<div class="post-container-shadow"></div>
-	        <div style="margin-left: 50px; z-index: 0;">
-		        <h1 class="post-title">📰 Topic - Subtopic</h1>
-		            <p class="post-p">Doesn't look like that page exists.</p>
-		            <p class="post-p2"><img src="assets/blog/icons/calender.png"></img> 16.5.2020 @ 02:36 - Updated 2 days ago</p>
-		    </div>
-			
+	    <div style="margin-left: 50px; z-index: 0;">
+		    <h1 class="post-title"></h1>
+		    <p class="post-p"></p>
+		    <p class="post-p2"><img src='assets/blog/icons/calender.png'></img></p>
+	    </div>
+		
 	</div>
 </div></a>
 
@@ -81,9 +81,52 @@
         setupIcons();
 		
 	    function setupPosts() {
-            const postTemplate = document.querySelector('a#post-template');
-            const postsContainer = document.querySelector('div#posts-container');
-			
+		    function addObjects(source) {
+                const postTemplate = document.querySelector('a#post-template');
+                const postsContainer = document.querySelector('div#posts-container');
+			    
+			    var split = source.split(";;");
+			    for(i = split.length/3 - 1; i >= 0; i--) {
+			        var clone = postTemplate.cloneNode(true);
+				    var container = clone.childNodes[0];
+			    	var textContainer = container.childNodes[1].childNodes[3];
+			    	var title = textContainer.childNodes[1];
+			    	var description = textContainer.childNodes[3];
+			    	var dateLabel = textContainer.childNodes[5];
+			    	
+		    		var index = i * 3;
+		    		
+		    		var unixTime = parseInt(split[index+2]);
+		    		// Create a new JavaScript Date object based on the timestamp
+		    		// multiplied by 1000 so that the argument is in milliseconds, not seconds.
+		    		var date = new Date(unixTime*1000);
+		    		var hours = "0" + date.getHours();
+		    		// Minutes part from the timestamp
+		    		var minutes = "0" + date.getMinutes();
+		    		// Will display time in 10:30:23 format
+		    		var formattedTime = " " + date.getUTCDate() + '.' + (date.getUTCMonth()+1) + '.' + date.getUTCFullYear()+" @ "+hours.substr(-2)+":"+minutes.substr(-2)+" - Updated ";
+		    		
+		    		var now = new Date();
+		    		const diffTime = Math.abs(now - date) / 1000;
+		    		if(diffTime<10) formattedTime = formattedTime+"just now";
+		    		else if(diffTime<60) formattedTime = formattedTime+Math.round(diffTime)+" seconds ago";
+		    		else if(diffTime<60*60) formattedTime = formattedTime+Math.round(diffTime/60)+" minutes ago";
+		    		else if(diffTime<60*60*24) formattedTime = formattedTime+Math.round(diffTime/60/60)+" hours ago";
+		    		else if(diffTime<60*60*24*30.4167) formattedTime = formattedTime+Math.round(diffTime/60/60/24)+" days ago";
+		    		else if(diffTime<60*60*24*30.4167*12) formattedTime = formattedTime+Math.round(diffTime/60/60/24/30.4167)+" months ago";
+		    		else formattedTime = formattedTime+(now.getUTCFullYear()-date.getUTCFullYear())+" years ago";
+		    		
+		    		container.style.backgroundImage = "url('blog/posts/"+i+"/cover.jpg')";
+		    		title.innerText = "📰 "+split[index];
+			    	description.innerText = split[index+1];
+			    	dateLabel.innerHTML = dateLabel.innerHTML+formattedTime;
+			    	
+                    postsContainer.append(clone);
+			    }
+			    
+			    postTemplate.remove();
+			}
+		
 			var request = new XMLHttpRequest();
             request.open('GET', 'blog/posts/list.txt', true);
             request.send(null);
@@ -91,21 +134,11 @@
                 if (request.readyState === 4 && request.status === 200) {
                     var type = request.getResponseHeader('Content-Type');
                     if (type.indexOf("text") !== 1) {
-			            console.log(request.responseText);
+			            addObjects(request.responseText);
                     }
                 }
 			}
 			
-			for(i = 1; i >= 0; i--) {
-			    var clone = postTemplate.cloneNode(true);
-				var container = clone.childNodes[0];
-				
-				container.style.backgroundImage = "url('blog/posts/"+i+"/cover.jpg')";
-				
-                postsContainer.append(clone);
-			}
-			
-			postTemplate.remove();
         }
         setupPosts();
 		
