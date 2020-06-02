@@ -136,6 +136,9 @@ body {
 	margin-top: 38px;
 	margin-bottom: 14px;
 }
+#editor-title2 span {
+	font-weight: 600;
+}
 .editor-p {
     font-family: Inter-Regular;
 	font-size: 20px;
