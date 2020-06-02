@@ -229,9 +229,12 @@ body {
 }
 .post-content-h {
     font-family: Inter-Regular;
-	font-size: 32px;
+	font-size: 34px;
 	line-height: 1.85;
 	
 	color: #ffffff;
 	margin: 50px 0;
+}
+.post-content-h.small {
+	font-size: 28px;
 }
