@@ -51,22 +51,27 @@
 			<p class="post-p">A review of modern game engine architectures, discussing different approaches to modeling high and low level systems, actors, entity component systems, data oriented design, and current best practices.</p>
 			<p class="post-p2" id="date-label"><img src='/assets/blog/icons/calender.png'></img></p>
 			<p class="post-content-p">The definition of a Game Engine can be ambiguous. It could be a simple rendering engine written onto a business card [Sanglard 2013], a shadertoy, demoscene app, or a massive framework [Gregory 2018] made of a variety of components such as Unreal, Unity, Godot, etc.</p>
+			<p class="post-content-h" id="systems">Systems</p>
+			<p class="post-content-p">Game engines are made of top level systems built as:</p>
+			<p class="post-content-h" id="singleton">Singleton</p>
+			<p class="post-content-p">Singletons are incredibly useful when architecting applications, as any system can immediately access data from a singleton. Unity for instance makes heavy use of singletons, which can be seen for instance, in the way they handle their Input singleton:</p>
+			
 		</div>
 		<div id="navigator-container">
 		    <div style="margin-top: 16px"></div>
-		    <a class="navigator-bar" href="/">
+		    <a class="navigator-bar" href="#systems">
 			    <div class="navigator-bar-head"></div>
 				<span>Systems</span>
 			</a>
-		    <a class="navigator-bar" href="/">
+		    <a class="navigator-bar" href="#singleton">
 			    <div class="navigator-bar-head"></div>
 				<span>Singleton</span>
 			</a>
-		    <a class="navigator-bar" href="/">
+		    <a class="navigator-bar" href="/" style="margin-left: 16px">
 			    <div class="navigator-bar-head"></div>
 				<span>Writing a singleton</span>
 			</a>
-		    <a class="navigator-bar" href="/">
+		    <a class="navigator-bar" href="/" style="margin-left: 16px">
 			    <div class="navigator-bar-head"></div>
 				<span>Design issues</span>
 			</a>
@@ -112,6 +117,28 @@
             onUpdate();
         }
         setupIcons();
+		
+		function setupNavigator() {
+		    var headers = document.getElementsByClassName("post-content-h");
+		    var bars = document.getElementsByClassName("navigator-bar-head");
+			
+			window.addEventListener('scroll', function() {
+			    var j = 0;
+			    for(; j < headers.length; j++) {
+				    if(window.pageYOffset < headers[j].offsetTop) break;
+				}
+				j--;
+				for(var i = 0; i < bars.length; i++) {
+				    var bar = bars[i];
+				    if(i === j) {
+					    if(!bar.classList.contains('triggered')) bars[i].classList.add('triggered');
+					} else {
+					    if(bar.classList.contains('triggered')) bars[i].classList.remove('triggered');
+					}
+				}
+			});
+        }
+        setupNavigator();
 		
 	    function setupPost() {
             const dateLabel = document.querySelector('p#date-label');
