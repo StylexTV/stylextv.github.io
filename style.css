@@ -158,6 +158,10 @@ body {
     -ms-user-select: none;
     user-select: none;
 	pointer-events: none;
+	
+	position: relative;
+    /* Adjust these values accordingly */
+    top: 3px;
 }
 .editor-p span {
 	color: #24292e;
