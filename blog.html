@@ -27,8 +27,8 @@
 	</div>
 	
 	<a hidden href="" id="post-template"><div class="post-container" onmousedown="return false";>
+	    <div class="post-container-shadow"></div>
 		<div class="post-container-bottom">
-			<div class="post-container-shadow"></div>
 		    <div style="margin-left: 50px; z-index: 0;">
 			    <h1 class="post-title"></h1>
 			    <p class="post-p"></p>
@@ -103,8 +103,9 @@
 		    function addObject(source) {
 			    
 			    const clone = postTemplate.cloneNode(true);
+				clone.id = "post-clone";
 				const container = clone.childNodes[0];
-			    const textContainer = container.childNodes[1].childNodes[3];
+			    const textContainer = container.childNodes[3].childNodes[1];
 			    const title = textContainer.childNodes[1];
 			    const description = textContainer.childNodes[3];
 			    const dateLabel = textContainer.childNodes[5];
@@ -194,6 +195,7 @@
                     }
                 }
 			}
+			addObject("game-engine-architecture;;Game Engine Architecture;;A review of modern game engine architectures, discussing different approaches to modeling high and low level systems, actors, entity component systems, data oriented design, and current best practices.;;1591079800");
 			
         }
 		
