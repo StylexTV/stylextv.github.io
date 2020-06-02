@@ -55,6 +55,12 @@
 			<p class="post-content-p">Game engines are made of top level systems built as:</p>
 			<p class="post-content-h" id="singleton">Singleton</p>
 			<p class="post-content-p">Singletons are incredibly useful when architecting applications, as any system can immediately access data from a singleton. Unity for instance makes heavy use of singletons, which can be seen for instance, in the way they handle their Input singleton:</p>
+			<p class="post-content-h" id="writing-a-singleton">Writing a Singleton</p>
+			<p class="post-content-p">There's a variety of ways to approach writing a singleton, each offers a different level of control of when a singleton is created, in exchange for slightly more lines of code. Most of the time you will want to decide, since some systems may depend on other systems.</p>
+			<p class="post-content-h" id="design-issues">Design Issues</p>
+			<p class="post-content-p">Singleton architectures make it very difficult to know where dependencies are, which can make it difficult to unit test your code or draw dependency graphs. They are easier to use (for the most part, just #include "YourSingleton.h" and you're good to go), but by their design, you can only have one instance of a singleton in an application.</p>
+			<p class="post-content-h" id="middleware">Middleware</p>
+			<p class="post-content-p">One approach to modeling high level systems is the use of middleware, the idea is to keep the core of an engine small and allow middleware to fill in the gaps in state that would be missing by default. Actors can subscribe to middleware if it exists, and from there read data from OS windows, the GUI state, or anything developers would feel need to be shared across Actors.</p>
 			
 		</div>
 		<div id="navigator-container">
@@ -67,15 +73,15 @@
 			    <div class="navigator-bar-head"></div>
 				<span>Singleton</span>
 			</a>
-		    <a class="navigator-bar" href="/" style="margin-left: 16px">
+		    <a class="navigator-bar" href="#writing-a-singleton" style="margin-left: 16px">
 			    <div class="navigator-bar-head"></div>
 				<span>Writing a singleton</span>
 			</a>
-		    <a class="navigator-bar" href="/" style="margin-left: 16px">
+		    <a class="navigator-bar" href="#design-issues" style="margin-left: 16px">
 			    <div class="navigator-bar-head"></div>
 				<span>Design issues</span>
 			</a>
-		    <a class="navigator-bar" href="/">
+		    <a class="navigator-bar" href="#middleware">
 			    <div class="navigator-bar-head"></div>
 				<span>Middleware</span>
 			</a>
