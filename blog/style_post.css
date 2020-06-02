@@ -193,6 +193,7 @@ body {
 	display: flex;
 	align-items: center;
 	text-decoration: none;
+	outline: 0;
 }
 .navigator-bar span {
 	color: #ffffff;
