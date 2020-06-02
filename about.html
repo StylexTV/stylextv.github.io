@@ -67,13 +67,21 @@
             const darkSchemeIcon = document.querySelector('div#dark-scheme-icon');
 			
             function setLight() {
+			    var children = lightSchemeIcon.children;
+                for(var i = 0; i < children.length; i++) {
+				    document.head.append(children[i].cloneNode(true));
+				}
                 darkSchemeIcon.remove();
-                document.head.append(lightSchemeIcon);
+                lightSchemeIcon.remove();
             }
 			
             function setDark() {
+			    var children = darkSchemeIcon.children;
+                for(var i = 0; i < children.length; i++) {
+				    document.head.append(children[i].cloneNode(true));
+				}
+			    darkSchemeIcon.remove();
                 lightSchemeIcon.remove();
-                document.head.append(darkSchemeIcon);
             }
 			
             const matcher = window.matchMedia('(prefers-color-scheme:dark)');
