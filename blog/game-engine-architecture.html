@@ -92,7 +92,7 @@
             const dateLabel = document.querySelector('p#date-label');
 			
 			var request = new XMLHttpRequest();
-            request.open('GET', 'blog/list.txt', true);
+            request.open('GET', '/blog/list.txt', true);
             request.send(null);
             request.onreadystatechange = function () {
                 if(request.readyState === 4 && request.status === 200) {

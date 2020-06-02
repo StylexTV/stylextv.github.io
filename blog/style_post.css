@@ -169,4 +169,12 @@ body {
 .post-p2 img {
 	max-width: 18px;
 	max-height: 18px;
+	
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	pointer-events: none;
 }
