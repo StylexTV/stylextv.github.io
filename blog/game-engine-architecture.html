@@ -75,6 +75,7 @@ Game Engine Architecture
 Jason Gregory
 2018
 gameenginebook.com</p>
+            <div style="margin-top: 150px"></div>
 		</div>
 		<div id="navigator-container">
 		    <div style="margin-top: 16px"></div>
@@ -130,7 +131,6 @@ gameenginebook.com</p>
 			for(var i = 0; i < headers.length; i++) {
 			    var header = headers[i];
 				var clone = template.cloneNode(true);
-				console.log(header);
 				clone.childNodes[3].innerHTML = header.innerHTML;
 				clone.href = "#"+header.id;
 				if(header.classList.contains("small")) clone.style = "margin-left: 16px";
