@@ -9,11 +9,11 @@ html {
 
 @font-face {
     font-family: Consola;
-    src:url("assets/fonts/consola.TTF");
+    src:url("/assets/fonts/consola.TTF");
 }
 @font-face {
     font-family: Inter-Regular;
-    src:url("assets/fonts/inter-regular.ttf");
+    src:url("/assets/fonts/inter-regular.ttf");
 }
 
 body {
@@ -130,7 +130,7 @@ body {
 	width: 100%;
 	
     background-size: cover;
-	background-image: url('2/cover.jpg');
+	background-image: url('game-engine-architecture/cover.jpg');
 	
 	-webkit-background-size: cover;
     -moz-background-size: cover;
