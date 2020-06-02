@@ -9,11 +9,11 @@ html {
 
 @font-face {
     font-family: Consola;
-    src:url("/assets/fonts/consola.TTF");
+    src:url("../assets/fonts/consola.TTF");
 }
 @font-face {
     font-family: Inter-Regular;
-    src:url("/assets/fonts/inter-regular.ttf");
+    src:url("../assets/fonts/inter-regular.ttf");
 }
 
 body {
