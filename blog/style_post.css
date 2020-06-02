@@ -177,6 +177,29 @@ body {
     user-select: none;
 	pointer-events: none;
 }
+.post-references {
+    font-family: Inter-Regular;
+	font-size: 28px;
+	line-height: 1.85;
+	
+	color: #ffffff;
+	margin: 50px 0;
+	display: flex;
+	align-items: center;
+}
+.post-references img {
+	max-width: 28px;
+	max-height: 28px;
+	margin-right: 8px;
+	
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	pointer-events: none;
+}
 
 #navigator-container {
 	width: 160px;
@@ -223,6 +246,7 @@ body {
     font-family: Inter-Regular;
 	font-size: 20px;
 	line-height: 1.85;
+	white-space: pre-line;
 	
 	color: rgba(255, 255, 255, 0.7);
 	margin: 50px 0;
