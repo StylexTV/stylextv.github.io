@@ -163,6 +163,7 @@ body {
 .post-p {
     font-family: Inter-Regular;
 	font-size: 20px;
+	line-height: 1.45;
 	
 	color: rgba(255, 255, 255, 0.7);
 	margin: 50px 0;
@@ -175,7 +176,6 @@ body {
 	color: #afb4b9;
 	margin: 50px 0;
 }
-
 .post-p2 img {
 	max-width: 18px;
 	max-height: 18px;

@@ -46,13 +46,20 @@
 	</div>
 	
 	<div id="center">
-	    
+	    <div id="content">
+		    <h1 id="post-title">📰 Game Engine Architecture</h1>
+			<p class="post-p">A review of modern game engine architectures, discussing different approaches to modeling high and low level systems, actors, entity component systems, data oriented design, and current best practices.</p>
+			<p class="post-p2" id="date-label"><img src='/assets/blog/icons/calender.png'></img></p>
+		</div>
 	</div>
 	
     <script type="text/javascript">
         document.getElementById("hideAll").style.display = "block";
 		
-	    window.onload = function() {document.getElementById("hideAll").style.display = "none";}
+	    window.onload = function() {
+		    setupPost();
+		    document.getElementById("hideAll").style.display = "none";
+		}
 		
 	    function setupIcons() {
             const lightSchemeIcon = document.querySelector('div#light-scheme-icon');
@@ -80,6 +87,76 @@
             onUpdate();
         }
         setupIcons();
+		
+	    function setupPost() {
+            const dateLabel = document.querySelector('p#date-label');
+			
+			var request = new XMLHttpRequest();
+            request.open('GET', 'blog/list.txt', true);
+            request.send(null);
+            request.onreadystatechange = function () {
+                if(request.readyState === 4 && request.status === 200) {
+                    var type = request.getResponseHeader('Content-Type');
+                    if(type.indexOf("text") !== 1) {
+					    const posts = request.responseText.split("\n");
+						for(var i=0; i < posts.length; i++) {
+						    const split = posts[i].split(";;");
+							if(split[0] === "game-engine-architecture") {
+							    
+								var unixTime = parseInt(split[3]);
+		    	                // Create a new JavaScript Date object based on the timestamp
+		    	                // multiplied by 1000 so that the argument is in milliseconds, not seconds.
+		    	                var date = new Date(unixTime*1000);
+		    	                var hours = "0" + date.getHours();
+		    	                // Minutes part from the timestamp
+		    	                var minutes = "0" + date.getMinutes();
+		    	                // Will display time in 10:30:23 format
+		    	                var formattedTime = " " + date.getUTCDate() + '.' + (date.getUTCMonth()+1) + '.' + date.getUTCFullYear()+" @ "+hours.substr(-2)+":"+minutes.substr(-2)+" - Updated ";
+		    	                
+		    	                var now = new Date();
+		    	                const diffTime = Math.abs(now - date) / 1000;
+		                    	if(diffTime<10) formattedTime = formattedTime+"just now";
+		                    	else if(diffTime<60) {
+			                		var number = Math.floor(diffTime);
+			                	    var unit = "seconds";
+			                		if(number == 1) unit = "second";
+			                		formattedTime = formattedTime+number+" "+unit+" ago";
+		                    	} else if(diffTime<60*60) {
+			                		var number = Math.floor(diffTime/60);
+			                	    var unit = "minutes";
+			                		if(number == 1) unit = "minute";
+			                		formattedTime = formattedTime+number+" "+unit+" ago";
+		                    	} else if(diffTime<60*60*24) {
+			                		var number = Math.floor(diffTime/60/60);
+			                		var unit = "hours";
+		                			if(number == 1) unit = "hour";
+			                		formattedTime = formattedTime+number+" "+unit+" ago";
+		                    	} else if(diffTime<60*60*24*30.4167) {
+			                		var number = Math.floor(diffTime/60/60/24);
+			                	    var unit = "days";
+			                		if(number == 1) unit = "day";
+		                			formattedTime = formattedTime+number+" "+unit+" ago";
+		                    	} else if(diffTime<60*60*24*30.4167*12) {
+			                		var number = Math.floor(diffTime/60/60/24/30.4167);
+		                			var unit = "months";
+			                		if(number == 1) unit = "month";
+		                			formattedTime = formattedTime+number+" "+unit+" ago";
+		                    	} else {
+		                			var number = now.getUTCFullYear()-date.getUTCFullYear();
+			                        var unit = "years";
+			                		if(number == 1) unit = "year";
+		                			formattedTime = formattedTime+number+" "+unit+" ago";
+				                }
+			                    dateLabel.innerHTML = dateLabel.innerHTML+formattedTime;
+								
+								break;
+			                }
+						}
+                    }
+                }
+			}
+			
+        }
 		
     </script>
 </body>

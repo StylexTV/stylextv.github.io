@@ -115,7 +115,7 @@ body {
 }
 .background-shadow {
     position: absolute;
-	top: 60vh;
+	top: 57.5vh;
 	height: 40vh;
 	width: 100%;
 	
@@ -126,7 +126,7 @@ body {
 .background-cover {
     position: absolute;
 	top: 0;
-	height: 100vh;
+	height: 97.5vh;
 	width: 100%;
 	
     background-size: cover;
@@ -137,4 +137,36 @@ body {
     -o-background-size: cover;
 	
 	z-index: -1;
+}
+
+#content {
+	width: 47vw;
+	margin-top: 64vh;
+}
+#post-title {
+    font-family: Inter-Regular;
+	font-size: 48px;
+	
+	color: #ffffff;
+	margin: -35px 0;
+}
+.post-p {
+    font-family: Inter-Regular;
+	font-size: 20px;
+	line-height: 1.45;
+	
+	color: rgba(255, 255, 255, 0.7);
+	margin: 50px 0;
+}
+.post-p2 {
+    font-family: Inter-Regular;
+	font-size: 16px;
+	line-height: 1.45;
+	
+	color: #afb4b9;
+	margin: 50px 0;
+}
+.post-p2 img {
+	max-width: 18px;
+	max-height: 18px;
 }
