@@ -156,6 +156,7 @@ body {
 .post-title {
     font-family: Inter-Regular;
 	font-size: 48px;
+	font-weight: 600;
 	
 	color: #ffffff;
 	margin: -35px 0;
