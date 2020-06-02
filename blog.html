@@ -175,8 +175,11 @@
                     var type = request.getResponseHeader('Content-Type');
                     if(type.indexOf("text") !== 1) {
 					    posts = request.responseText.split("\n");
-						for(; loadedPagesUntil < 15; loadedPagesUntil++) {
+						for(var i = 0; i < 15; i++) {
+							if(loadedPagesUntil >= posts.length) break;
+							
 						    addObject(posts[posts.length - 1 - loadedPagesUntil]);
+							loadedPagesUntil++;
 						}
 			            window.addEventListener('scroll', function() {
                             if(window.pageYOffset + window.innerHeight >= document.body.clientHeight && loadedPagesUntil < posts.length) {
