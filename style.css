@@ -117,10 +117,10 @@ body {
     align-items: center;
 	height: 100vh;
 }
+
 #editor {
 	max-width: 32.08vw;
 }
-
 #editor-title {
     font-family: Inter-Regular;
 	font-size: 48px;
@@ -168,12 +168,43 @@ body {
 	font-weight: 600;
 }
 
-.code-container {
-	font-family: Consola;
-	font-size: 13.6px;
+#showcase-container {
+    position: relative;
+	width: 34vw;
+	height: 34vw;
+	margin-left: 50px;
+	border-radius: 3px;
+	overflow: hidden;
 	
-	background-color: #f6f8fa;
-	padding: 18px;
-	line-height: 1.45;
-    border-radius: 3px;
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+	
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+	
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.showcase-sector {
+	width: 50%;
+	height: 50%;
+	
+	background-position: center center;
+	background-size: cover;
+	
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+.showcase-sector:hover > .showcase-sector-overlay {
+	background-color: rgba(0, 0, 0, 0.55);
+}
+.showcase-sector-overlay {
+    width: 100%;
+    height: 100%;
+	transition: 0.25s;
 }
