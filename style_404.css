@@ -22,6 +22,10 @@ html {
     font-family: Inter-Regular;
     src:url("/assets/fonts/inter-regular.ttf");
 }
+@font-face {
+    font-family: Inter-Extralight;
+    src:url("/assets/fonts/inter-extralight.ttf");
+}
 
 body {
 	margin: 0;
@@ -123,8 +127,8 @@ body {
 }
 
 #editor-title {
-    font-family: Inter-Regular;
-	font-size: 48px;
+    font-family: Inter-Extralight;
+	font-size: 52px;
 	
 	color: #24292e;
 	margin: -35px 0;

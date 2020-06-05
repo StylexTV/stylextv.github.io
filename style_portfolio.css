@@ -22,6 +22,10 @@ html {
     font-family: Inter-Regular;
     src:url("assets/fonts/inter-regular.ttf");
 }
+@font-face {
+    font-family: Inter-Extralight;
+    src:url("assets/fonts/inter-extralight.ttf");
+}
 
 body {
 	margin: 0;
@@ -168,9 +172,8 @@ body {
     position: absolute;
 }
 .post-title {
-    font-family: Inter-Regular;
-	font-size: 48px;
-	font-weight: 600;
+    font-family: Inter-Extralight;
+	font-size: 52px;
 	
 	color: #ffffff;
 	margin: -35px 0;
