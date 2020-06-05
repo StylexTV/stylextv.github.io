@@ -26,6 +26,10 @@ html {
     font-family: Inter-Extralight;
     src:url("assets/fonts/inter-extralight.ttf");
 }
+@font-face {
+    font-family: Inter-Semibold;
+    src:url("assets/fonts/inter-semibold.ttf");
+}
 
 body {
 	margin: 0;
@@ -136,8 +140,7 @@ body {
 	line-height: 13px;
 }
 #editor-title span {
-    font-family: Inter-Regular;
-	font-weight: 600;
+    font-family: Inter-Semibold;
 }
 .editor-p {
     font-family: Inter-Regular;
