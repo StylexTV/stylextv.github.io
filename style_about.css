@@ -137,17 +137,17 @@ body {
 #editor-title {
     font-family: Inter-Extralight;
 	font-size: 48px;
+	margin: 0 0;
 	
 	color: #24292e;
-	margin: -35px 0;
 }
 #editor-title2 {
     font-family: Inter-Extralight;
 	font-size: 52px;
+	margin-top: 3px;
+	margin-bottom: 14px;
 	
 	color: #24292e;
-	margin-top: 38px;
-	margin-bottom: 14px;
 }
 #editor-title2 span {
     font-family: Inter-Semibold;
