@@ -139,7 +139,8 @@ body {
 	font-size: 20px;
 	
 	color: #586069;
-	margin: 15px 0;
+	margin-top: 15px;
+	margin-bottom: 50px;
 }
 
 .thin-button {
