@@ -31,7 +31,7 @@ body {
     position: fixed;
     left: 0px;
     right: 0px;
-    top: 107px;
+    top: 0px;
     bottom: 0px;
     background-color: #ffffff;
     z-index: 99; /* Higher than anything else in the document */
@@ -43,6 +43,7 @@ body {
     left: 0;
     top: 0;
 	height: 107px;
+	z-index: 100;
 }
 #header-container {
 	height: 100%;
