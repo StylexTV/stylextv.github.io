@@ -119,11 +119,12 @@ body {
 }
 
 #editor {
-	max-width: 32.08vw;
+	max-width: 42vw;
+	margin: 0 4vw;
 }
 #editor-title {
     font-family: Inter-Regular;
-	font-size: 48px;
+	font-size: 64px;
 	
 	color: #24292e;
 	
@@ -131,7 +132,7 @@ body {
 }
 .editor-p {
     font-family: Inter-Regular;
-	font-size: 20px;
+	font-size: 28px;
 	line-height: 1.85;
 	
 	color: #586069;
@@ -148,8 +149,8 @@ body {
 	text-decoration: none;
 }
 .editor-p img {
-	max-width: 21px;
-	max-height: 21px;
+	max-width: 28px;
+	max-height: 28px;
 	
 	-webkit-touch-callout: none;
     -webkit-user-select: none;
