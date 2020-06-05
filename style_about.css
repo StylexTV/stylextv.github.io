@@ -132,6 +132,7 @@ body {
 }
 #editor {
 	max-width: 32.08vw;
+	margin-bottom: 19px;
 }
 
 #editor-title {
