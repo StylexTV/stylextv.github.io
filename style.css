@@ -214,7 +214,7 @@ body {
     -o-background-size: cover;
 }
 .showcase-sector:hover > .showcase-sector-overlay {
-	background-color: rgba(0, 0, 0, 0.55);
+	background-color: rgba(0, 0, 0, 0.35);
 }
 .showcase-sector-overlay {
     width: 100%;
