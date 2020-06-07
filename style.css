@@ -135,9 +135,9 @@ body {
     font-family: Inter-Extralight;
 	font-size: 64px;
 	
-	color: #24292e;
+	margin: 34px 0;
 	
-	line-height: 13px;
+	color: #24292e;
 }
 #editor-title span {
     font-family: Inter-Semibold;
