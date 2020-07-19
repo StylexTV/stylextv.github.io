@@ -1,0 +1,47 @@
+html {
+}
+
+@font-face {
+    font-family: Rotunda-Bold;
+    src: url("../fonts/Rotunda/Rotunda-Bold.otf");
+}
+
+body {
+	margin: 0;
+}
+
+#header {
+	width: 100%;
+	height: 65px;
+	text-align: center;
+	
+	background-color: #ffffff;
+	box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 12px 0px;
+}
+#header-container {
+	display: inline-block;
+	height: 100%;
+}
+#header-flex {
+	display: flex;
+	height: 100%;
+    justify-content: center;
+}
+#header-label {
+	display: flex;
+	align-self: center;
+    justify-content: center;
+}
+#header-label-icon {
+	width: 32px;
+	height: 32px;
+	align-self: center;
+	
+	background-image: url("../content/header/icon.png");
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+#header-label svg {
+	margin-left: 15px;
+	align-self: center;
+}
