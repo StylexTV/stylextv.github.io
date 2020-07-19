@@ -1,3 +1,0 @@
-game-engine-architecture;;Game Engine Architecture;;A review of modern game engine architectures, discussing different approaches to modeling high and low level systems, actors, entity component systems, data oriented design, and current best practices.;;1591079800
-frame-analysis-minecraftrtx;;Frame Analysis - Minecraft RTX Beta;;A review of the rendering architecture of the new Minecraft RTX renderer, reviewing their implementation of SVGF, their path tracer, and their DLSS implementation.;;1591636775
-real-time-ray-tracing;;Real Time Ray Tracing;;An overview of various ray operations, their similarities, differences, and how to implement each type of ray operation in real time rendering.;;1591636775
