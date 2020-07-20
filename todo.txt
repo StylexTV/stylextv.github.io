@@ -1,2 +1,0 @@
-loading animation: completly white page with favicon in the middle; after load: 1s transition to main page
-loading bar on top of old page, when clicking on new page (screenshot)
