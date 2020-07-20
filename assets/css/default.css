@@ -2,8 +2,12 @@ html {
 }
 
 @font-face {
-    font-family: Rotunda-Bold;
-    src: url("../fonts/Rotunda/Rotunda-Bold.otf");
+    font-family: Averta-Bold;
+    src: url("../fonts/Averta/Averta Bold.otf");
+}
+@font-face {
+    font-family: Roboto-Regular;
+    src: url("../fonts/Roboto/Roboto-Regular.ttf");
 }
 
 body {
@@ -58,10 +62,84 @@ a:focus {
 .header-social svg {
 	align-self: center;
 	
-	transition: 0.125s;
+	transition: 0.1s;
 	
 	fill: #757575;
 }
 .header-social:hover svg {
 	fill: #191919;
+}
+
+#content-wrapper {
+	display: flex;
+	height: calc(100vh - 65px);
+	align-items: center;
+	justify-content: center;
+}
+#content {
+	max-width: 1000px;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 60px 20px;
+}
+#content h1 {
+	position: relative;
+	box-sizing: border-box;
+	margin: 0 0;
+	padding: 0 20px;
+	float: left;
+	width: 41.66666667%;
+	
+	font-family: Averta-Bold;
+	font-size: 202px;
+	color: rgba(0, 0, 0, 0.84);
+}
+#content h2 {
+	position: relative;
+	box-sizing: border-box;
+	margin: 0 0;
+	padding: 70px 20px 0 0;
+	float: left;
+	width: 58.33333333%;
+	
+	font-family: Averta-Bold;
+	font-size: 77px;
+	color: rgba(0, 0, 0, 0.3);
+}
+.content-button {
+	display: table;
+	box-sizing: border-box;
+	margin-bottom: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 16px;
+	width: 16.66666667%;
+	height: 37px;
+	line-height: 37px;
+	text-align: center;
+	
+	transition: 0.1s;
+	user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+	
+	text-decoration:none;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	color: rgba(0, 0, 0, 0.54);
+	font-family: Roboto-Regular;
+	font-size: 22px;
+}
+.content-button:hover {
+	border: 1px solid rgba(0, 0, 0, 0.54);
+	color: rgba(0, 0, 0, 0.68);
+}
+.content-button:focus {
+	border: 1px solid rgba(0, 0, 0, 0.54);
+	color: rgba(0, 0, 0, 0.68);
+	outline: none;
 }
