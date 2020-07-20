@@ -132,7 +132,7 @@ a:focus {
 	border-radius: 4px;
 	color: rgba(0, 0, 0, 0.54);
 	font-family: Roboto-Regular;
-	font-size: 22px;
+	font-size: 20px;
 }
 .content-button:hover {
 	border: 1px solid rgba(0, 0, 0, 0.54);
