@@ -9,6 +9,10 @@ html {
     font-family: Roboto-Regular;
     src: url("../fonts/Roboto/Roboto-Regular.ttf");
 }
+@font-face {
+    font-family: Roboto-Regular;
+    src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
 
 body {
 	margin: 0;
@@ -69,6 +73,30 @@ a:focus {
 .header-social:hover svg {
 	fill: #191919;
 }
+#header-navigation {
+	display: flex;
+	align-self: center;
+}
+#header-navigation a {
+	margin-left: 24px;
+	align-self: center;
+	
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.54);
+	font-family: Roboto-Regular;
+	font-size: 15px;
+}
+#header-navigation a:hover {
+	color: rgba(0, 0, 0, 0.76);
+}
+#header-navigation a:focus {
+	color: rgba(0, 0, 0, 0.76);
+	outline: none;
+}
+#header-navigation-splitter {
+	margin-top: 1px;
+	margin-left: 16px;
+}
 
 #content-wrapper {
 	display: flex;
@@ -127,7 +155,7 @@ a:focus {
     -moz-user-select: none;
     -ms-user-select: none;
 	
-	text-decoration:none;
+	text-decoration: none;
 	border: 1px solid rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
 	color: rgba(0, 0, 0, 0.54);
@@ -142,4 +170,10 @@ a:focus {
 	border: 1px solid rgba(0, 0, 0, 0.54);
 	color: rgba(0, 0, 0, 0.68);
 	outline: none;
+}
+.content-placeholder {
+	display: table;
+	box-sizing: border-box;
+	margin-bottom: 60px;
+	padding: 0 16px;
 }
