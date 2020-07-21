@@ -100,7 +100,7 @@ a:focus {
 
 #content-wrapper {
 	display: flex;
-	height: calc(100vh - 65px);
+	height: calc(100vh - 66px);
 	align-items: center;
 	justify-content: center;
 }
