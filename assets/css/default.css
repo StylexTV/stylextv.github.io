@@ -311,7 +311,7 @@ body {
 	z-index: 10;
 	cursor: pointer;
 	
-	background: url("../content/articles/default/play.svg") no-repeat 30px calc(100% - 30px);
+	background: url("../content/articles/play.svg") no-repeat 30px calc(100% - 30px);
 }
 .content-article-trailer-caption {
 	position: absolute;
