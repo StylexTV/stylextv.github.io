@@ -6,8 +6,8 @@ html {
   font-style:  italic;
   font-weight: 400;
   font-display: swap;
-  src: url("../fonts/Inter/Inter-UI-Italic.woff2?v=3.13") format("woff2"),
-       url("../fonts/Inter/Inter-UI-Italic.woff?v=3.13") format("woff");
+  src: url("../fonts/Inter/Inter-Italic.woff2?v=3.13") format("woff2"),
+       url("../fonts/Inter/Inter-Italic.woff?v=3.13") format("woff");
 }
 
 body {
@@ -324,4 +324,12 @@ body {
 	line-height: 1.5rem;
 	font-weight: 400;
 	font-family: Inter,sans-serif;
+}
+.content-article-project2 {
+	padding-bottom: 160px;
+}
+.content-article-project2-container {
+	position: relative;
+	max-width: 1230px;
+	margin: 0 auto;
 }
