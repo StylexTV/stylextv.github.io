@@ -33,10 +33,11 @@ body {
 	text-align: center;
 }
 .header-brand {
-	
+	display: flex;
+	flex-direction: row;
 }
 .header-brand-inner {
-	float: left;
+	
 }
 .header-brand-inner a {
 	display: flex;
@@ -66,6 +67,7 @@ body {
 	width: 100%;
 	text-align: center;
 	margin: 0 0 15px;
+	padding: 0;
 	overflow: hidden;
 	
 	transition: opacity .5s ease-out 1s;
@@ -80,6 +82,7 @@ body {
 }
 .header-query-main {
 	position: relative;
+	display: block;
 	width: 580px;
 	max-width: 90%;
 	margin: 15px auto 5px;
@@ -101,4 +104,22 @@ body {
 #query-input::placeholder {
 	color: #bfc8cf;
 	opacity: 1;
+}
+#query-button-submit {
+	position: absolute;
+	right: 15px;
+	top: 10px;
+	width: 16.7667px;
+	height: 26.25px;
+	padding: 0;
+	
+	background: transparent;
+	border: none;
+	cursor: pointer;
+}
+#query-button-submit:hover svg {
+	fill: #292f33;
+}
+#query-button-submit:focus svg {
+	fill: #1b95e0;
 }

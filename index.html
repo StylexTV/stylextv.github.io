@@ -28,9 +28,14 @@
 		  </div>
 		</div>
 		<div class="header-query">
+		  <h1 class="header-query-prompt">The name of what color do you want?</h1>
 		  <div class="header-query-main">
-		    <h1 class="header-query-prompt">The name of what color do you want?</h1>
 		    <input id="query-input" placeholder="Enter a hex color" value="">
+			<button id="query-button-submit" type="submit">
+			  <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 46 72' width="16.7667" height="26.25" fill="#8899a6">
+			    <path class='icon' d='M6 39h24.757l-7.878 7.88a2.994 2.994 0 0 0 0 4.24 2.994 2.994 0 0 0 4.24 0l13-13a2.994 2.994 0 0 0 0-4.24l-13-13C26.537 20.292 25.77 20 25 20s-1.536.293-2.12.88a2.994 2.994 0 0 0 0 4.24L30.756 33H6a3 3 0 1 0 0 6z'/>
+			  </svg>
+			</button>
 		  </div>
 		</div>
 	  </div>
@@ -45,6 +50,9 @@
         processQuery();
       }
     });
+	document.getElementById("query-button-submit").onclick = function() {
+      processQuery();
+    };
 	
     class NamedColor {
       constructor(name, hex, l, a, b) {
