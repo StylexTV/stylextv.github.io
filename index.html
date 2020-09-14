@@ -40,6 +40,27 @@
 		</div>
 	  </div>
 	</div>
+	<div id="results">
+	  <p class="results-title">The three closest matches are shown below</p>
+	  <div class="results-list">
+	    <li id="element-1" class="results-element" role="button">
+		  <span></span>
+		  <p>Your color</p>
+		</li>
+	    <li id="element-2" class="results-element" role="button">
+		  <span></span>
+		  <p>Closest</p>
+		</li>
+	    <li id="element-3" class="results-element" role="button">
+		  <span></span>
+		  <p>Second closest</p>
+		</li>
+	    <li id="element-4" class="results-element" role="button">
+		  <span></span>
+		  <p>Third closest</p>
+		</li>
+	  </div>
+	</div>
   </div>
   <script>
 	document.getElementById("query-input").addEventListener("keyup", function(event) {
@@ -47,7 +68,7 @@
         // Cancel the default action, if needed
         event.preventDefault();
         // Trigger the button element with a click
-        processQuery();
+		document.getElementById("query-button-submit").onclick();
       }
     });
 	document.getElementById("query-button-submit").onclick = function() {
@@ -1050,12 +1071,22 @@
 	];
 	
 	function processQuery(){
+	  window.scrollTo({
+	    top: document.body.scrollHeight,
+        left: 0,
+        behavior: 'smooth'
+      });
+	  
 	  var userInput = document.getElementById("query-input").value;
 	  var rgb = hexToRgb(userInput);
 	  var lab = rgbToLab(rgb);
 	  
 	  var closest;
 	  var closestDis;
+	  var closest2;
+	  var closest2Dis;
+	  var closest3;
+	  var closest3Dis;
 	  var arrayLength = colors.length;
       for (var i = 0; i < arrayLength; i++) {
 	    var c = colors[i];
@@ -1067,9 +1098,25 @@
 		if(closest == null || disSq<closestDis) {
 		  closest = c;
 		  closestDis = disSq;
+		} else if(closest2 == null || disSq<closest2Dis) {
+		  closest2 = c;
+		  closest2Dis = disSq;
+		} else if(closest3 == null || disSq<closest3Dis) {
+		  closest3 = c;
+		  closest3Dis = disSq;
 		}
 	  }
-	  console.log(closest.getName());
+	  
+	  document.getElementById("element-1").children[0].style.backgroundColor = userInput;
+	  var e2 = document.getElementById("element-2");
+	  e2.children[0].style.backgroundColor = closest.getHex();
+	  e2.children[1].innerText = closest.getName();
+	  var e3 = document.getElementById("element-3");
+	  e3.children[0].style.backgroundColor = closest2.getHex();
+	  e3.children[1].innerText = closest2.getName();
+	  var e4 = document.getElementById("element-4");
+	  e4.children[0].style.backgroundColor = closest3.getHex();
+	  e4.children[1].innerText = closest3.getName();
 	};
 	
 	function hexToRgb(hex) {
