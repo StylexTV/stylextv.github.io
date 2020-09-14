@@ -4,183 +4,1141 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Short | Developer at &#60;3</title>
+  <title>Color Namespace</title>
 
   <link rel="icon" href="assets/favicons/default.png">
-  <meta name="theme-color" content="#000000">
+  <meta name="theme-color" content="#ffffff">
 
   <link rel="stylesheet" href="assets/css/default.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
   <div id="root">
     <div id="header">
-	  <div id="header-container">
-	    <a class="header-label" ondragstart="return false;" href="/">
-		  <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 512 512" style="margin-right: 10px">
-            <path d="M0 64v64h384v384h128V0H0v64z"/>
-            <path d="M0 384v128h256V384H128V256H0v128z"/>
-          </svg>
-		  <svg version="1.0" width="64.9932886" height="18" viewBox="0 0 1076 298">
-            <path d="M203 146v145h62.9l.3-58.2c.3-58.2.3-58.3 2.6-64 2.9-7.2 10-15.1 16.6-18.6 4.4-2.3 6.3-2.6 14.2-2.7 8.4 0 9.4.2 14 3 5.5 3.5 9.7 9.5 12.1 17.6 1.4 4.7 1.7 13.4 2 64.2l.4 58.7h63l-.4-68.3c-.3-66.4-.4-68.4-2.5-76.2-9.1-33.5-31.9-51.4-65.7-51.7-13.1-.1-20.7 1.6-32 7.2-9.2 4.5-16.9 10.9-21.4 17.7l-3.1 4.6V1h-63v145zM867 69.5V95h-30v47h30v38.2c.1 41 1 58.7 3.5 68.3 5.2 20.1 19 33.8 39 39 14.2 3.7 34.8 3.7 52 .1 12.1-2.5 10.9.3 10.2-25.4-.4-12.4-.8-22.6-.9-22.7-.2-.2-3.2.3-6.8 1.1-18.6 3.9-31.1-1.5-33.9-14.5-.7-3.3-1.1-19.6-1.1-44.6V142h45V95h-45V44h-62v25.5zM69 95.9c-30 6.7-49.6 22.9-55.6 46.2-2.3 8.5-2.2 22.7 0 30.4 2.7 9.3 6.4 15.2 14 22.2 8.6 7.9 18.9 13.1 34.8 17.3 31.5 8.5 37.5 10.9 40.8 16.3 4.4 7.2 1.3 16.2-6.8 20.4-13.8 7-40.1.7-54.9-13.1l-5.7-5.3-11 11.6c-6.1 6.4-14.2 14.8-17.9 18.7l-6.8 7.2 5.8 4.5c26.8 21.3 71.4 30 108.3 21.1 9.2-2.2 25.5-10.4 31.8-15.9 13.5-12 19.9-28.2 19-48.2-1.4-29.6-18.8-45.1-63.1-56.3-27.2-6.9-31.9-9.6-32.1-18.4-.1-5.7 2.4-9.3 8.7-12.5 12.9-6.4 34.5-2.1 49.6 9.9l5.3 4.2 4.7-4.8c2.6-2.7 10.5-10.8 17.4-18l12.7-13.1-6.2-4.6c-11.9-8.8-26.9-15.5-43.5-19.2-4-1-13.7-1.8-23.8-2-14.2-.4-18.4-.2-25.5 1.4zM518.5 94.6c-46.2 7-78.4 36.3-87.6 79.9-2 9.1-1.7 32.3.5 42.5 4 19.3 12.4 34.8 26.1 48.6 21.8 22.1 50.2 32.7 83.3 31.1 41.7-2 74.9-23.1 91.3-58.1 7-15.1 8.4-22.4 8.3-44.6 0-18.3-.2-20.1-2.8-28.5-4.8-16-11.1-27.4-21.5-38.7-12.7-13.9-31.7-24.7-52.5-29.9-6.1-1.6-12.3-2.1-25.1-2.4-9.3-.2-18.3-.1-20 .1zM552 149c16.4 6.5 27 22.3 28.6 42.5 1.5 18.3-8.3 38.4-23 47-12.2 7.2-32 7.2-44.2 0-5.2-3.1-12.7-10.6-15.8-16-4.9-8.3-6.9-16.2-7-27.5 0-11.1 1.2-16.6 6.1-26.4 4.9-9.8 15-18 26.2-21.2 6.9-2 22.2-1.2 29.1 1.6zM787.5 95c-17.4 2.6-30.7 11-40.2 25.3l-4.8 7.2-.3-13.8-.3-13.7H681v191h63v-48.8c0-28.5.4-51.4 1-55.2 1.4-8.9 6.6-19.5 12.4-25.2 10.7-10.7 26.2-14.5 45.2-11.2l3 .6 1.3-27.2c.7-15 .9-27.6.4-28-1.3-1.2-14.3-1.9-19.8-1zM1022.9 217.3c-7 3-10.4 5.3-15.8 11.2-6.8 7.3-8.5 12.3-8.6 24 0 9 .3 10.6 2.8 15.7 3.2 6.5 11.3 14.5 18 17.6 19.3 9.1 41.6 1.7 51.8-17 3.2-6 3.4-6.8 3.4-16.3 0-9-.3-10.6-2.9-16-3.8-7.6-10.5-14.3-18.1-18-5.1-2.5-7.3-3-15.5-3.3-8.2-.2-10.3.1-15.1 2.1z"/>
-          </svg>
-		</a>
-		<div class="header-navigation">
-		  <a class="header-navigation-item" onmousedown="return false;" href="/portfolio">Portfolio</a>
-		  <a class="header-navigation-item" onmousedown="return false;" href="/blog">Blog</a>
-		  <a class="header-navigation-item" onmousedown="return false;" href="/about">About</a>
+      <div id="header-content">
+	    <div class="header-brand">
+		  <div class="header-brand-inner">
+		    <a>
+			  <svg xmlns="http://www.w3.org/2000/svg" width="26.25" height="26.25" viewBox="0 0 16 16" fill="#ffffff">
+			    <path d="M3.757 8l-2.05-2.05a.999.999 0 010-1.414l2.828-2.828a.999.999 0 011.414 0L12.243 8H3.757zM9 3.343V2a1 1 0 011-1h4a1 1 0 011 1v6h-1.343L9 3.343zM15 10a1 1 0 00-1-1H2a1 1 0 00-1 1v4a1 1 0 001 1h12a1 1 0 001-1v-4zm-4 2a1 1 0 112 0 1 1 0 01-2 0z"/>
+		      </svg>
+			  Color Namespace
+			</a>
+		  </div>
 		</div>
-		<div class="header-socials">
-		  <a class="header-button" onmousedown="return false;" href="/latest">Latest work</a>
-		  <a class="header-socials-item" onmousedown="return false;" href="https://twitter.com">
-		    <div class="header-socials-item-border">
-			  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 1200 1200">
-                <path d="M768.5 195.1c-39.1 5.2-74.7 20.2-104.6 44-10.3 8.2-27.3 25.7-35.2 36.1-33.8 45.1-48 102.8-38.7 157.1 1.1 6.6 2 12.2 2 12.6 0 .3-1.7.5-3.7.4-16.4-1.1-33.5-2.8-48.3-4.9-108.8-15.4-209.9-60.7-295-132.2-14.8-12.4-57.5-55.1-67.5-67.4-3.8-4.8-7.4-8.6-7.9-8.4-1.4.3-10.9 19.9-15 30.9-5.1 13.7-9.2 30.5-11.2 46-2 15.8-1.5 44 1.1 58.2 6.2 34.5 19.2 64.7 39.6 91.7 8.3 11 28.3 30.8 39.1 38.8 10.2 7.5 9.9 7.8-5.1 6.1-23.6-2.7-46.2-9.1-66-18.6-6.2-3-11.6-5.5-11.9-5.5-.9 0 .7 24.1 2.3 34 5.4 33.4 19.5 66.2 40.4 93.5 6.8 9 25.5 27.9 34.6 35 12.1 9.4 25.3 17.8 37.8 23.9 11.4 5.5 35 14 42.6 15.2 2.3.4 4.4 1 4.6 1.4.6.9-17 4.6-28.5 6-15.7 1.9-40.5 1.2-57.8-1.6l-4.3-.7 2.7 7.4c3.6 10.3 12.1 27.9 18.2 37.6 34.3 55.3 92.1 90.7 157.5 96.6l13.2 1.2-10.5 7.6c-59.2 43-124.5 68.7-197 77.4-18.9 2.3-56.2 3.1-75.6 1.6-8.8-.7-16.8-1.4-17.9-1.7l-2-.5 2 1.6c1.1.9 6.8 4.5 12.8 8.1 76.1 45.4 158.6 72.1 249.2 80.6 18.8 1.8 86.3 1.7 105 0 113.3-10.7 208.6-46.3 293.1-109.4 39.9-29.9 78.8-68.3 110-108.8 55.3-71.8 95-158.4 113.3-247.2 8.3-40.2 11.1-66.4 11.8-109.8l.6-33.5 6.1-4.5c19.6-14.4 47.3-40.3 64.2-60.1 13.6-15.8 31.5-39.9 29.7-39.9-.4 0-6.4 2.3-13.3 5-29.5 12-62.2 20.4-98.5 25.6-3.9.6-3.8.5 4.5-5.2 30.3-20.5 55.4-49.5 71-81.9 4-8.5 10-23.4 10-25.1 0-.3-2.8 1.1-6.2 3.1-19.2 11.1-47.6 23.8-72.3 32.2-13.5 4.6-46.2 13.3-50 13.3-1.2 0-4-2-6.5-4.6-7.2-7.5-21.1-18.7-31.7-25.7-23.7-15.6-50-25.9-79.8-31.3-10.7-1.9-46.5-2.8-57-1.3z" fill="currentColor"/>
-              </svg>
-			</div>
-		  </a>
-		  <a class="header-socials-item" onmousedown="return false;" href="https://github.com/StylexTV">
-		    <div class="header-socials-item-border">
-			  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 1200 1200">
-                <path d="M571 101.6c-1.9.2-9.8.9-17.5 1.5-68.7 5.3-144 29.4-205.5 65.7-75.4 44.5-135.9 104.8-179.2 178.7-34.8 59.3-58.1 129-65.3 195.2-8 74.7-.5 148.1 22.2 215.3 32.6 96.6 89 175.2 172.3 240.4 9.8 7.7 40.3 27.8 54 35.6 15 8.5 43.2 22.4 55.6 27.3 32.7 12.9 35.2 13.7 41.8 13.7 8 0 14.6-2.4 18.8-6.7 7.7-8.1 7.3-4.9 7.2-60.5 0-27.4-.3-50-.5-50.2-.2-.2-6 .8-12.9 2.1-11.2 2.3-15.2 2.5-38 2.7-21.2.1-26.9-.2-34-1.7-10.1-2.2-27.5-7.9-34.5-11.4-9.6-4.9-22.6-14.6-29.6-22.2-9.3-10-13.1-15.9-19.4-30-8-17.8-12.2-25.7-19.3-36.6-8-12.2-24-28.5-33.2-34-8-4.8-18.3-13.8-20.6-18.1-2.6-4.8-1.3-8.1 4.2-10.6 12.7-5.6 35.7-2.1 53.2 8.1 16.1 9.4 27 20.3 41.3 41.6 12.1 17.7 20.7 27.5 30.9 34.9 14.9 10.7 27.9 15.6 47.2 17.7 16.4 1.8 39.9-1.9 58.7-9.1l7.9-3.1 1.6-9.2c3.9-21 12.9-39.9 24.9-52.4l5-5.2-3.4-.5c-1.9-.3-8.3-1.3-14.4-2.2-40.2-5.9-70.8-14.8-97.6-28.4-22.5-11.4-35.1-20.3-50.8-36-13.4-13.4-23.8-27.4-32.2-43.4-7.7-14.7-11-22.9-16.3-40.6-8.7-28.7-11.9-53.3-12-91.5-.1-35.7 2.9-53.2 13.9-80.2 7.7-18.9 15.3-31.6 29.2-49.1l7.4-9.3-2-5.8c-7.9-22.8-9.5-57.5-4.1-87.7 2.3-13 9.3-35.6 11.8-38.1 1.4-1.3 3.6-1.5 14.2-1 29.6 1.3 66.4 15.9 110.6 43.9l12.1 7.7 9.5-2.4c12.6-3.2 44.2-9 59.8-10.9 47.8-6 97.9-3.9 148.3 6 10 2 21.5 4.5 25.5 5.6 6.4 1.7 7.6 1.8 9 .5.9-.8 6.5-4.4 12.3-8 33.7-21 64-34.7 88.9-40.2 9.5-2.1 29.9-3.1 32.6-1.7 3.9 2.1 12.1 31.4 15 53.7 3.2 24.2 0 55.8-7.8 75.7-.9 2.5-.5 3.3 5.3 10 12.5 14.6 25.8 37.4 33.3 57.3 3.5 9.2 8.3 29.6 10.2 43 1.3 9.5 1.5 17.1 1.1 37-.9 43.3-6.5 74.7-19.3 106.4-29.2 72.9-91.9 114.2-193.4 127.7-7.4 1-13.7 1.9-13.9 2.1-.3.2 1.8 2.7 4.6 5.6 14.1 14.6 23.5 37.2 27.3 66 .6 4.8 1 38 1 86v78.2l2.4 5.1c4.5 9.6 13.5 14.2 26 13.1 4.3-.3 11.7-2.6 25.6-8 66.3-25.5 124.5-63.2 174.5-113.2 26.5-26.4 51-57.1 70.3-87.9 36.1-57.9 60.2-122.3 70.2-188.2 3.9-25.4 5.1-40.1 5.7-66.4 1.8-83-15.6-160.6-52.7-234.5-12.8-25.3-20.4-38.2-35.7-60.3-19-27.3-30.5-41.1-53.8-65-31.8-32.7-64.5-58.4-103.4-81.4-61.1-36.1-129.8-58.8-200.6-66.3-14-1.5-72.8-2.9-81.5-1.9z" fill="currentColor"/>
-              </svg>
-			</div>
-		  </a>
-		  <a class="header-socials-item" onmousedown="return false;" href="https://medium.com">
-		    <div class="header-socials-item-border">
-			  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 1200 1200">
-                <path d="M100 600v500h1000V100H100v500zm366.4-272.7c2.3 5.2 9.6 21.2 42.1 93.2 9.2 20.3 19.8 43.7 23.5 52 3.7 8.2 13.2 29.2 21 46.5 7.8 17.3 17.3 38.2 21 46.5 11.8 26.3 33.7 74.8 36.8 81.4l2.9 6.4 7.3-18.4c11.6-29.3 57.3-144.3 92.2-232.2l32.1-80.7H930l-.1 8.7-.1 8.8-9.6 8.1c-5.3 4.5-19.2 16.3-30.9 26.2l-21.2 18.1.5 198.3.5 198.3 9.7 9.3c5.3 5.2 19 18.2 30.4 29l20.8 19.7V862l-132.7-.2-132.8-.3-.3-6-.3-6 19.3-18.2c10.6-10 24.8-23.5 31.6-30l12.3-11.8-.3-155.3-.3-155.4-15.4 38.9c-8.5 21.3-26.7 67.4-40.6 102.3-13.9 34.9-41.1 103.7-60.6 152.8l-35.4 89.3-10.4-.3-10.5-.3-5-11c-2.8-6.1-6.7-14.7-8.7-19-9.8-21.5-127.1-277.9-129.9-284-6.2-13.4-15.1-33.1-20.7-45.5-3.1-6.9-5.9-12.9-6.3-13.3-.4-.4-1 35.1-1.3 79-.4 43.9-.9 103.4-1.2 132.3l-.6 52.5 11.8 13.6c6.5 7.5 24.7 28.7 40.6 47.2l28.7 33.6V862l-97.2-.2-97.3-.3-.3-7.3-.3-7.2 34.4-46.9 34.4-46.9.6-93.9c.4-51.6.7-125.7.7-164.7v-70.9l-5.8-7.1c-48-58.5-61-74.5-62.5-76.6-1.2-1.8-1.7-4.4-1.7-9.6 0-3.9.3-7.4.7-7.7.3-.4 44.9-.7 99-.7h98.4l2.3 5.3z" fill="currentColor"/>
-              </svg>
-			</div>
-		  </a>
-		</div>
-	  </div>
-	</div>
-	
-    <div class="content-article-cover">
-	  <div class="content-article-center-vertical">
-	    <div class="content-article-title-row">
-		  <h1 class="content-article-title-huge">Cuphead</h1>
-	      <div class="content-article-title-studio">by StudioMDHR</div>
-		</div>
-	  </div>
-	  <div class="content-article-menu">
-	    <div class="content-article-menu-container">
-		  <div class="content-article-menu-row">
-		    <a href="#studio">The studio</a><!--
-	     --><a href="#project">The project</a><!--
-		 --><a href="#reveal">The reveal</a>
+		<div class="header-query">
+		  <div class="header-query-main">
+		    <h1 class="header-query-prompt">The name of what color do you want?</h1>
+		    <input id="query-input" placeholder="Enter a hex color" value="">
 		  </div>
 		</div>
 	  </div>
 	</div>
-	
-	<div id="studio"></div>
-	<div class="content-article-studio">
-	  <div class="content-article-studio-title">
-	    <div class="content-article-studio-title-inner">The studio</div>
-	  </div>
-	  <div class="content-article-studio-container">
-	    <div class="content-article-studio-row">
-		  <div class="content-article-studio-inner">
-		    <div class="content-article-studio-inner-title">They bet everything on a game</div>
-		    <p class="content-article-studio-inner-text">Meet the brothers, Moldenhauer. They quit their jobs in the marketing and construction industries, remortgaged their homes in 2015, and threw everything into developing their first&nbsp;video game. Ever since, StudioMDHR (Studio Moldenhauer) and their premier game, <em>Cuphead</em>, has been getting a lot of buzz.</p>
-		  </div>
-		</div>
-		<div class="content-article-studio-row">
-		  <div class="content-article-studio-image">
-		    <img src="assets/content/articles/default/founders.jpg"></img>
-			<p>Chad Moldenhauer & Jared Moldenhauer — Founders</p>
-		  </div>
-		</div>
-		<div class="content-article-studio-row">
-		  <div class="content-article-studio-inner">
-		    <p class="content-article-studio-inner-text">After being showcased at Microsoft’s E3 2015, the scope and ambition for <em>Cuphead</em> grew, and the brothers expanded their team to 17 strong. And now several years later, the brothers confirm getting <em>Cuphead</em> out the door took a lot of blood, sweat and passion. Luckily they were pushing the game into the hands of eagerly awaiting players on Xbox One, Windows 10, and Steam.</p>
-		  </div>
-		</div>
-	  </div>
-	</div>
-	
-	<div id="project"></div>
-	<div class="content-article-project">
-	  <div class="content-article-project-title">
-	    <div class="content-article-project-title-inner">The project</div>
-	  </div>
-	  <div class="content-article-project-container">
-	    <img src="assets/content/articles/default/thumbnail.jpg"></img>
-		<div class="content-article-trailer-capback"></div>
-		<div class="content-article-trailer-overlay"></div>
-		<div class="content-article-trailer-caption">Watch the Cuphead trailer</div>
-	  </div>
-	</div>
-	<div class="content-article-project2">
-	  <div class="content-article-project2-container">
-	    <div class="content-article-project2-image">
-		  <img src="assets/content/articles/default/project-0.jpg"></img>
-		</div>
-		<div class="content-article-project2-inner">
-		  <div class="content-article-project2-inner-title">What happens when Betty Boop meets the Gunstar Heroes?</div>
-		  <p class="content-article-project2-inner-text"><em>Cuphead</em> combines two of the Moldenhauer brothers’ life-long passions. It’s a marriage of classic run-and-gun games, like <em>Contra</em>, <em>Metal Slug</em>, and <em>Gunstar Heroes</em>, and the weird, subversive, and iconic art-look of 1930s animations like the Fleischer Studios’ <em>Betty Boop</em> and other cartoons.</p>
-		  <p class="content-article-project2-inner-text">Players step into the oversized shoes of Cuphead or Mugman (in single player or local co-op) as they battle across strange worlds to pay off a debt after having made the unfortunate mistake of betting against the devil. The result, according to Mashable, is “a stunningly gorgeous video game that also happens to be lots of fun.”</p>
-		  <div class="content-article-project2-inner-buttons"></div>
-		</div>
-	  </div>
-	  <div class="content-article-project2-gallery">
-	    <div class="content-article-project2-gallery-item">
-		  <img src="assets/content/articles/default/project-1.jpg"></img>
-		</div>
-	    <div class="content-article-project2-gallery-item">
-		  <img src="assets/content/articles/default/project-2.jpg"></img>
-		</div>
-	    <div class="content-article-project2-gallery-item">
-		  <img src="assets/content/articles/default/project-3.jpg"></img>
-		</div>
-	  </div>
-	</div>
-	
-	<div id="reveal"></div>
-	<div class="content-article-reveal">
-	  <div class="content-article-reveal-title">
-	    <div class="content-article-reveal-title-inner">The reveal</div>
-	  </div>
-	  <div class="content-article-reveal-cover" style="background-image: url('assets/content/articles/default/reveal-0.jpg')"></div>
-	  <div class="content-article-reveal-container">
-	    <div class="content-article-reveal-row">
-		  <div class="content-article-reveal-inner">
-		    <div class="content-article-reveal-inner-title">50,000 frames of amazing hand-drawn animation</div>
-		    <p class="content-article-reveal-inner-text"><em>Cuphead </em>is one of the most visually striking games ever made with Unity. All of the game’s animated artwork has been drawn, penciled and inked on paper, and then colored in Photoshop.</p>
-		    <p class="content-article-reveal-inner-text">“By using the same animating tools and techniques that they did in the 1930s – hand-drawing and inking each frame, animating on the ones, and creating hand-painted watercolor backgrounds – we believe we can closely replicate the 1930s style better than using modern and digital means to create the art,” says Chad Moldenhauer.</p>
-		  </div>
-		</div>
-	    <div class="content-article-reveal-row">
-		  <div class="content-article-reveal-image">
-		    <img src="assets/content/articles/default/reveal-1.jpg"></img>
-			<p>Old-school animation + 24 FPS brings Cuphead alive.</p>
-		  </div>
-		</div>
-		<div class="content-article-reveal-row">
-		  <div class="content-article-reveal-inner">
-		    <p class="content-article-reveal-inner-text">StudioMDHR then sets the animation at 24 frames-per-second – just as it was in the 1930s – while the game runs at a sparkling 60 frames-per-second to ensure truly responsive gameplay.</p>
-		    <p class="content-article-reveal-inner-text">As well as helping StudioMDHR process the massive amount of their exquisite art, Unity’s out-of-the-box features such as the Sprite Renderer, Sprite Packer, 2D Physics, and particle effects ensured that <em>Cuphead</em>’s stunning results were a sure bet.</p>
-		    <p class="content-article-reveal-inner-text"><strong>StudioMDHR tapped Unity’s powerful tools for 2D games to make <em>Cuphead</em>.</strong></p>
-		    <a class="content-article-button" onmousedown="return false;" href="/">Learn more</a>
-		  </div>
-		</div>
-	  </div>
-	</div>
-	
-	<div class="content-article-more">
-	  <div class="content-article-more-container">
-	    <div class="content-article-more-title">Interested in learning more about what I am working on right now? Check out my latest project.</div>
-		<a class="content-article-more-button" onmousedown="return false;" href="/latest">Learn more</a>
-	  </div>
-	</div>
-	
   </div>
-  
-  <script src="js/scripts.js"></script>
+  <script>
+	document.getElementById("query-input").addEventListener("keyup", function(event) {
+	  if (event.keyCode === 13) {
+        // Cancel the default action, if needed
+        event.preventDefault();
+        // Trigger the button element with a click
+        processQuery();
+      }
+    });
+	
+    class NamedColor {
+      constructor(name, hex, l, a, b) {
+        this.name = name;
+		this.hex = hex;
+        this.l = l;
+        this.a = a;
+        this.b = b;
+      }
+	  
+      getName() {
+        return this.name;
+      }
+      getHex() {
+        return this.hex;
+      }
+      getL() {
+        return this.l;
+      }
+      getA() {
+        return this.a;
+      }
+      getB() {
+        return this.b;
+      }
+	}
+    const colors = [
+	  new NamedColor("Absolute Zero", "#0048BA", 85, 19, -65),
+	  new NamedColor("Acid green", "#B0BF1A", 189, -18, 70),
+	  new NamedColor("Aero", "#7CB9E8", 184, -10, -29),
+	  new NamedColor("Aero blue", "#C0E8D5", 226, -15, 5),
+	  new NamedColor("African violet", "#B284BE", 156, 26, -22),
+	  new NamedColor("Air superiority blue", "#72A0C1", 162, -9, -21),
+	  new NamedColor("Alabaster", "#EDEAE0", 236, 0, 5),
+	  new NamedColor("Alice blue", "#F0F8FF", 248, -1, -3),
+	  new NamedColor("Alloy orange", "#C46210", 135, 37, 58),
+	  new NamedColor("Almond", "#EFDECD", 228, 4, 11),
+	  new NamedColor("Amaranth", "#E52B50", 131, 70, 28),
+	  new NamedColor("Amaranth (M&P)", "#9F2B68", 98, 52, -6),
+	  new NamedColor("Amaranth pink", "#F19CBB", 188, 36, -1),
+	  new NamedColor("Amaranth purple", "#AB274F", 101, 55, 11),
+	  new NamedColor("Amaranth red", "#D3212D", 119, 66, 42),
+	  new NamedColor("Amazon", "#3B7A57", 118, -27, 13),
+	  new NamedColor("Amber", "#FFBF00", 208, 15, 83),
+	  new NamedColor("Amber (SAE/ECE)", "#FF7E00", 172, 46, 75),
+	  new NamedColor("Amethyst", "#9966CC", 133, 36, -45),
+	  new NamedColor("Android green", "#A4C639", 192, -25, 62),
+	  new NamedColor("Antique brass", "#CD9575", 170, 19, 26),
+	  new NamedColor("Antique bronze", "#665D1E", 100, -1, 36),
+	  new NamedColor("Antique fuchsia", "#915C83", 118, 27, -12),
+	  new NamedColor("Antique ruby", "#841B2D", 76, 45, 18),
+	  new NamedColor("Antique white", "#FAEBD7", 239, 3, 12),
+	  new NamedColor("Ao (English)", "#008000", 118, -47, 49),
+	  new NamedColor("Apple green", "#8DB600", 176, -28, 69),
+	  new NamedColor("Apricot", "#FBCEB1", 220, 13, 21),
+	  new NamedColor("Aqua", "#00FFFF", 231, -50, -14),
+	  new NamedColor("Aquamarine", "#7FFFD4", 234, -44, 9),
+	  new NamedColor("Arctic lime", "#D0FF14", 240, -33, 88),
+	  new NamedColor("Army green", "#4B5320", 86, -9, 28),
+	  new NamedColor("Artichoke", "#8F9779", 156, -6, 15),
+	  new NamedColor("Arylide yellow", "#E9D66B", 218, -2, 54),
+	  new NamedColor("Ash gray", "#B2BEB5", 193, -5, 3),
+	  new NamedColor("Asparagus", "#87A96B", 167, -20, 28),
+	  new NamedColor("Atomic tangerine", "#FF9966", 187, 36, 44),
+	  new NamedColor("Auburn", "#A52A2A", 97, 50, 32),
+	  new NamedColor("Aureolin", "#FDEE00", 237, -8, 90),
+	  new NamedColor("Avocado", "#568203", 126, -28, 52),
+	  new NamedColor("Azure", "#007FFF", 136, 9, -72),
+	  new NamedColor("Azure (X11/web color)", "#F0FFFF", 252, -4, -1),
+	  new NamedColor("Baby blue", "#89CFF0", 202, -15, -23),
+	  new NamedColor("Baby blue eyes", "#A1CAF1", 202, -6, -23),
+	  new NamedColor("Baby pink", "#F4C2C2", 212, 18, 7),
+	  new NamedColor("Baby powder", "#FEFEFA", 254, 0, 2),
+	  new NamedColor("Baker-Miller pink", "#FF91AF", 186, 45, 4),
+	  new NamedColor("Banana Mania", "#FAE7B5", 235, 1, 27),
+	  new NamedColor("Barbie Pink", "#DA1884", 125, 74, -6),
+	  new NamedColor("Barn red", "#7C0A02", 66, 45, 38),
+	  new NamedColor("Battleship grey", "#848482", 141, 0, 1),
+	  new NamedColor("Beau blue", "#BCD4E6", 213, -5, -11),
+	  new NamedColor("Beaver", "#9F8170", 144, 10, 14),
+	  new NamedColor("Beige", "#F5F5DC", 245, -2, 12),
+	  new NamedColor("B'dazzled blue", "#2E5894", 94, 1, -37),
+	  new NamedColor("Big dip oâ€™ruby", "#9C2542", 92, 50, 14),
+	  new NamedColor("Bisque", "#FFE4C4", 235, 6, 19),
+	  new NamedColor("Bistre", "#3D2B1F", 50, 7, 11),
+	  new NamedColor("Bistre brown", "#967117", 128, 9, 51),
+	  new NamedColor("Bitter lemon", "#CAE00D", 218, -22, 81),
+	  new NamedColor("Bitter lime", "#BFFF00", 237, -40, 88),
+	  new NamedColor("Bittersweet", "#FE6F5E", 166, 55, 38),
+	  new NamedColor("Bittersweet shimmer", "#BF4F51", 125, 46, 23),
+	  new NamedColor("Black", "#000000", 0, 0, 0),
+	  new NamedColor("Black bean", "#3D0C02", 29, 24, 17),
+	  new NamedColor("Black chocolate", "#1B1811", 21, 0, 5),
+	  new NamedColor("Black coffee", "#3B2F2F", 53, 6, 2),
+	  new NamedColor("Black coral", "#54626F", 104, -2, -8),
+	  new NamedColor("Black olive", "#3B3C36", 64, 0, 4),
+	  new NamedColor("Black Shadows", "#BFAFB2", 186, 6, 1),
+	  new NamedColor("Blanched almond", "#FFEBCD", 240, 4, 17),
+	  new NamedColor("Blast-off bronze", "#A57164", 135, 20, 16),
+	  new NamedColor("Bleu de France", "#318CE7", 144, -2, -54),
+	  new NamedColor("Blizzard blue", "#ACE5EE", 223, -16, -10),
+	  new NamedColor("Blond", "#FAF0BE", 241, -1, 26),
+	  new NamedColor("Blood red", "#660000", 51, 41, 31),
+	  new NamedColor("Blue", "#0000FF", 75, 68, -111),
+	  new NamedColor("Blue (Crayola)", "#1F75FE", 129, 16, -75),
+	  new NamedColor("Blue (Munsell)", "#0093AF", 142, -25, -24),
+	  new NamedColor("Blue (NCS)", "#0087BD", 133, -15, -37),
+	  new NamedColor("Blue (Pantone)", "#0018A8", 51, 42, -76),
+	  new NamedColor("Blue (pigment)", "#333399", 68, 27, -56),
+	  new NamedColor("Blue (RYB)", "#0247FE", 99, 42, -95),
+	  new NamedColor("Blue bell", "#A2A2D0", 173, 7, -23),
+	  new NamedColor("Blue-gray", "#6699CC", 156, -6, -31),
+	  new NamedColor("Blue-green", "#0D98BA", 147, -24, -27),
+	  new NamedColor("Blue-green (color wheel)", "#064E40", 74, -23, 2),
+	  new NamedColor("Blue jeans", "#5DADEC", 172, -10, -39),
+	  new NamedColor("Blue sapphire", "#126180", 97, -14, -23),
+	  new NamedColor("Blue-violet", "#8A2BE2", 105, 63, -75),
+	  new NamedColor("Blue-violet (Crayola)", "#7366BD", 121, 22, -44),
+	  new NamedColor("Blue-violet (color wheel)", "#4D1A7F", 58, 39, -47),
+	  new NamedColor("Blue yonder", "#5072A7", 120, 0, -32),
+	  new NamedColor("Bluetiful", "#3C69E7", 120, 19, -69),
+	  new NamedColor("Blush", "#DE5D83", 147, 54, 6),
+	  new NamedColor("Bole", "#79443B", 90, 23, 16),
+	  new NamedColor("Bone", "#E3DAC9", 223, 1, 10),
+	  new NamedColor("Bottle green", "#006A4E", 100, -32, 8),
+	  new NamedColor("Brandy", "#87413F", 94, 30, 16),
+	  new NamedColor("Brick red", "#CB4154", 125, 56, 21),
+	  new NamedColor("Bright green", "#66FF00", 228, -67, 83),
+	  new NamedColor("Bright lilac", "#D891EF", 179, 39, -36),
+	  new NamedColor("Bright maroon", "#C32148", 111, 63, 22),
+	  new NamedColor("Bright navy blue", "#1974D2", 122, 2, -56),
+	  new NamedColor("Bright yellow (Crayola)", "#FFAA1D", 196, 25, 76),
+	  new NamedColor("Brilliant rose", "#FF55A3", 159, 70, -4),
+	  new NamedColor("Brink pink", "#FB607F", 160, 62, 16),
+	  new NamedColor("British racing green", "#004225", 61, -25, 12),
+	  new NamedColor("Bronze", "#CD7F32", 155, 27, 53),
+	  new NamedColor("Brown", "#88540B", 105, 18, 46),
+	  new NamedColor("Brown sugar", "#AF6E4D", 135, 24, 30),
+	  new NamedColor("Brunswick green", "#1B4D3E", 74, -20, 4),
+	  new NamedColor("Bud green", "#7BB661", 175, -31, 37),
+	  new NamedColor("Buff", "#F0DC82", 224, -1, 47),
+	  new NamedColor("Burgundy", "#800020", 67, 49, 23),
+	  new NamedColor("Burlywood", "#DEB887", 197, 9, 30),
+	  new NamedColor("Burnished brown", "#A17A74", 140, 15, 9),
+	  new NamedColor("Burnt orange", "#CC5500", 132, 46, 62),
+	  new NamedColor("Burnt sienna", "#E97451", 160, 44, 41),
+	  new NamedColor("Burnt umber", "#8A3324", 87, 37, 29),
+	  new NamedColor("Byzantine", "#BD33A4", 120, 63, -29),
+	  new NamedColor("Byzantium", "#702963", 75, 37, -18),
+	  new NamedColor("Cadet", "#536872", 109, -5, -7),
+	  new NamedColor("Cadet blue", "#5F9EA0", 155, -20, -7),
+	  new NamedColor("Cadet blue (Crayola)", "#A9B2C3", 184, 0, -9),
+	  new NamedColor("Cadet grey", "#91A3B0", 168, -3, -8),
+	  new NamedColor("Cadmium green", "#006B3C", 100, -36, 19),
+	  new NamedColor("Cadmium orange", "#ED872D", 170, 36, 62),
+	  new NamedColor("Cadmium red", "#E30022", 124, 74, 51),
+	  new NamedColor("Cadmium yellow", "#FFF600", 243, -11, 92),
+	  new NamedColor("CafÃ© au lait", "#A67B5B", 141, 14, 24),
+	  new NamedColor("CafÃ© noir", "#4B3621", 63, 8, 17),
+	  new NamedColor("Cambridge blue", "#A3C1AD", 192, -12, 7),
+	  new NamedColor("Camel", "#C19A6B", 169, 11, 30),
+	  new NamedColor("Cameo pink", "#EFBBCC", 207, 21, 0),
+	  new NamedColor("Canary", "#FFFF99", 251, -9, 49),
+	  new NamedColor("Canary yellow", "#FFEF00", 238, -7, 91),
+	  new NamedColor("Candy apple red", "#FF0800", 139, 80, 70),
+	  new NamedColor("Candy pink", "#E4717A", 158, 46, 17),
+	  new NamedColor("Capri", "#00BFFF", 183, -23, -43),
+	  new NamedColor("Caput mortuum", "#592720", 58, 23, 16),
+	  new NamedColor("Cardinal", "#C41E3A", 111, 63, 30),
+	  new NamedColor("Caribbean green", "#00CC99", 186, -52, 13),
+	  new NamedColor("Carmine", "#960018", 80, 55, 35),
+	  new NamedColor("Carmine (M&P)", "#D70040", 118, 72, 31),
+	  new NamedColor("Carnation pink", "#FFA6C9", 199, 37, -3),
+	  new NamedColor("Carnelian", "#B31B1B", 100, 58, 43),
+	  new NamedColor("Carolina blue", "#56A0D3", 160, -11, -33),
+	  new NamedColor("Carrot orange", "#ED9121", 176, 30, 68),
+	  new NamedColor("Castleton green", "#00563F", 81, -28, 7),
+	  new NamedColor("Catawba", "#703642", 79, 27, 5),
+	  new NamedColor("Cedar Chest", "#C95A49", 134, 44, 32),
+	  new NamedColor("Celadon", "#ACE1AF", 216, -24, 19),
+	  new NamedColor("Celadon blue", "#007BA7", 122, -16, -31),
+	  new NamedColor("Celadon green", "#2F847C", 127, -27, -3),
+	  new NamedColor("Celeste", "#B2FFFF", 242, -23, -7),
+	  new NamedColor("Celtic blue", "#246BCE", 115, 7, -58),
+	  new NamedColor("Cerise", "#DE3163", 130, 68, 16),
+	  new NamedColor("Cerulean", "#007BA7", 122, -16, -31),
+	  new NamedColor("Cerulean blue", "#2A52BE", 95, 17, -61),
+	  new NamedColor("Cerulean frost", "#6D9BC3", 158, -7, -25),
+	  new NamedColor("Cerulean (Crayola)", "#1DACD6", 166, -25, -31),
+	  new NamedColor("CG blue", "#007AA5", 121, -16, -31),
+	  new NamedColor("CG red", "#E03C31", 132, 63, 46),
+	  new NamedColor("Champagne", "#F7E7CE", 236, 3, 14),
+	  new NamedColor("Champagne pink", "#F1DDCF", 228, 5, 10),
+	  new NamedColor("Charcoal", "#36454F", 72, -3, -7),
+	  new NamedColor("Charleston green", "#232B2B", 43, -3, 0),
+	  new NamedColor("Charm pink", "#E68FAC", 177, 37, 0),
+	  new NamedColor("Chartreuse (traditional)", "#DFFF00", 243, -27, 90),
+	  new NamedColor("Chartreuse (web)", "#7FFF00", 230, -60, 84),
+	  new NamedColor("Cherry blossom pink", "#FFB7C5", 208, 28, 4),
+	  new NamedColor("Chestnut", "#954535", 102, 33, 26),
+	  new NamedColor("Chili red", "#E23D28", 133, 63, 51),
+	  new NamedColor("China pink", "#DE6FA1", 157, 48, -5),
+	  new NamedColor("China rose", "#A8516E", 118, 39, 1),
+	  new NamedColor("Chinese red", "#AA381E", 105, 47, 42),
+	  new NamedColor("Chinese violet", "#856088", 117, 21, -15),
+	  new NamedColor("Chinese yellow", "#FFB200", 200, 21, 81),
+	  new NamedColor("Chocolate (traditional)", "#7B3F00", 86, 24, 44),
+	  new NamedColor("Chocolate (web)", "#D2691E", 144, 39, 58),
+	  new NamedColor("Chocolate Cosmos", "#58111A", 47, 33, 15),
+	  new NamedColor("Chrome yellow", "#FFA700", 194, 27, 79),
+	  new NamedColor("Cinereous", "#98817B", 143, 8, 7),
+	  new NamedColor("Cinnabar", "#E34234", 136, 62, 46),
+	  new NamedColor("Cinnamon Satin", "#CD607E", 141, 46, 5),
+	  new NamedColor("Citrine", "#E4D00A", 212, -4, 81),
+	  new NamedColor("Citron", "#9FA91F", 170, -14, 62),
+	  new NamedColor("Claret", "#7F1734", 72, 45, 11),
+	  new NamedColor("Cobalt blue", "#0047AB", 81, 14, -59),
+	  new NamedColor("Cocoa brown", "#D2691E", 144, 39, 58),
+	  new NamedColor("Coffee", "#6F4E37", 93, 12, 19),
+	  new NamedColor("Columbia Blue", "#B9D9EB", 216, -7, -12),
+	  new NamedColor("Congo pink", "#F88379", 174, 45, 27),
+	  new NamedColor("Cool grey", "#8C92AC", 155, 2, -13),
+	  new NamedColor("Copper", "#B87333", 141, 24, 46),
+	  new NamedColor("Copper (Crayola)", "#DA8A67", 167, 29, 32),
+	  new NamedColor("Copper penny", "#AD6F69", 137, 25, 14),
+	  new NamedColor("Copper red", "#CB6D51", 145, 36, 33),
+	  new NamedColor("Copper rose", "#996666", 124, 21, 9),
+	  new NamedColor("Coquelicot", "#FF3800", 146, 73, 70),
+	  new NamedColor("Coral", "#FF7F50", 173, 47, 49),
+	  new NamedColor("Coral pink", "#F88379", 174, 45, 27),
+	  new NamedColor("Cordovan", "#893F45", 94, 33, 12),
+	  new NamedColor("Corn", "#FBEC5D", 236, -6, 69),
+	  new NamedColor("Cornell red", "#B31B1B", 100, 58, 43),
+	  new NamedColor("Cornflower blue", "#6495ED", 156, 3, -49),
+	  new NamedColor("Cornsilk", "#FFF8DC", 249, 0, 14),
+	  new NamedColor("Cosmic cobalt", "#2E2D88", 60, 24, -51),
+	  new NamedColor("Cosmic latte", "#FFF8E7", 249, 0, 9),
+	  new NamedColor("Coyote brown", "#81613C", 112, 10, 26),
+	  new NamedColor("Cotton candy", "#FFBCD9", 212, 28, -4),
+	  new NamedColor("Cream", "#FFFDD0", 251, -4, 22),
+	  new NamedColor("Crimson", "#DC143C", 122, 71, 35),
+	  new NamedColor("Crimson (UA)", "#9E1B32", 90, 53, 23),
+	  new NamedColor("Cultured", "#F5F5F5", 246, 0, 0),
+	  new NamedColor("Cyan", "#00FFFF", 231, -50, -14),
+	  new NamedColor("Cyan (process)", "#00B7EB", 175, -25, -37),
+	  new NamedColor("Cyber grape", "#58427C", 83, 20, -29),
+	  new NamedColor("Cyber yellow", "#FFD300", 221, 5, 86),
+	  new NamedColor("Cyclamen", "#F56FA1", 165, 56, 0),
+	  new NamedColor("Dark blue-gray", "#666699", 114, 10, -27),
+	  new NamedColor("Dark brown", "#654321", 81, 12, 26),
+	  new NamedColor("Dark byzantium", "#5D3954", 74, 20, -8),
+	  new NamedColor("Dark cornflower blue", "#26428B", 74, 10, -44),
+	  new NamedColor("Dark cyan", "#008B8B", 132, -31, -9),
+	  new NamedColor("Dark electric blue", "#536878", 109, -4, -11),
+	  new NamedColor("Dark goldenrod", "#B8860B", 152, 13, 63),
+	  new NamedColor("Dark green", "#013220", 44, -19, 7),
+	  new NamedColor("Dark green (X11)", "#006400", 92, -39, 41),
+	  new NamedColor("Dark jungle green", "#1A2421", 34, -4, 0),
+	  new NamedColor("Dark khaki", "#BDB76B", 188, -5, 39),
+	  new NamedColor("Dark lava", "#483C32", 67, 4, 8),
+	  new NamedColor("Dark liver", "#534B4F", 84, 4, 0),
+	  new NamedColor("Dark liver (horses)", "#543D37", 72, 10, 8),
+	  new NamedColor("Dark magenta", "#8B008B", 83, 60, -38),
+	  new NamedColor("Dark moss green", "#4A5D23", 94, -14, 30),
+	  new NamedColor("Dark olive green", "#556B2F", 108, -15, 30),
+	  new NamedColor("Dark orange", "#FF8C00", 179, 40, 76),
+	  new NamedColor("Dark orchid", "#9932CC", 109, 60, -60),
+	  new NamedColor("Dark pastel green", "#03C03C", 174, -61, 52),
+	  new NamedColor("Dark purple", "#301934", 33, 16, -12),
+	  new NamedColor("Dark red", "#8B0000", 73, 51, 43),
+	  new NamedColor("Dark salmon", "#E9967A", 179, 30, 28),
+	  new NamedColor("Dark sea green", "#8FBC8F", 184, -21, 18),
+	  new NamedColor("Dark sienna", "#3C1414", 33, 20, 10),
+	  new NamedColor("Dark sky blue", "#8CBED6", 189, -12, -17),
+	  new NamedColor("Dark slate blue", "#483D8B", 77, 21, -42),
+	  new NamedColor("Dark slate gray", "#2F4F4F", 79, -11, -3),
+	  new NamedColor("Dark spring green", "#177245", 108, -34, 17),
+	  new NamedColor("Dark turquoise", "#00CED1", 191, -41, -13),
+	  new NamedColor("Dark violet", "#9400D3", 99, 70, -70),
+	  new NamedColor("Dartmouth green", "#00703C", 105, -37, 21),
+	  new NamedColor("Davy's grey", "#555555", 92, 0, 0),
+	  new NamedColor("Deep cerise", "#DA3287", 130, 68, -5),
+	  new NamedColor("Deep champagne", "#FAD6A5", 224, 8, 29),
+	  new NamedColor("Deep chestnut", "#B94E48", 122, 44, 26),
+	  new NamedColor("Deep jungle green", "#004B49", 71, -20, -4),
+	  new NamedColor("Deep pink", "#FF1493", 144, 83, -3),
+	  new NamedColor("Deep saffron", "#FF9933", 186, 34, 66),
+	  new NamedColor("Deep sky blue", "#00BFFF", 183, -23, -43),
+	  new NamedColor("Deep Space Sparkle", "#4A646C", 103, -7, -7),
+	  new NamedColor("Deep taupe", "#7E5E60", 110, 14, 4),
+	  new NamedColor("Denim", "#1560BD", 104, 6, -55),
+	  new NamedColor("Denim blue", "#2243B6", 82, 23, -65),
+	  new NamedColor("Desert", "#C19A6B", 169, 11, 30),
+	  new NamedColor("Desert sand", "#EDC9AF", 213, 10, 18),
+	  new NamedColor("Dim gray", "#696969", 113, 0, 0),
+	  new NamedColor("Dodger blue", "#1E90FF", 149, 1, -64),
+	  new NamedColor("Dogwood rose", "#D71868", 122, 71, 8),
+	  new NamedColor("Drab", "#967117", 128, 9, 51),
+	  new NamedColor("Duke blue", "#00009C", 40, 47, -77),
+	  new NamedColor("Dutch white", "#EFDFBB", 228, 2, 20),
+	  new NamedColor("Earth yellow", "#E1A95F", 187, 15, 46),
+	  new NamedColor("Ebony", "#555D50", 98, -4, 6),
+	  new NamedColor("Ecru", "#C2B280", 186, 0, 28),
+	  new NamedColor("Eerie black", "#1B1B1B", 25, 0, 0),
+	  new NamedColor("Eggplant", "#614051", 80, 17, -3),
+	  new NamedColor("Eggshell", "#F0EAD6", 237, 0, 11),
+	  new NamedColor("Egyptian blue", "#1034A6", 67, 26, -65),
+	  new NamedColor("Eigengrau", "#16161D", 19, 1, -4),
+	  new NamedColor("Electric blue", "#7DF9FF", 232, -34, -13),
+	  new NamedColor("Electric green", "#00FF00", 224, -78, 81),
+	  new NamedColor("Electric indigo", "#6F00FF", 95, 73, -98),
+	  new NamedColor("Electric lime", "#CCFF00", 240, -35, 89),
+	  new NamedColor("Electric purple", "#BF00FF", 125, 83, -78),
+	  new NamedColor("Electric violet", "#8F00FF", 106, 76, -91),
+	  new NamedColor("Emerald", "#50C878", 185, -47, 30),
+	  new NamedColor("Eminence", "#6C3082", 80, 37, -34),
+	  new NamedColor("English green", "#1B4D3E", 74, -20, 4),
+	  new NamedColor("English lavender", "#B48395", 153, 21, -1),
+	  new NamedColor("English red", "#AB4B52", 115, 41, 16),
+	  new NamedColor("English vermillion", "#CC474B", 127, 54, 28),
+	  new NamedColor("English violet", "#563C5C", 75, 17, -14),
+	  new NamedColor("Erin", "#00FF40", 224, -77, 70),
+	  new NamedColor("Eton blue", "#96C8A2", 195, -22, 14),
+	  new NamedColor("Fallow", "#C19A6B", 169, 11, 30),
+	  new NamedColor("Falu red", "#801818", 72, 44, 30),
+	  new NamedColor("Fandango", "#B53389", 113, 58, -17),
+	  new NamedColor("Fandango pink", "#DE5285", 142, 59, 2),
+	  new NamedColor("Fashion fuchsia", "#F400A1", 139, 83, -15),
+	  new NamedColor("Fawn", "#E5AA70", 190, 18, 39),
+	  new NamedColor("Feldgrau", "#4D5D53", 97, -7, 4),
+	  new NamedColor("Fern green", "#4F7942", 119, -23, 25),
+	  new NamedColor("Field drab", "#6C541E", 95, 6, 34),
+	  new NamedColor("Fiery rose", "#FF5470", 156, 67, 23),
+	  new NamedColor("Firebrick", "#B22222", 102, 57, 39),
+	  new NamedColor("Fire engine red", "#CE2029", 116, 65, 43),
+	  new NamedColor("Fire opal", "#E95C4B", 149, 55, 39),
+	  new NamedColor("Flame", "#E25822", 143, 53, 57),
+	  new NamedColor("Flax", "#EEDC82", 224, -1, 46),
+	  new NamedColor("Flirt", "#A2006D", 92, 62, -13),
+	  new NamedColor("Floral white", "#FFFAF0", 251, 0, 5),
+	  new NamedColor("Fluorescent blue", "#15F4EE", 222, -49, -10),
+	  new NamedColor("Forest green (Crayola)", "#5FA777", 160, -31, 18),
+	  new NamedColor("Forest green (traditional)", "#014421", 62, -26, 15),
+	  new NamedColor("Forest green (web)", "#228B22", 129, -45, 44),
+	  new NamedColor("French beige", "#A67B5B", 141, 14, 24),
+	  new NamedColor("French bistre", "#856D4D", 122, 6, 22),
+	  new NamedColor("French blue", "#0072BB", 117, -5, -46),
+	  new NamedColor("French fuchsia", "#FD3F92", 151, 75, 0),
+	  new NamedColor("French lilac", "#86608E", 118, 22, -18),
+	  new NamedColor("French lime", "#9EFD38", 232, -49, 77),
+	  new NamedColor("French mauve", "#D473D4", 159, 49, -33),
+	  new NamedColor("French pink", "#FD6C9E", 167, 60, 2),
+	  new NamedColor("French raspberry", "#C72C48", 116, 61, 24),
+	  new NamedColor("French rose", "#F64A8A", 150, 69, 4),
+	  new NamedColor("French sky blue", "#77B5FE", 183, -4, -42),
+	  new NamedColor("French violet", "#8806CE", 94, 67, -71),
+	  new NamedColor("Frostbite", "#E936A7", 141, 74, -18),
+	  new NamedColor("Fuchsia", "#FF00FF", 153, 94, -60),
+	  new NamedColor("Fuchsia (Crayola)", "#C154C1", 136, 55, -36),
+	  new NamedColor("Fuchsia purple", "#CC397B", 125, 62, -1),
+	  new NamedColor("Fuchsia rose", "#C74375", 126, 56, 2),
+	  new NamedColor("Fulvous", "#E48400", 165, 33, 71),
+	  new NamedColor("Fuzzy Wuzzy", "#87421F", 94, 28, 35),
+	  new NamedColor("Gainsboro", "#DCDCDC", 224, 0, 0),
+	  new NamedColor("Gamboge", "#E49B0F", 179, 21, 72),
+	  new NamedColor("Generic viridian", "#007F66", 120, -35, 5),
+	  new NamedColor("Ghost white", "#F8F8FF", 249, 1, -2),
+	  new NamedColor("Glaucous", "#6082B6", 136, 0, -31),
+	  new NamedColor("Glossy grape", "#AB92B3", 162, 14, -13),
+	  new NamedColor("GO green", "#00AB66", 157, -50, 25),
+	  new NamedColor("Gold", "#A57C00", 140, 10, 60),
+	  new NamedColor("Gold (metallic)", "#D4AF37", 187, 5, 63),
+	  new NamedColor("Gold (web) (Golden)", "#FFD700", 223, 3, 87),
+	  new NamedColor("Gold (Crayola)", "#E6BE8A", 203, 10, 32),
+	  new NamedColor("Gold Fusion", "#85754E", 128, 2, 24),
+	  new NamedColor("Golden brown", "#996515", 121, 17, 49),
+	  new NamedColor("Golden poppy", "#FCC200", 209, 12, 83),
+	  new NamedColor("Golden yellow", "#FFDF00", 228, 0, 88),
+	  new NamedColor("Goldenrod", "#DAA520", 182, 12, 69),
+	  new NamedColor("Granite gray", "#676767", 111, 0, 0),
+	  new NamedColor("Granny Smith apple", "#A8E4A0", 217, -28, 27),
+	  new NamedColor("Gray (web)", "#808080", 137, 0, 0),
+	  new NamedColor("Gray (X11 gray)", "#BEBEBE", 196, 0, 0),
+	  new NamedColor("Green", "#00FF00", 224, -78, 81),
+	  new NamedColor("Green (Crayola)", "#1CAC78", 159, -46, 16),
+	  new NamedColor("Green (web)", "#008000", 118, -47, 49),
+	  new NamedColor("Green (Munsell)", "#00A877", 155, -46, 15),
+	  new NamedColor("Green (NCS)", "#009F6B", 147, -45, 17),
+	  new NamedColor("Green (Pantone)", "#00AD43", 158, -55, 42),
+	  new NamedColor("Green (pigment)", "#00A550", 151, -51, 33),
+	  new NamedColor("Green (RYB)", "#66B032", 166, -39, 53),
+	  new NamedColor("Green-blue", "#1164B4", 105, 1, -49),
+	  new NamedColor("Green-blue (Crayola)", "#2887C8", 136, -9, -41),
+	  new NamedColor("Green-cyan", "#009966", 142, -44, 17),
+	  new NamedColor("Green Lizard", "#A7F432", 226, -43, 77),
+	  new NamedColor("Green Sheen", "#6EAEA1", 170, -23, 0),
+	  new NamedColor("Green-yellow", "#ADFF2F", 235, -45, 80),
+	  new NamedColor("Green-yellow (Crayola)", "#F0E891", 233, -5, 43),
+	  new NamedColor("Grullo", "#A99A86", 165, 3, 13),
+	  new NamedColor("Gunmetal", "#2a3439", 53, -2, -4),
+	  new NamedColor("Han blue", "#446CCF", 119, 11, -56),
+	  new NamedColor("Han purple", "#5218FA", 88, 66, -100),
+	  new NamedColor("Hansa yellow", "#E9D66B", 218, -2, 54),
+	  new NamedColor("Harlequin", "#3FFF00", 225, -74, 82),
+	  new NamedColor("Harvest gold", "#DA9100", 169, 22, 71),
+	  new NamedColor("Heat Wave", "#FF7A00", 170, 48, 74),
+	  new NamedColor("Heliotrope", "#DF73FF", 167, 58, -51),
+	  new NamedColor("Heliotrope gray", "#AA98A9", 165, 9, -5),
+	  new NamedColor("Hollywood cerise", "#F400A1", 139, 83, -15),
+	  new NamedColor("Honeydew", "#F0FFF0", 251, -6, 5),
+	  new NamedColor("Honolulu blue", "#006DB0", 111, -6, -43),
+	  new NamedColor("Hooker's green", "#49796B", 120, -19, 2),
+	  new NamedColor("Hot magenta", "#FF1DCE", 150, 87, -34),
+	  new NamedColor("Hot pink", "#FF69B4", 168, 63, -9),
+	  new NamedColor("Hunter green", "#355E3B", 92, -20, 15),
+	  new NamedColor("Iceberg", "#71A6D2", 167, -8, -27),
+	  new NamedColor("Icterine", "#FCF75E", 244, -10, 71),
+	  new NamedColor("Illuminating emerald", "#319177", 138, -33, 5),
+	  new NamedColor("Imperial red", "#ED2939", 134, 72, 43),
+	  new NamedColor("Inchworm", "#B2EC5D", 223, -34, 61),
+	  new NamedColor("Independence", "#4C516D", 89, 3, -16),
+	  new NamedColor("India green", "#138808", 126, -47, 49),
+	  new NamedColor("Indian red", "#CD5C5C", 138, 46, 23),
+	  new NamedColor("Indian yellow", "#E3A857", 187, 16, 50),
+	  new NamedColor("Indigo", "#4B0082", 50, 47, -53),
+	  new NamedColor("Indigo dye", "#00416A", 66, -4, -29),
+	  new NamedColor("International orange (aerospace)", "#FF4F00", 152, 66, 71),
+	  new NamedColor("International orange (engineering)", "#BA160C", 103, 61, 51),
+	  new NamedColor("International orange (Golden Gate Bridge)", "#C0362C", 115, 55, 40),
+	  new NamedColor("Iris", "#5A4FCF", 104, 33, -65),
+	  new NamedColor("Irresistible", "#B3446C", 117, 48, 2),
+	  new NamedColor("Isabelline", "#F4F0EC", 242, 1, 2),
+	  new NamedColor("Italian sky blue", "#B2FFFF", 242, -23, -7),
+	  new NamedColor("Ivory", "#FFFFF0", 254, -1, 7),
+	  new NamedColor("Jade", "#00A86B", 155, -48, 21),
+	  new NamedColor("Japanese carmine", "#9D2933", 93, 48, 24),
+	  new NamedColor("Japanese violet", "#5B3256", 69, 23, -13),
+	  new NamedColor("Jasmine", "#F8DE7E", 227, 0, 50),
+	  new NamedColor("Jazzberry jam", "#A50B5E", 93, 60, -2),
+	  new NamedColor("Jet", "#343434", 55, 0, 0),
+	  new NamedColor("Jonquil", "#F4CA16", 212, 5, 81),
+	  new NamedColor("June bud", "#BDDA57", 212, -23, 59),
+	  new NamedColor("Jungle green", "#29AB87", 160, -41, 8),
+	  new NamedColor("Kelly green", "#4CBB17", 172, -51, 63),
+	  new NamedColor("Keppel", "#3AB09E", 166, -36, 0),
+	  new NamedColor("Key lime", "#E8F48C", 239, -14, 48),
+	  new NamedColor("Khaki (web)", "#C3B091", 186, 3, 19),
+	  new NamedColor("Khaki (X11) (Light khaki)", "#F0E68C", 231, -5, 45),
+	  new NamedColor("Kobe", "#882D17", 83, 39, 35),
+	  new NamedColor("Kobi", "#E79FC4", 188, 31, -7),
+	  new NamedColor("Kobicha", "#6B4423", 84, 15, 27),
+	  new NamedColor("Kombu green", "#354230", 67, -8, 9),
+	  new NamedColor("KSU purple", "#512888", 67, 35, -46),
+	  new NamedColor("Languid lavender", "#D6CADD", 211, 7, -7),
+	  new NamedColor("Lapis lazuli", "#26619C", 101, -2, -37),
+	  new NamedColor("Laser lemon", "#FFFF66", 250, -13, 71),
+	  new NamedColor("Laurel green", "#A9BA9D", 188, -9, 13),
+	  new NamedColor("Lava", "#CF1020", 114, 68, 47),
+	  new NamedColor("Lavender (floral)", "#B57EDC", 156, 35, -39),
+	  new NamedColor("Lavender (web)", "#E6E6FA", 234, 3, -9),
+	  new NamedColor("Lavender blue", "#CCCCFF", 212, 8, -24),
+	  new NamedColor("Lavender blush", "#FFF0F5", 245, 6, 0),
+	  new NamedColor("Lavender gray", "#C4C3D0", 202, 2, -5),
+	  new NamedColor("Lawn green", "#7CFC00", 227, -60, 83),
+	  new NamedColor("Lemon", "#FFF700", 244, -11, 92),
+	  new NamedColor("Lemon chiffon", "#FFFACD", 249, -3, 22),
+	  new NamedColor("Lemon curry", "#CCA01D", 175, 9, 67),
+	  new NamedColor("Lemon glacier", "#FDFF00", 248, -16, 93),
+	  new NamedColor("Lemon meringue", "#F6EABE", 237, 0, 23),
+	  new NamedColor("Lemon yellow", "#FFF44F", 242, -8, 76),
+	  new NamedColor("Lemon yellow (Crayola)", "#FFFF9F", 251, -9, 46),
+	  new NamedColor("Liberty", "#545AA7", 104, 14, -42),
+	  new NamedColor("Light blue", "#ADD8E6", 213, -11, -11),
+	  new NamedColor("Light coral", "#F08080", 170, 44, 21),
+	  new NamedColor("Light cornflower blue", "#93CCEA", 201, -13, -20),
+	  new NamedColor("Light cyan", "#E0FFFF", 249, -9, -3),
+	  new NamedColor("Light French beige", "#C8AD7F", 184, 5, 27),
+	  new NamedColor("Light goldenrod yellow", "#FAFAD2", 249, -4, 19),
+	  new NamedColor("Light gray", "#D3D3D3", 216, 0, 0),
+	  new NamedColor("Light green", "#90EE90", 221, -42, 36),
+	  new NamedColor("Light orange", "#FED8B1", 227, 10, 24),
+	  new NamedColor("Light periwinkle", "#C5CBE1", 208, 1, -11),
+	  new NamedColor("Light pink", "#FFB6C1", 207, 28, 6),
+	  new NamedColor("Light salmon", "#FFA07A", 192, 34, 35),
+	  new NamedColor("Light sea green", "#20B2AA", 167, -38, -6),
+	  new NamedColor("Light sky blue", "#87CEFA", 202, -13, -28),
+	  new NamedColor("Light slate gray", "#778899", 142, -2, -10),
+	  new NamedColor("Light steel blue", "#B0C4DE", 200, -2, -14),
+	  new NamedColor("Light yellow", "#FFFFE0", 253, -3, 15),
+	  new NamedColor("Lilac", "#C8A2C8", 181, 19, -13),
+	  new NamedColor("Lilac Luster", "#AE98AA", 166, 11, -5),
+	  new NamedColor("Lime (color wheel)", "#BFFF00", 237, -40, 88),
+	  new NamedColor("Lime (web) (X11 green)", "#00FF00", 224, -78, 81),
+	  new NamedColor("Lime green", "#32CD32", 185, -61, 60),
+	  new NamedColor("Lincoln green", "#195905", 83, -32, 36),
+	  new NamedColor("Linen", "#FAF0E6", 243, 2, 6),
+	  new NamedColor("Lion", "#C19A6B", 169, 11, 30),
+	  new NamedColor("Liseran purple", "#DE6FA1", 157, 48, -5),
+	  new NamedColor("Little boy blue", "#6CA0DC", 163, -4, -35),
+	  new NamedColor("Liver", "#674C47", 90, 11, 8),
+	  new NamedColor("Liver (dogs)", "#B86D29", 137, 27, 49),
+	  new NamedColor("Liver (organ)", "#6C2E1F", 71, 27, 23),
+	  new NamedColor("Liver chestnut", "#987456", 132, 12, 22),
+	  new NamedColor("Livid", "#6699CC", 156, -6, -31),
+	  new NamedColor("Macaroni and Cheese", "#FFBD88", 209, 20, 37),
+	  new NamedColor("Madder Lake", "#CC3336", 120, 60, 37),
+	  new NamedColor("Magenta", "#FF00FF", 153, 94, -60),
+	  new NamedColor("Magenta (Crayola)", "#F653A6", 155, 68, -8),
+	  new NamedColor("Magenta (dye)", "#CA1F7B", 117, 68, -6),
+	  new NamedColor("Magenta (Pantone)", "#D0417E", 130, 60, 0),
+	  new NamedColor("Magenta (process)", "#FF0090", 143, 85, -2),
+	  new NamedColor("Magenta haze", "#9F4576", 109, 42, -8),
+	  new NamedColor("Magic mint", "#AAF0D1", 228, -26, 8),
+	  new NamedColor("Magnolia", "#F2E8D7", 236, 1, 10),
+	  new NamedColor("Mahogany", "#C04000", 118, 51, 58),
+	  new NamedColor("Maize", "#FBEC5D", 236, -6, 69),
+	  new NamedColor("Maize (Crayola)", "#F2C649", 210, 7, 66),
+	  new NamedColor("Majorelle blue", "#6050DC", 108, 37, -70),
+	  new NamedColor("Malachite", "#0BDA51", 195, -66, 52),
+	  new NamedColor("Manatee", "#979AAA", 163, 1, -8),
+	  new NamedColor("Mandarin", "#F37A48", 166, 45, 49),
+	  new NamedColor("Mango", "#FDBE02", 207, 14, 82),
+	  new NamedColor("Mango Tango", "#FF8243", 175, 46, 55),
+	  new NamedColor("Mantis", "#74C365", 184, -38, 39),
+	  new NamedColor("Mardi Gras", "#880085", 81, 58, -35),
+	  new NamedColor("Marigold", "#EAA221", 185, 21, 70),
+	  new NamedColor("Maroon (Crayola)", "#C32148", 111, 63, 22),
+	  new NamedColor("Maroon (web)", "#800000", 67, 48, 39),
+	  new NamedColor("Maroon (X11)", "#B03060", 107, 54, 4),
+	  new NamedColor("Mauve", "#E0B0FF", 200, 28, -32),
+	  new NamedColor("Mauve taupe", "#915F6D", 118, 22, 1),
+	  new NamedColor("Mauvelous", "#EF98AA", 184, 35, 5),
+	  new NamedColor("Maximum blue", "#47ABCC", 166, -21, -25),
+	  new NamedColor("Maximum blue green", "#30BFBF", 179, -37, -10),
+	  new NamedColor("Maximum blue purple", "#ACACE6", 183, 9, -28),
+	  new NamedColor("Maximum green", "#5E8C31", 136, -27, 42),
+	  new NamedColor("Maximum green yellow", "#D9E650", 225, -17, 68),
+	  new NamedColor("Maximum purple", "#733380", 84, 38, -30),
+	  new NamedColor("Maximum red", "#D92121", 122, 68, 50),
+	  new NamedColor("Maximum red purple", "#A63A79", 108, 50, -11),
+	  new NamedColor("Maximum yellow", "#FAFA37", 245, -14, 84),
+	  new NamedColor("Maximum yellow red", "#F2BA49", 202, 13, 63),
+	  new NamedColor("May green", "#4C9141", 138, -34, 35),
+	  new NamedColor("Maya blue", "#73C2FB", 191, -12, -35),
+	  new NamedColor("Medium aquamarine", "#66DDAA", 205, -43, 14),
+	  new NamedColor("Medium blue", "#0000CD", 58, 58, -94),
+	  new NamedColor("Medium candy apple red", "#E2062C", 124, 74, 46),
+	  new NamedColor("Medium carmine", "#AF4035", 111, 46, 32),
+	  new NamedColor("Medium champagne", "#F3E5AB", 232, 0, 30),
+	  new NamedColor("Medium orchid", "#BA55D3", 136, 55, -46),
+	  new NamedColor("Medium purple", "#9370DB", 139, 32, -50),
+	  new NamedColor("Medium sea green", "#3CB371", 166, -45, 24),
+	  new NamedColor("Medium slate blue", "#7B68EE", 131, 34, -65),
+	  new NamedColor("Medium spring green", "#00FA9A", 222, -67, 32),
+	  new NamedColor("Medium turquoise", "#48D1CC", 195, -38, -8),
+	  new NamedColor("Medium violet-red", "#C71585", 115, 70, -13),
+	  new NamedColor("Mellow apricot", "#F8B878", 204, 19, 42),
+	  new NamedColor("Mellow yellow", "#F8DE7E", 227, 0, 50),
+	  new NamedColor("Melon", "#FEBAAD", 208, 24, 17),
+	  new NamedColor("Metallic gold", "#D3AF37", 187, 5, 63),
+	  new NamedColor("Metallic Seaweed", "#0A7E8C", 122, -25, -15),
+	  new NamedColor("Metallic Sunburst", "#9C7C38", 138, 7, 41),
+	  new NamedColor("Mexican pink", "#E4007C", 128, 78, 0),
+	  new NamedColor("Middle blue", "#7ED4E6", 204, -23, -17),
+	  new NamedColor("Middle blue green", "#8DD9CC", 208, -26, 0),
+	  new NamedColor("Middle blue purple", "#8B72BE", 135, 22, -36),
+	  new NamedColor("Middle grey", "#8B8680", 143, 1, 4),
+	  new NamedColor("Middle green", "#4D8C57", 135, -29, 22),
+	  new NamedColor("Middle green yellow", "#ACBF60", 190, -16, 45),
+	  new NamedColor("Middle purple", "#D982B5", 166, 39, -11),
+	  new NamedColor("Middle red", "#E58E73", 173, 32, 29),
+	  new NamedColor("Middle red purple", "#A55353", 117, 34, 16),
+	  new NamedColor("Middle yellow", "#FFEB00", 236, -6, 90),
+	  new NamedColor("Middle yellow red", "#ECB176", 196, 17, 39),
+	  new NamedColor("Midnight", "#702670", 75, 40, -26),
+	  new NamedColor("Midnight blue", "#191970", 38, 26, -50),
+	  new NamedColor("Midnight green (eagle green)", "#004953", 70, -17, -11),
+	  new NamedColor("Mikado yellow", "#FFC40C", 211, 12, 82),
+	  new NamedColor("Mimi pink", "#FFDAE9", 231, 15, -1),
+	  new NamedColor("Mindaro", "#E3F988", 241, -19, 51),
+	  new NamedColor("Ming", "#36747D", 115, -18, -10),
+	  new NamedColor("Minion yellow", "#F5E050", 227, -3, 70),
+	  new NamedColor("Mint", "#3EB489", 168, -41, 12),
+	  new NamedColor("Mint cream", "#F5FFFA", 253, -3, 1),
+	  new NamedColor("Mint green", "#98FF98", 234, -45, 39),
+	  new NamedColor("Misty moss", "#BBB477", 186, -3, 32),
+	  new NamedColor("Misty rose", "#FFE4E1", 237, 9, 5),
+	  new NamedColor("Mode beige", "#967117", 128, 9, 51),
+	  new NamedColor("Morning blue", "#8DA399", 166, -9, 2),
+	  new NamedColor("Moss green", "#8A9A5B", 156, -13, 31),
+	  new NamedColor("Mountain Meadow", "#30BA8F", 173, -45, 11),
+	  new NamedColor("Mountbatten pink", "#997A8D", 140, 15, -5),
+	  new NamedColor("MSU green", "#18453B", 66, -17, 1),
+	  new NamedColor("Mulberry", "#C54B8C", 129, 54, -9),
+	  new NamedColor("Mulberry (Crayola)", "#C8509B", 134, 54, -15),
+	  new NamedColor("Mustard", "#FFDB58", 226, 3, 67),
+	  new NamedColor("Myrtle green", "#317873", 117, -23, -3),
+	  new NamedColor("Mystic", "#D65282", 139, 56, 2),
+	  new NamedColor("Mystic maroon", "#AD4379", 115, 48, -7),
+	  new NamedColor("Nadeshiko pink", "#F6ADC6", 200, 30, 0),
+	  new NamedColor("Naples yellow", "#FADA5E", 225, 1, 63),
+	  new NamedColor("Navajo white", "#FFDEAD", 230, 7, 29),
+	  new NamedColor("Navy blue", "#000080", 29, 41, -66),
+	  new NamedColor("Navy blue (Crayola)", "#1974D2", 122, 2, -56),
+	  new NamedColor("Neon blue", "#4666FF", 123, 29, -80),
+	  new NamedColor("Neon Carrot", "#FFA343", 192, 30, 62),
+	  new NamedColor("Neon green", "#39FF14", 225, -74, 80),
+	  new NamedColor("Neon fuchsia", "#FE4164", 149, 72, 26),
+	  new NamedColor("New York pink", "#D7837F", 163, 33, 17),
+	  new NamedColor("Nickel", "#727472", 124, 0, 1),
+	  new NamedColor("Non-photo blue", "#A4DDED", 216, -15, -13),
+	  new NamedColor("Nyanza", "#E9FFDB", 249, -11, 15),
+	  new NamedColor("Ocean Blue", "#4F42B5", 89, 31, -60),
+	  new NamedColor("Ocean green", "#48BF91", 178, -42, 13),
+	  new NamedColor("Ochre", "#CC7722", 150, 30, 57),
+	  new NamedColor("Old burgundy", "#43302E", 56, 9, 5),
+	  new NamedColor("Old gold", "#CFB53B", 190, 0, 62),
+	  new NamedColor("Old lace", "#FDF5E6", 247, 1, 8),
+	  new NamedColor("Old lavender", "#796878", 117, 9, -5),
+	  new NamedColor("Old mauve", "#673147", 72, 27, -1),
+	  new NamedColor("Old rose", "#C08081", 154, 26, 10),
+	  new NamedColor("Old silver", "#848482", 141, 0, 1),
+	  new NamedColor("Olive", "#808000", 133, -8, 56),
+	  new NamedColor("Olive Drab (#3)", "#6B8E23", 140, -24, 49),
+	  new NamedColor("Olive Drab #7", "#3C341F", 56, 1, 15),
+	  new NamedColor("Olive green", "#B5B35C", 183, -7, 44),
+	  new NamedColor("Olivine", "#9AB973", 182, -19, 32),
+	  new NamedColor("Onyx", "#353839", 59, 0, 0),
+	  new NamedColor("Opal", "#A8C3BC", 195, -10, 0),
+	  new NamedColor("Opera mauve", "#B784A7", 156, 24, -10),
+	  new NamedColor("Orange", "#FF7F00", 172, 46, 75),
+	  new NamedColor("Orange (Crayola)", "#FF7538", 168, 51, 58),
+	  new NamedColor("Orange (Pantone)", "#FF5800", 156, 63, 72),
+	  new NamedColor("Orange (web)", "#FFA500", 193, 28, 79),
+	  new NamedColor("Orange peel", "#FF9F00", 189, 30, 78),
+	  new NamedColor("Orange-red", "#FF681F", 162, 56, 66),
+	  new NamedColor("Orange-red (Crayola)", "#FF5349", 155, 66, 44),
+	  new NamedColor("Orange soda", "#FA5B3D", 155, 61, 50),
+	  new NamedColor("Orange-yellow", "#F5BD1F", 204, 12, 77),
+	  new NamedColor("Orange-yellow (Crayola)", "#F8D568", 221, 3, 57),
+	  new NamedColor("Orchid", "#DA70D6", 160, 52, -33),
+	  new NamedColor("Orchid pink", "#F2BDCD", 209, 21, 0),
+	  new NamedColor("Orchid (Crayola)", "#E29CD2", 185, 33, -16),
+	  new NamedColor("Outer space (Crayola)", "#2D383A", 58, -3, -2),
+	  new NamedColor("Outrageous Orange", "#FF6E4A", 165, 55, 48),
+	  new NamedColor("Oxblood", "#800020", 67, 49, 23),
+	  new NamedColor("Oxford blue", "#002147", 32, 2, -27),
+	  new NamedColor("OU Crimson red", "#841617", 73, 46, 31),
+	  new NamedColor("Pacific blue", "#1CA9C9", 162, -27, -26),
+	  new NamedColor("Pakistan green", "#006600", 94, -39, 41),
+	  new NamedColor("Palatinate purple", "#682860", 70, 35, -18),
+	  new NamedColor("Pale aqua", "#BCD4E6", 213, -5, -11),
+	  new NamedColor("Pale cerulean", "#9BC4E2", 196, -8, -19),
+	  new NamedColor("Pale Dogwood", "#ED7A9B", 167, 48, 4),
+	  new NamedColor("Pale pink", "#FADADD", 229, 12, 3),
+	  new NamedColor("Pale purple (Pantone)", "#FAE6FA", 238, 10, -6),
+	  new NamedColor("Pale silver", "#C9C0BB", 200, 3, 4),
+	  new NamedColor("Pale spring bud", "#ECEBBD", 235, -4, 23),
+	  new NamedColor("Pansy purple", "#78184A", 70, 44, -4),
+	  new NamedColor("Paolo Veronese green", "#009B7D", 145, -41, 6),
+	  new NamedColor("Papaya whip", "#FFEFD5", 243, 3, 15),
+	  new NamedColor("Paradise pink", "#E63E62", 137, 66, 20),
+	  new NamedColor("Parchment", "#F1E9D2", 236, 0, 12),
+	  new NamedColor("Paris Green", "#50C878", 185, -47, 30),
+	  new NamedColor("Pastel pink", "#DEA5A4", 187, 22, 9),
+	  new NamedColor("Patriarch", "#800080", 76, 56, -35),
+	  new NamedColor("Payne's grey", "#536878", 109, -4, -11),
+	  new NamedColor("Peach", "#FFE5B4", 235, 4, 27),
+	  new NamedColor("Peach (Crayola)", "#FFCBA4", 218, 15, 27),
+	  new NamedColor("Peach puff", "#FFDAB9", 228, 10, 21),
+	  new NamedColor("Pear", "#D1E231", 220, -20, 76),
+	  new NamedColor("Pearly purple", "#B768A2", 140, 38, -16),
+	  new NamedColor("Periwinkle", "#CCCCFF", 212, 8, -24),
+	  new NamedColor("Periwinkle (Crayola)", "#C3CDE6", 210, 0, -13),
+	  new NamedColor("Permanent Geranium Lake", "#E12C2C", 128, 68, 47),
+	  new NamedColor("Persian blue", "#1C39BB", 76, 30, -71),
+	  new NamedColor("Persian green", "#00A693", 155, -40, 0),
+	  new NamedColor("Persian indigo", "#32127A", 44, 36, -53),
+	  new NamedColor("Persian orange", "#D99058", 170, 24, 41),
+	  new NamedColor("Persian pink", "#F77FBE", 175, 52, -10),
+	  new NamedColor("Persian plum", "#701C1C", 64, 37, 23),
+	  new NamedColor("Persian red", "#CC3333", 120, 60, 39),
+	  new NamedColor("Persian rose", "#FE28A2", 147, 81, -10),
+	  new NamedColor("Persimmon", "#EC5800", 147, 56, 68),
+	  new NamedColor("Pewter Blue", "#8BA8B7", 171, -7, -10),
+	  new NamedColor("Phlox", "#DF00FF", 139, 88, -69),
+	  new NamedColor("Phthalo blue", "#000F89", 38, 37, -66),
+	  new NamedColor("Phthalo green", "#123524", 49, -16, 7),
+	  new NamedColor("Picotee blue", "#2E2787", 56, 28, -53),
+	  new NamedColor("Pictorial carmine", "#C30B4E", 108, 67, 16),
+	  new NamedColor("Piggy pink", "#FDDDE6", 232, 12, 0),
+	  new NamedColor("Pine green", "#01796F", 115, -31, -2),
+	  new NamedColor("Pine tree", "#2A2F23", 47, -3, 7),
+	  new NamedColor("Pink", "#FFC0CB", 214, 24, 4),
+	  new NamedColor("Pink (Pantone)", "#D74894", 137, 61, -9),
+	  new NamedColor("Pink flamingo", "#FC74FD", 177, 66, -44),
+	  new NamedColor("Pink lace", "#FFDDF4", 233, 15, -6),
+	  new NamedColor("Pink lavender", "#D8B2D1", 196, 18, -9),
+	  new NamedColor("Pink Sherbet", "#F78FA7", 182, 42, 5),
+	  new NamedColor("Pistachio", "#93C572", 190, -27, 36),
+	  new NamedColor("Platinum", "#E5E4E2", 231, 0, 1),
+	  new NamedColor("Plum", "#8E4585", 104, 38, -21),
+	  new NamedColor("Plum (web)", "#DDA0DD", 187, 31, -21),
+	  new NamedColor("Plump Purple", "#5946B2", 93, 30, -55),
+	  new NamedColor("Polished Pine", "#5DA493", 159, -26, 1),
+	  new NamedColor("Pomp and Power", "#86608E", 118, 22, -18),
+	  new NamedColor("Popstar", "#BE4F62", 126, 47, 13),
+	  new NamedColor("Portland Orange", "#FF5A36", 157, 62, 55),
+	  new NamedColor("Powder blue", "#B0E0E6", 219, -14, -7),
+	  new NamedColor("Princeton orange", "#F58025", 169, 42, 65),
+	  new NamedColor("Process yellow", "#FFEF00", 238, -7, 91),
+	  new NamedColor("Prune", "#701C1C", 64, 37, 23),
+	  new NamedColor("Prussian blue", "#003153", 48, -3, -24),
+	  new NamedColor("Psychedelic purple", "#DF00FF", 139, 88, -69),
+	  new NamedColor("Puce", "#CC8899", 164, 28, 2),
+	  new NamedColor("Pullman Brown (UPS Brown)", "#644117", 79, 13, 31),
+	  new NamedColor("Pumpkin", "#FF7518", 168, 51, 70),
+	  new NamedColor("Purple", "#6A0DAD", 75, 56, -63),
+	  new NamedColor("Purple (web)", "#800080", 76, 56, -35),
+	  new NamedColor("Purple (Munsell)", "#9F00C5", 101, 70, -60),
+	  new NamedColor("Purple (X11)", "#A020F0", 113, 72, -77),
+	  new NamedColor("Purple mountain majesty", "#9678B6", 141, 21, -28),
+	  new NamedColor("Purple navy", "#4E5180", 91, 8, -26),
+	  new NamedColor("Purple pizzazz", "#FE4EDA", 161, 76, -34),
+	  new NamedColor("Purple Plum", "#9C51B6", 120, 44, -40),
+	  new NamedColor("Purpureus", "#9A4EAE", 117, 44, -37),
+	  new NamedColor("Queen blue", "#436B95", 111, -4, -27),
+	  new NamedColor("Queen pink", "#E8CCD7", 216, 11, -1),
+	  new NamedColor("Quick Silver", "#A6A6A6", 174, 0, 0),
+	  new NamedColor("Quinacridone magenta", "#8E3A59", 95, 39, 0),
+	  new NamedColor("Radical Red", "#FF355E", 147, 75, 29),
+	  new NamedColor("Raisin black", "#242124", 34, 2, 0),
+	  new NamedColor("Rajah", "#FBAB60", 196, 25, 50),
+	  new NamedColor("Raspberry", "#E30B5D", 126, 75, 18),
+	  new NamedColor("Raspberry glace", "#915F6D", 118, 22, 1),
+	  new NamedColor("Raspberry rose", "#B3446C", 117, 48, 2),
+	  new NamedColor("Raw sienna", "#D68A59", 165, 26, 39),
+	  new NamedColor("Raw umber", "#826644", 116, 8, 24),
+	  new NamedColor("Razzle dazzle rose", "#FF33CC", 153, 83, -31),
+	  new NamedColor("Razzmatazz", "#E3256B", 130, 72, 11),
+	  new NamedColor("Razzmic Berry", "#8D4E85", 108, 33, -18),
+	  new NamedColor("Rebecca Purple", "#663399", 83, 38, -47),
+	  new NamedColor("Red", "#FF0000", 138, 81, 70),
+	  new NamedColor("Red (Crayola)", "#EE204D", 134, 75, 32),
+	  new NamedColor("Red (Munsell)", "#F2003C", 132, 78, 41),
+	  new NamedColor("Red (NCS)", "#C40233", 107, 67, 33),
+	  new NamedColor("Red (Pantone)", "#ED2939", 134, 72, 43),
+	  new NamedColor("Red (pigment)", "#ED1C24", 132, 74, 54),
+	  new NamedColor("Red (RYB)", "#FE2712", 142, 76, 66),
+	  new NamedColor("Red-orange", "#FF5349", 155, 66, 44),
+	  new NamedColor("Red-orange (Crayola)", "#FF681F", 162, 56, 66),
+	  new NamedColor("Red-orange (Color wheel)", "#FF4500", 149, 69, 71),
+	  new NamedColor("Red-purple", "#E40078", 127, 77, 2),
+	  new NamedColor("Red Salsa", "#FD3A4A", 146, 73, 40),
+	  new NamedColor("Red-violet", "#C71585", 115, 70, -13),
+	  new NamedColor("Red-violet (Crayola)", "#C0448F", 125, 56, -14),
+	  new NamedColor("Red-violet (Color wheel)", "#922B3E", 89, 45, 14),
+	  new NamedColor("Redwood", "#A45A52", 120, 30, 19),
+	  new NamedColor("Resolution blue", "#002387", 48, 25, -58),
+	  new NamedColor("Rhythm", "#777696", 129, 6, -16),
+	  new NamedColor("Rich black", "#004040", 60, -18, -5),
+	  new NamedColor("Rich black (FOGRA29)", "#010B13", 7, -1, -4),
+	  new NamedColor("Rich black (FOGRA39)", "#010203", 1, 0, 0),
+	  new NamedColor("Rifle green", "#444C38", 79, -5, 11),
+	  new NamedColor("Robin egg blue", "#00CCCC", 189, -42, -12),
+	  new NamedColor("Rocket metallic", "#8A7F80", 138, 4, 1),
+	  new NamedColor("Rojo Spanish red", "#A91101", 93, 57, 51),
+	  new NamedColor("Roman silver", "#838996", 145, 0, -7),
+	  new NamedColor("Rose", "#FF007F", 142, 84, 6),
+	  new NamedColor("Rose bonbon", "#F9429E", 151, 74, -6),
+	  new NamedColor("Rose Dust", "#9E5E6F", 122, 28, 2),
+	  new NamedColor("Rose ebony", "#674846", 87, 13, 7),
+	  new NamedColor("Rose madder", "#E32636", 128, 70, 42),
+	  new NamedColor("Rose pink", "#FF66CC", 169, 67, -22),
+	  new NamedColor("Rose Pompadour", "#ED7A9B", 167, 48, 4),
+	  new NamedColor("Rose quartz", "#AA98A9", 165, 9, -5),
+	  new NamedColor("Rose red", "#C21E56", 111, 64, 13),
+	  new NamedColor("Rose taupe", "#905D5D", 115, 21, 9),
+	  new NamedColor("Rose vale", "#AB4E52", 116, 39, 17),
+	  new NamedColor("Rosewood", "#65000B", 50, 41, 26),
+	  new NamedColor("Rosso corsa", "#D40000", 115, 70, 61),
+	  new NamedColor("Rosy brown", "#BC8F8F", 163, 18, 7),
+	  new NamedColor("Royal blue (dark)", "#002366", 40, 13, -42),
+	  new NamedColor("Royal blue (light)", "#4169E1", 119, 18, -66),
+	  new NamedColor("Royal purple", "#7851A9", 107, 31, -41),
+	  new NamedColor("Royal yellow", "#FADA5E", 225, 1, 63),
+	  new NamedColor("Ruber", "#CE4676", 130, 57, 4),
+	  new NamedColor("Rubine red", "#D10056", 115, 71, 16),
+	  new NamedColor("Ruby", "#E0115F", 125, 74, 16),
+	  new NamedColor("Ruby red", "#9B111E", 85, 54, 34),
+	  new NamedColor("Rufous", "#A81C07", 94, 55, 48),
+	  new NamedColor("Russet", "#80461B", 93, 23, 36),
+	  new NamedColor("Russian green", "#679267", 144, -21, 18),
+	  new NamedColor("Russian violet", "#32174D", 36, 23, -28),
+	  new NamedColor("Rust", "#B7410E", 114, 47, 52),
+	  new NamedColor("Rusty red", "#DA2C43", 125, 66, 33),
+	  new NamedColor("Sacramento State green", "#043927", 52, -20, 6),
+	  new NamedColor("Saddle brown", "#8B4513", 97, 28, 42),
+	  new NamedColor("Safety orange", "#FF7800", 169, 49, 74),
+	  new NamedColor("Safety orange (blaze orange)", "#FF6700", 161, 57, 73),
+	  new NamedColor("Safety yellow", "#EED202", 216, -1, 84),
+	  new NamedColor("Saffron", "#F4C430", 209, 8, 74),
+	  new NamedColor("Sage", "#BCB88A", 189, -3, 24),
+	  new NamedColor("St. Patrick's blue", "#23297A", 53, 20, -47),
+	  new NamedColor("Salmon", "#FA8072", 173, 47, 30),
+	  new NamedColor("Salmon pink", "#FF91A4", 186, 44, 9),
+	  new NamedColor("Sand", "#C2B280", 186, 0, 28),
+	  new NamedColor("Sand dune", "#967117", 128, 9, 51),
+	  new NamedColor("Sandy brown", "#F4A460", 190, 26, 47),
+	  new NamedColor("Sap green", "#507D2A", 122, -26, 39),
+	  new NamedColor("Sapphire", "#0F52BA", 92, 13, -60),
+	  new NamedColor("Sapphire blue", "#0067A5", 105, -6, -40),
+	  new NamedColor("Sapphire (Crayola)", "#0067A5", 105, -6, -40),
+	  new NamedColor("Satin sheen gold", "#CBA135", 175, 8, 59),
+	  new NamedColor("Scarlet", "#FF2400", 142, 77, 70),
+	  new NamedColor("Schauss pink", "#FF91AF", 186, 45, 4),
+	  new NamedColor("School bus yellow", "#FFD800", 224, 2, 87),
+	  new NamedColor("Screamin' Green", "#66FF66", 228, -63, 59),
+	  new NamedColor("Sea green", "#2E8B57", 131, -37, 20),
+	  new NamedColor("Sea green (Crayola)", "#00FFCD", 228, -60, 9),
+	  new NamedColor("Seal brown", "#59260B", 57, 23, 28),
+	  new NamedColor("Seashell", "#FFF5EE", 248, 3, 5),
+	  new NamedColor("Selective yellow", "#FFBA00", 205, 17, 82),
+	  new NamedColor("Sepia", "#704214", 84, 18, 35),
+	  new NamedColor("Shadow", "#8A795D", 132, 4, 18),
+	  new NamedColor("Shadow blue", "#778BA5", 145, -2, -15),
+	  new NamedColor("Shamrock green", "#009E60", 146, -47, 22),
+	  new NamedColor("Sheen green", "#8FD400", 199, -40, 75),
+	  new NamedColor("Shimmering Blush", "#D98695", 166, 34, 6),
+	  new NamedColor("Shiny Shamrock", "#5FA778", 160, -31, 17),
+	  new NamedColor("Shocking pink", "#FC0FC0", 146, 86, -29),
+	  new NamedColor("Shocking pink (Crayola)", "#FF6FFF", 177, 69, -45),
+	  new NamedColor("Sienna", "#882D17", 83, 39, 35),
+	  new NamedColor("Silver", "#C0C0C0", 198, 0, 0),
+	  new NamedColor("Silver (Crayola)", "#C9C0BB", 200, 3, 4),
+	  new NamedColor("Silver (Metallic)", "#AAA9AD", 177, 1, -1),
+	  new NamedColor("Silver chalice", "#ACACAC", 179, 0, 0),
+	  new NamedColor("Silver pink", "#C4AEAD", 186, 8, 4),
+	  new NamedColor("Silver sand", "#BFC1C2", 199, 0, 0),
+	  new NamedColor("Sinopia", "#CB410B", 123, 54, 57),
+	  new NamedColor("Sizzling Red", "#FF3855", 147, 74, 34),
+	  new NamedColor("Sizzling Sunrise", "#FFDB00", 226, 1, 87),
+	  new NamedColor("Skobeloff", "#007474", 111, -27, -7),
+	  new NamedColor("Sky blue", "#87CEEB", 201, -17, -21),
+	  new NamedColor("Sky blue (Crayola)", "#76D7EA", 206, -25, -18),
+	  new NamedColor("Sky magenta", "#CF71AF", 153, 44, -15),
+	  new NamedColor("Slate blue", "#6A5ACD", 114, 30, -58),
+	  new NamedColor("Slate gray", "#708090", 134, -2, -10),
+	  new NamedColor("Slimy green", "#299617", 139, -47, 51),
+	  new NamedColor("Smitten", "#C84186", 126, 58, -7),
+	  new NamedColor("Smoky black", "#100C08", 9, 1, 2),
+	  new NamedColor("Snow", "#FFFAFA", 252, 2, 1),
+	  new NamedColor("Solid pink", "#893843", 90, 36, 12),
+	  new NamedColor("Sonic silver", "#757575", 126, 0, 0),
+	  new NamedColor("Space cadet", "#1D2951", 44, 6, -26),
+	  new NamedColor("Spanish bistre", "#807532", 125, -1, 38),
+	  new NamedColor("Spanish blue", "#0070B8", 115, -5, -45),
+	  new NamedColor("Spanish carmine", "#D10047", 115, 71, 25),
+	  new NamedColor("Spanish gray", "#989898", 160, 0, 0),
+	  new NamedColor("Spanish green", "#009150", 134, -45, 25),
+	  new NamedColor("Spanish orange", "#E86100", 149, 51, 68),
+	  new NamedColor("Spanish pink", "#F7BFBE", 210, 21, 9),
+	  new NamedColor("Spanish red", "#E60026", 125, 75, 50),
+	  new NamedColor("Spanish sky blue", "#00FFFF", 231, -50, -14),
+	  new NamedColor("Spanish violet", "#4C2882", 64, 33, -44),
+	  new NamedColor("Spanish viridian", "#007F5C", 119, -37, 10),
+	  new NamedColor("Spring bud", "#A7FC00", 232, -47, 85),
+	  new NamedColor("Spring Frost", "#87FF2A", 231, -58, 79),
+	  new NamedColor("Spring green", "#00FF7F", 226, -72, 46),
+	  new NamedColor("Spring green (Crayola)", "#ECEBBD", 235, -4, 23),
+	  new NamedColor("Star command blue", "#007BB8", 123, -11, -40),
+	  new NamedColor("Steel blue", "#4682B4", 133, -7, -32),
+	  new NamedColor("Steel pink", "#CC33CC", 131, 71, -46),
+	  new NamedColor("Steel Teal", "#5F8A8B", 139, -14, -5),
+	  new NamedColor("Stil de grain yellow", "#FADA5E", 225, 1, 63),
+	  new NamedColor("Straw", "#E4D96F", 219, -5, 53),
+	  new NamedColor("Sugar Plum", "#914E75", 108, 33, -8),
+	  new NamedColor("Sunglow", "#FFCC33", 216, 9, 76),
+	  new NamedColor("Sunray", "#E3AB57", 189, 15, 51),
+	  new NamedColor("Sunset", "#FAD6A5", 224, 8, 29),
+	  new NamedColor("Super pink", "#CF6BA9", 150, 46, -14),
+	  new NamedColor("Sweet Brown", "#A83731", 104, 47, 31),
+	  new NamedColor("Syracuse Orange", "#D44500", 129, 56, 62),
+	  new NamedColor("Tan", "#D2B48C", 192, 7, 25),
+	  new NamedColor("Tan (Crayola)", "#D99A6C", 176, 20, 34),
+	  new NamedColor("Tangerine", "#F28500", 171, 38, 73),
+	  new NamedColor("Tango pink", "#E4717A", 158, 46, 17),
+	  new NamedColor("Tart Orange", "#FB4D46", 151, 66, 44),
+	  new NamedColor("Taupe", "#483C32", 67, 4, 8),
+	  new NamedColor("Taupe gray", "#8B8589", 143, 3, 0),
+	  new NamedColor("Tea green", "#D0F0C0", 233, -16, 20),
+	  new NamedColor("Tea rose", "#F88379", 174, 45, 27),
+	  new NamedColor("Tea rose", "#F4C2C2", 212, 18, 7),
+	  new NamedColor("Teal", "#008080", 122, -29, -8),
+	  new NamedColor("Teal blue", "#367588", 117, -16, -16),
+	  new NamedColor("Telemagenta", "#CF3476", 124, 64, 1),
+	  new NamedColor("TennÃ© (tawny)", "#CD5700", 133, 45, 62),
+	  new NamedColor("Terra cotta", "#E2725B", 156, 43, 34),
+	  new NamedColor("Thistle", "#D8BFD8", 204, 12, -8),
+	  new NamedColor("Thulian pink", "#DE6FA1", 157, 48, -5),
+	  new NamedColor("Tickle Me Pink", "#FC89AC", 181, 47, 2),
+	  new NamedColor("Tiffany Blue", "#0ABAB5", 174, -40, -8),
+	  new NamedColor("Timberwolf", "#DBD7D2", 220, 1, 3),
+	  new NamedColor("Titanium yellow", "#EEE600", 229, -10, 87),
+	  new NamedColor("Tomato", "#FF6347", 161, 59, 48),
+	  new NamedColor("Tropical rainforest", "#00755E", 111, -33, 4),
+	  new NamedColor("True Blue", "#2D68C4", 112, 6, -54),
+	  new NamedColor("Trypan Blue", "#1C05B3", 52, 52, -82),
+	  new NamedColor("Tufts blue", "#3E8EDE", 145, -4, -48),
+	  new NamedColor("Tumbleweed", "#DEAA88", 188, 16, 25),
+	  new NamedColor("Turquoise", "#40E0D0", 206, -44, -4),
+	  new NamedColor("Turquoise blue", "#00FFEF", 230, -53, -6),
+	  new NamedColor("Turquoise green", "#A0D6B4", 207, -22, 11),
+	  new NamedColor("Turtle green", "#8A9A5B", 156, -13, 31),
+	  new NamedColor("Tuscan", "#FAD6A5", 224, 8, 29),
+	  new NamedColor("Tuscan brown", "#6F4E37", 93, 12, 19),
+	  new NamedColor("Tuscan red", "#7C4848", 94, 23, 10),
+	  new NamedColor("Tuscan tan", "#A67B5B", 141, 14, 24),
+	  new NamedColor("Tuscany", "#C09999", 171, 15, 6),
+	  new NamedColor("Twilight lavender", "#8A496B", 102, 31, -6),
+	  new NamedColor("Tyrian purple", "#66023C", 54, 43, -4),
+	  new NamedColor("UA blue", "#0033AA", 67, 27, -67),
+	  new NamedColor("UA red", "#D9004C", 119, 73, 24),
+	  new NamedColor("Ultramarine", "#3F00FF", 82, 70, -107),
+	  new NamedColor("Ultramarine blue", "#4166F5", 121, 26, -76),
+	  new NamedColor("Ultra pink", "#FF6FFF", 177, 69, -45),
+	  new NamedColor("Ultra red", "#FC6C85", 165, 57, 16),
+	  new NamedColor("Umber", "#635147", 92, 6, 9),
+	  new NamedColor("Unbleached silk", "#FFDDCA", 231, 10, 14),
+	  new NamedColor("United Nations blue", "#5B92E5", 152, 1, -47),
+	  new NamedColor("University of Pennsylvania red", "#A50021", 89, 59, 34),
+	  new NamedColor("Unmellow yellow", "#FFFF66", 250, -13, 71),
+	  new NamedColor("UP Forest green", "#014421", 62, -26, 15),
+	  new NamedColor("UP maroon", "#7B1113", 67, 44, 30),
+	  new NamedColor("Upsdell red", "#AE2029", 99, 56, 34),
+	  new NamedColor("Uranian blue", "#AFDBF5", 217, -9, -17),
+	  new NamedColor("USAFA blue", "#004F98", 84, 3, -46),
+	  new NamedColor("Van Dyke brown", "#664228", 81, 14, 22),
+	  new NamedColor("Vanilla", "#F3E5AB", 232, 0, 30),
+	  new NamedColor("Vanilla ice", "#F38FA9", 181, 41, 4),
+	  new NamedColor("Vegas gold", "#C5B358", 186, -1, 48),
+	  new NamedColor("Venetian red", "#C80815", 109, 67, 51),
+	  new NamedColor("Verdigris", "#43B3AE", 170, -33, -6),
+	  new NamedColor("Vermilion", "#E34234", 136, 62, 46),
+	  new NamedColor("Vermilion", "#D9381E", 127, 62, 53),
+	  new NamedColor("Veronica", "#A020F0", 113, 72, -77),
+	  new NamedColor("Violet", "#8F00FF", 106, 76, -91),
+	  new NamedColor("Violet (color wheel)", "#7F00FF", 100, 75, -95),
+	  new NamedColor("Violet (crayola)", "#963D7F", 103, 44, -18),
+	  new NamedColor("Violet (RYB)", "#8601AF", 86, 63, -57),
+	  new NamedColor("Violet (web)", "#EE82EE", 178, 53, -36),
+	  new NamedColor("Violet-blue", "#324AB2", 88, 20, -58),
+	  new NamedColor("Violet-blue (Crayola)", "#766EC8", 128, 20, -46),
+	  new NamedColor("Violet-red", "#F75394", 154, 67, 1),
+	  new NamedColor("Viridian", "#40826D", 126, -25, 5),
+	  new NamedColor("Viridian green", "#009698", 142, -33, -10),
+	  new NamedColor("Vivid burgundy", "#9F1D35", 91, 53, 22),
+	  new NamedColor("Vivid sky blue", "#00CCFF", 193, -29, -37),
+	  new NamedColor("Vivid tangerine", "#FFA089", 192, 34, 28),
+	  new NamedColor("Vivid violet", "#9F00FF", 112, 78, -87),
+	  new NamedColor("Volt", "#CEFF00", 240, -34, 89),
+	  new NamedColor("Warm black", "#004242", 62, -18, -5),
+	  new NamedColor("Wheat", "#F5DEB3", 228, 3, 24),
+	  new NamedColor("White", "#FFFFFF", 255, 0, 0),
+	  new NamedColor("Wild blue yonder", "#A2ADD0", 180, 2, -18),
+	  new NamedColor("Wild orchid", "#D470A2", 154, 44, -7),
+	  new NamedColor("Wild Strawberry", "#FF43A4", 154, 75, -8),
+	  new NamedColor("Wild watermelon", "#FC6C85", 165, 57, 16),
+	  new NamedColor("Windsor tan", "#A75502", 117, 31, 54),
+	  new NamedColor("Wine", "#722F37", 75, 31, 10),
+	  new NamedColor("Wine dregs", "#673147", 72, 27, -1),
+	  new NamedColor("Winter Sky", "#FF007C", 142, 84, 8),
+	  new NamedColor("Wintergreen Dream", "#56887D", 135, -19, 0),
+	  new NamedColor("Wisteria", "#C9A0DC", 182, 24, -24),
+	  new NamedColor("Wood brown", "#C19A6B", 169, 11, 30),
+	  new NamedColor("Xanadu", "#738678", 138, -8, 5),
+	  new NamedColor("Xanthic", "#EEED09", 234, -13, 88),
+	  new NamedColor("Yale Blue", "#00356B", 55, 2, -36),
+	  new NamedColor("Yellow", "#FFFF00", 249, -15, 93),
+	  new NamedColor("Yellow (Crayola)", "#FCE883", 235, -1, 51),
+	  new NamedColor("Yellow (Munsell)", "#EFCC00", 212, 1, 83),
+	  new NamedColor("Yellow (NCS)", "#FFD300", 221, 5, 86),
+	  new NamedColor("Yellow (Pantone)", "#FEDF00", 228, 0, 88),
+	  new NamedColor("Yellow (process)", "#FFEF00", 238, -7, 91),
+	  new NamedColor("Yellow (RYB)", "#FEFE33", 248, -14, 86),
+	  new NamedColor("Yellow-green", "#9ACD32", 196, -32, 66),
+	  new NamedColor("Yellow-green (Crayola)", "#C5E384", 220, -20, 43),
+	  new NamedColor("Yellow-green (Color Wheel)", "#30B21A", 163, -54, 59),
+	  new NamedColor("Yellow Orange", "#FFAE42", 198, 24, 65),
+	  new NamedColor("Yellow Orange (Color Wheel)", "#FF9505", 184, 35, 76),
+	  new NamedColor("Yellow Sunshine", "#FFF700", 244, -11, 92),
+	  new NamedColor("YInMn Blue", "#2E5090", 87, 5, -39),
+	  new NamedColor("Zaffre", "#0014A8", 50, 44, -77),
+	  new NamedColor("Zomp", "#39A78E", 158, -36, 3)
+	];
+	
+	function processQuery(){
+	  var userInput = document.getElementById("query-input").value;
+	  var rgb = hexToRgb(userInput);
+	  var lab = rgbToLab(rgb);
+	  
+	  var closest;
+	  var closestDis;
+	  var arrayLength = colors.length;
+      for (var i = 0; i < arrayLength; i++) {
+	    var c = colors[i];
+	    var lDis = lab.l - c.getL();
+		var aDis = lab.a - c.getA();
+		var bDis = lab.b - c.getB();
+		var disSq = lDis*lDis + aDis*aDis + bDis*bDis;
+		
+		if(closest == null || disSq<closestDis) {
+		  closest = c;
+		  closestDis = disSq;
+		}
+	  }
+	  console.log(closest.getName());
+	};
+	
+	function hexToRgb(hex) {
+      var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+      return result ? {
+        r: parseInt(result[1], 16),
+        g: parseInt(result[2], 16),
+        b: parseInt(result[3], 16)
+      } : null;
+    }
+	function rgbToLab(rgb) {
+      var r, g, b, X, Y, Z, fx, fy, fz, xr, yr, zr;
+	  var Ls, as, bs;
+	  var eps = 0.008856452;
+	  var k = 903.2963;
+
+	  var Xr = 0.964221;  // reference white D50
+	  var Yr = 1.0;
+	  var Zr = 0.825211;
+
+	  // RGB to XYZ
+	  r = rgb.r/255.0; //R 0..1
+	  g = rgb.g/255.0; //G 0..1
+	  b = rgb.b/255.0; //B 0..1
+
+	  // assuming sRGB (D65)
+	  if (r <= 0.04045)
+	      r = r/12;
+	  else
+	      r = Math.pow((r+0.055)/1.055,2.4);
+
+	  if (g <= 0.04045)
+	      g = g/12;
+	  else
+	      g = Math.pow((g+0.055)/1.055,2.4);
+
+	  if (b <= 0.04045)
+	      b = b/12;
+	  else
+	      b = Math.pow((b+0.055)/1.055,2.4);
+
+
+	  X = 0.436052025*r + 0.385081593*g + 0.143087414*b;
+	  Y = 0.222491598*r + 0.71688606*g + 0.060621486*b;
+	  Z = 0.013929122*r + 0.097097002*g + 0.71418547*b;
+
+	  // XYZ to Lab
+	  xr = X/Xr;
+	  yr = Y/Yr;
+	  zr = Z/Zr;
+
+	  if ( xr > eps )
+	      fx =  Math.pow(xr, 1/3.);
+	  else
+	      fx = ((k * xr + 16.) / 116.);
+
+	  if ( yr > eps )
+	      fy =  Math.pow(yr, 1/3.);
+	  else
+	  fy = ((k * yr + 16.) / 116.);
+
+	  if ( zr > eps )
+	      fz =  Math.pow(zr, 1/3.);
+	  else
+	      fz = ((k * zr + 16.) / 116);
+
+	  Ls = ( 116 * fy ) - 16;
+	  as = 500*(fx-fy);
+	  bs = 200*(fy-fz);
+
+	  return {
+        l: parseInt(2.55*Ls + .5),
+        a: parseInt(as + .5),
+        b: parseInt(bs + .5)
+      };
+    }
+	
+  </script>
 </body>
 </html>
