@@ -20,10 +20,19 @@
 	    <div class="header-brand">
 		  <div class="header-brand-inner">
 		    <a>
-			  <svg xmlns="http://www.w3.org/2000/svg" width="26.25" height="26.25" viewBox="0 0 16 16" fill="#ffffff">
-			    <path d="M3.757 8l-2.05-2.05a.999.999 0 010-1.414l2.828-2.828a.999.999 0 011.414 0L12.243 8H3.757zM9 3.343V2a1 1 0 011-1h4a1 1 0 011 1v6h-1.343L9 3.343zM15 10a1 1 0 00-1-1H2a1 1 0 00-1 1v4a1 1 0 001 1h12a1 1 0 001-1v-4zm-4 2a1 1 0 112 0 1 1 0 01-2 0z"/>
+			  <svg xmlns="http://www.w3.org/2000/svg" width="26.25" height="26.25" viewBox="0 0 344 344">
+			    <g transform="translate(0.000000,344.000000) scale(0.100000,-0.100000)"
+fill="#000000" stroke="none">
+<path d="M1630 3434 c-259 -22 -484 -99 -686 -233 -563 -373 -778 -1068 -529
+-1712 183 -473 583 -951 1156 -1379 74 -55 141 -100 149 -100 19 0 249 172
+396 296 284 240 562 551 722 810 253 408 341 807 263 1191 -103 502 -465 905
+-954 1062 -148 47 -380 76 -517 65z m235 -839 c92 -24 174 -73 250 -150 115
+-115 165 -234 165 -395 0 -159 -52 -283 -165 -395 -112 -113 -236 -165 -395
+-165 -161 0 -280 50 -395 165 -115 115 -165 234 -165 395 0 161 50 280 165
+395 75 75 157 125 246 149 72 20 220 20 294 1z"/>
+</g>
 		      </svg>
-			  Color Namespace
+			  HEX
 			</a>
 		  </div>
 		</div>
@@ -32,7 +41,7 @@
 		  <div class="header-query-main">
 		    <input id="query-input" placeholder="Enter a hex color" value="">
 			<button id="query-button-submit" type="submit">
-			  <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 46 72' width="16.7667" height="26.25" fill="#8899a6">
+			  <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 46 72' width="16.7667" height="26.25" fill="#666666">
 			    <path class='icon' d='M6 39h24.757l-7.878 7.88a2.994 2.994 0 0 0 0 4.24 2.994 2.994 0 0 0 4.24 0l13-13a2.994 2.994 0 0 0 0-4.24l-13-13C26.537 20.292 25.77 20 25 20s-1.536.293-2.12.88a2.994 2.994 0 0 0 0 4.24L30.756 33H6a3 3 0 1 0 0 6z'/>
 			  </svg>
 			</button>
@@ -1071,52 +1080,54 @@
 	];
 	
 	function processQuery(){
-	  window.scrollTo({
-	    top: document.body.scrollHeight,
-        left: 0,
-        behavior: 'smooth'
-      });
-	  
 	  var userInput = document.getElementById("query-input").value;
 	  var rgb = hexToRgb(userInput);
-	  var lab = rgbToLab(rgb);
+	  if(rgb != null) {
+	    
+	    window.scrollTo({
+	      top: document.body.scrollHeight,
+          left: 0,
+          behavior: 'smooth'
+        });
+	    var lab = rgbToLab(rgb);
 	  
-	  var closest;
-	  var closestDis;
-	  var closest2;
-	  var closest2Dis;
-	  var closest3;
-	  var closest3Dis;
-	  var arrayLength = colors.length;
-      for (var i = 0; i < arrayLength; i++) {
-	    var c = colors[i];
-	    var lDis = lab.l - c.getL();
-		var aDis = lab.a - c.getA();
-		var bDis = lab.b - c.getB();
-		var disSq = lDis*lDis + aDis*aDis + bDis*bDis;
-		
-		if(closest == null || disSq<closestDis) {
-		  closest = c;
-		  closestDis = disSq;
-		} else if(closest2 == null || disSq<closest2Dis) {
-		  closest2 = c;
-		  closest2Dis = disSq;
-		} else if(closest3 == null || disSq<closest3Dis) {
-		  closest3 = c;
-		  closest3Dis = disSq;
-		}
+	    var closest;
+	    var closestDis;
+	    var closest2;
+	    var closest2Dis;
+	    var closest3;
+	    var closest3Dis;
+	    var arrayLength = colors.length;
+        for (var i = 0; i < arrayLength; i++) {
+	      var c = colors[i];
+	      var lDis = lab.l - c.getL();
+		  var aDis = lab.a - c.getA();
+		  var bDis = lab.b - c.getB();
+		  var disSq = lDis*lDis + aDis*aDis + bDis*bDis;
+	  	
+	  	  if(closest == null || disSq<closestDis) {
+		    closest = c;
+	  	    closestDis = disSq;
+		  } else if(closest2 == null || disSq<closest2Dis) {
+		    closest2 = c;
+		    closest2Dis = disSq;
+		  } else if(closest3 == null || disSq<closest3Dis) {
+		    closest3 = c;
+		    closest3Dis = disSq;
+		  }
+	    }
+	  
+	    document.getElementById("element-1").children[0].style.backgroundColor = userInput;
+	    var e2 = document.getElementById("element-2");
+	    e2.children[0].style.backgroundColor = closest.getHex();
+	    e2.children[1].innerText = closest.getName();
+	    var e3 = document.getElementById("element-3");
+	    e3.children[0].style.backgroundColor = closest2.getHex();
+	    e3.children[1].innerText = closest2.getName();
+	    var e4 = document.getElementById("element-4");
+	    e4.children[0].style.backgroundColor = closest3.getHex();
+	    e4.children[1].innerText = closest3.getName();
 	  }
-	  
-	  document.getElementById("element-1").children[0].style.backgroundColor = userInput;
-	  var e2 = document.getElementById("element-2");
-	  e2.children[0].style.backgroundColor = closest.getHex();
-	  e2.children[1].innerText = closest.getName();
-	  var e3 = document.getElementById("element-3");
-	  e3.children[0].style.backgroundColor = closest2.getHex();
-	  e3.children[1].innerText = closest2.getName();
-	  var e4 = document.getElementById("element-4");
-	  e4.children[0].style.backgroundColor = closest3.getHex();
-	  e4.children[1].innerText = closest3.getName();
 	};
 	
 	function hexToRgb(hex) {

@@ -2,16 +2,14 @@ html {
 }
 
 @font-face {
-	font-family: 'Helvetica Neue';
-	font-style: bold;
-	font-weight: 300;
+	font-family: 'Inter';
 	font-display: swap;
-	src: url("../fonts/Helvetica Neue/Helvetica Neu Bold.ttf");
+	src: url("../fonts/Inter/Inter-VariableFont_slnt,wght.ttf");
 }
 
 body {
 	margin: 0 0 210px;
-	background-color: #fff;
+	background-color: #fafafa;
 }
 
 #header {
@@ -22,8 +20,8 @@ body {
 	justify-content: center;
 	top: 0px;
 	
-	background-image: linear-gradient(135deg,#1da1f2,#981ceb);
-	background-color: #000;
+	border-bottom: 1px solid #eaeaea;
+	background-color: #fff;
 }
 #header-content {
 	height: 100%;
@@ -49,9 +47,9 @@ body {
 	line-height: 50px;
 	letter-spacing: .0357em;
 	font-size: 14px;
-	color: #ffffff;
-	font-family: Helvetica Neue;
-	font-weight: 300;
+	color: #000000;
+	font-family: Inter;
+	font-weight: 400;
 }
 .header-brand-inner a svg {
 	margin-right: 12px;
@@ -74,11 +72,11 @@ body {
 	
 	transition: opacity .5s ease-out 1s;
 	
-	font-family: Helvetica Neue;
-	font-weight: 100;
+	font-family: Inter;
+	font-weight: 700;
 	font-style: normal;
 	font-size: 36px;
-	color: #ffffff;
+	color: #000;
     line-height: 46.8px;
 	letter-spacing: .02em;
 }
@@ -93,18 +91,17 @@ body {
 	box-sizing: border-box;
 	width: 100%;
 	padding: 15px 36px 15px 20px;
-	border: 0;
+	border: 1px solid #eaeaea;
 	border-radius: 4px;
 	
-	background: #fff;
-	color: #292f33;
+	color: #000000;
 	font-size: 14px;
 	letter-spacing: .0357em;
-	font-family: Helvetica Neue;
-	font-weight: 300;
+	font-family: Inter;
+	font-weight: 400;
 }
 #query-input::placeholder {
-	color: #bfc8cf;
+	color: #666666;
 	opacity: 1;
 }
 #query-button-submit {
@@ -121,10 +118,10 @@ body {
 	border: none;
 }
 #query-button-submit:hover svg {
-	fill: #292f33;
+	fill: #000000;
 }
 #query-button-submit:focus svg {
-	fill: #1b95e0;
+	fill: #000000;
 }
 
 #results {
@@ -135,10 +132,10 @@ body {
 	padding: 30px 10px;
 	text-align: center;
 	
-	color: #292f33;
+	color: #666666;
 	font-size: 18px;
-	font-weight: 200;
-	font-family: Helvetica Neue;
+	font-weight: 400;
+	font-family: Inter;
 }
 .results-list {
 	display: flex;
@@ -167,8 +164,8 @@ body {
 	
 	border: none;
 	font-size: 14px;
-	font-weight: 400;
-	font-family: Helvetica Neue;
+	font-weight: 700;
+	font-family: Inter;
 }
 .results-element span {
 	display: inline-block;
@@ -177,5 +174,5 @@ body {
 	height: 206.25px;
 	border-radius: 3px;
 	
-	background-color: #059ff5;
+	background-color: #007fef;
 }
